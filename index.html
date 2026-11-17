@@ -1,0 +1,1316 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>TTS Digest</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="feed.js" defer></script>
+</head>
+<body>
+
+
+<header class="top">
+  <div class="wrap masthead">
+    <a href="./" class="brand"><span class="wave" aria-hidden="true">▂▅▇▅▂</span> TTS Digest</a>
+    <nav aria-label="Dashboard"><a href="#week">This week</a><a href="#timeline">Timeline</a><a href="#archive">Archive</a></nav>
+  </div>
+</header>
+<main class="wrap">
+  <section class="hero" aria-labelledby="page-title">
+    <div>
+      <p class="date">16 Nov – 22 Nov 2026 <span>· Cairo</span></p>
+      <h1 id="page-title">What changed in TTS?</h1>
+      <p>Model releases, provider updates, and research. Arabic speech and real-time deployment first.</p>
+    </div>
+    <dl class="stats">
+      <div><dt>This week</dt><dd>2</dd></div>
+      <div><dt>Need action</dt><dd>1</dd></div>
+      <div><dt>Sources checked</dt><dd>14<span>/14</span></dd></div>
+    </dl>
+  </section>
+  <div class="overview">
+    <section class="panel" id="week">
+      <div class="section-head"><h2>This Week</h2><a href="#timeline">Browse timeline ↓</a></div>
+      
+      <article class="brief-row">
+        <div class="meta"><span class="kind downloadable">Downloadable model</span><span class="focus">Priority</span></div>
+        <h3><a href="#hf-discovery:algerian-nlp/Hadra-TTS-kokoro" data-entry-link>Hadra adapts Kokoro 82M to Algerian Darja</a></h3>
+        <p>A compact dialect candidate with documented Darja–French support. Arabic–English behavior remains an open evaluation question.</p>
+      </article>
+      
+      <article class="brief-row">
+        <div class="meta"><span class="kind paper">Research paper</span></div>
+        <h3><a href="#arxiv:2611.20822" data-entry-link>Zero-shot TTS evaluation can miss voice representation gaps</a></h3>
+        <p>Audit speaker groups with listener judgments alongside embedding similarity and automated quality scores.</p>
+      </article>
+      
+    </section>
+    <aside class="panel action-panel" id="actions">
+      <div class="section-head"><h2>Action Needed</h2><span class="count">1</span></div>
+      
+      <article class="action-row">
+        <div class="meta"><strong>Deprecation</strong></div>
+        <h3><a href="#elevenlabs:68f97a660601869172af6c0e" data-entry-link>ElevenLabs deprecates use_pvc_as_ivc for dialogue</a></h3>
+        <p>Update dialogue clients that send use_pvc_as_ivc to use clone_strength and validate the result with your fine-tuned v4 voices.</p>
+      </article>
+      
+    </aside>
+  </div>
+  <details class="health">
+    <summary><strong>Source checks</strong><span>14 of 14 complete · Last check <time datetime="2026-11-17T15:13:38.354839+02:00">17 Nov 2026, 15:13 Cairo</time></span></summary>
+    <ul>
+      
+      <li><strong>F5-TTS</strong><span>github</span><span class="ok">Ok</span></li>
+      
+      <li><strong>F5-TTS</strong><span>model</span><span class="ok">Ok</span></li>
+      
+      <li><strong>Kokoro</strong><span>github</span><span class="ok">Ok</span></li>
+      
+      <li><strong>Kokoro</strong><span>model</span><span class="ok">Ok</span></li>
+      
+      <li><strong>Chatterbox</strong><span>github</span><span class="ok">Ok</span></li>
+      
+      <li><strong>Chatterbox</strong><span>model</span><span class="ok">Ok</span></li>
+      
+      <li><strong>Qwen3-TTS</strong><span>github</span><span class="ok">Ok</span></li>
+      
+      <li><strong>Qwen3-TTS</strong><span>model</span><span class="ok">Ok</span></li>
+      
+      <li><strong>Hugging Face TTS discovery</strong><span>discovery</span><span class="ok">Ok</span></li>
+      
+      <li><strong>ElevenLabs</strong><span>vendor</span><span class="ok">Ok</span></li>
+      
+      <li><strong>Cartesia</strong><span>vendor</span><span class="ok">Ok</span></li>
+      
+      <li><strong>OpenAI</strong><span>vendor</span><span class="ok">Ok</span></li>
+      
+      <li><strong>Google</strong><span>vendor</span><span class="ok">Ok</span></li>
+      
+      <li><strong>arXiv</strong><span>arxiv</span><span class="ok">Ok</span></li>
+      
+    </ul>
+  </details>
+  <section id="timeline" class="timeline">
+    <div class="section-head"><h2>Timeline</h2><span id="shown" aria-live="polite">24 entries</span></div>
+    <div class="toolbar">
+      <label class="query"><span>Search updates</span><input id="search" type="search" placeholder="Model, topic, or keyword"></label>
+      <div class="filters" aria-label="Entry filters">
+        <button type="button" data-filter="all" aria-pressed="true">All</button>
+        <button type="button" data-filter="downloadable" aria-pressed="false">Downloadable</button>
+        <button type="button" data-filter="proprietary" aria-pressed="false">Proprietary</button>
+        <button type="button" data-filter="paper" aria-pressed="false">Papers</button>
+        <button type="button" data-filter="Arabic" aria-pressed="false">Arabic</button>
+        <button type="button" data-filter="Real-time" aria-pressed="false">Real-time</button>
+      </div>
+    </div>
+    <div id="feed">
+    
+      
+      
+      <article id="hf-discovery:algerian-nlp/Hadra-TTS-kokoro" class="entry" data-kind="downloadable" data-tags="Arabic|Code-switching|Pronunciation">
+        
+        <time class="stamp" datetime="2026-11-17">17 Nov 2026</time>
+        
+        <div>
+          <div class="meta"><span class="kind downloadable">Downloadable model</span></div>
+          <h3>Hadra adapts Kokoro 82M to Algerian Darja</h3>
+          <p>The model card describes three speaker personas, Algerian phonology, and support for French code-switching.</p>
+          <p class="takeaway"><strong>Why it matters</strong> A compact dialect candidate with documented Darja–French support. Arabic–English behavior remains an open evaluation question.</p>
+          
+          
+          
+          <p class="licensing"><span>Weights · apache-2.0</span></p>
+          
+          <div class="links">
+            
+            
+              
+              <a href="https://huggingface.co/algerian-nlp/Hadra-TTS-kokoro" target="_blank" rel="noopener noreferrer">Source ↗</a>
+              
+              
+            
+              
+              <a href="https://huggingface.co/algerian-nlp/Hadra-TTS-kokoro/blob/1ebf113332b25dcd6709142e844a7d7e9b1321e1/README.md" target="_blank" rel="noopener noreferrer">Pinned model card ↗</a>
+              
+              
+            
+            
+          </div>
+          <ul class="tags" aria-label="Topics"><li>Arabic</li><li>Code-switching</li><li>Pronunciation</li></ul>
+        </div>
+      </article>
+    
+      
+      
+      <article id="arxiv:2611.20822" class="entry" data-kind="paper" data-tags="Cloning|Evaluation">
+        
+        <time class="stamp" datetime="2026-11-16">16 Nov 2026</time>
+        
+        <div>
+          <div class="meta"><span class="kind paper">Research paper</span><span>Preprint</span></div>
+          <h3>Zero-shot TTS evaluation can miss voice representation gaps</h3>
+          <p>This study compares six voice-cloning models on datasets with and without gender-expansive voices and contrasts listener judgments with automated metrics.</p>
+          <p class="takeaway"><strong>Why it matters</strong> Audit speaker groups with listener judgments alongside embedding similarity and automated quality scores.</p>
+          <p><strong>Evidence</strong> Human similarity ratings were lower for gender-expansive voices on two systems and higher on three. Automated ratings varied across models and disagreed with listeners.</p>
+          
+          
+          <div class="links">
+            
+            
+              
+              <a href="https://arxiv.org/abs/2611.20822" target="_blank" rel="noopener noreferrer">Source ↗</a>
+              
+              
+            
+              
+              <a href="https://arxiv.org/abs/2611.20822v1" target="_blank" rel="noopener noreferrer">Revision ↗</a>
+              
+              
+            
+            
+          </div>
+          <ul class="tags" aria-label="Topics"><li>Cloning</li><li>Evaluation</li></ul>
+        </div>
+      </article>
+    
+      
+      
+      <article id="arxiv:2611.20254" class="entry" data-kind="paper" data-tags="Training|Cloning">
+        
+        <time class="stamp" datetime="2026-11-15">15 Nov 2026</time>
+        
+        <div>
+          <div class="meta"><span class="kind paper">Research paper</span><span>Preprint</span></div>
+          <h3>VoxMel replaces a learned acoustic tokenizer with fixed Haar tiers</h3>
+          <p>The autoregressive model generates coarse Mel frames and reconstructs temporal and frequency detail in two later passes.</p>
+          <p class="takeaway"><strong>Why it matters</strong> A different acoustic target to compare against token-based models, especially when testing simplifications to the speech front end.</p>
+          <p><strong>Evidence</strong> The authors report that GRPO improved WER from 1.51% to 1.15% on test-en and CER from 1.29% to 1.17% on test-zh for their Emilia-trained 0.6B model.</p>
+          
+          
+          <div class="links">
+            
+            
+              
+              <a href="https://arxiv.org/abs/2611.20254" target="_blank" rel="noopener noreferrer">Source ↗</a>
+              
+              
+            
+              
+              <a href="https://arxiv.org/abs/2611.20254v1" target="_blank" rel="noopener noreferrer">Revision ↗</a>
+              
+              
+            
+              
+              <a href="https://voxdance.github.io/voxmel-demo/" target="_blank" rel="noopener noreferrer">Audio demos ↗</a>
+              
+              
+            
+              
+              <a href="https://github.com/VoxDance-Lab/VoxMel" target="_blank" rel="noopener noreferrer">Code ↗</a>
+              
+              
+            
+            <a href="#hf-discovery:VoxDance-Lab/VoxMel-0.3B" data-entry-link>VoxMel releases two English and Mandarin cloning checkpoints</a>
+          </div>
+          <ul class="tags" aria-label="Topics"><li>Training</li><li>Cloning</li></ul>
+        </div>
+      </article>
+    
+      
+      
+      <article id="arxiv:2611.19832" class="entry" data-kind="paper" data-tags="Training|Pronunciation">
+        
+        <time class="stamp" datetime="2026-11-15">15 Nov 2026</time>
+        
+        <div>
+          <div class="meta"><span class="kind paper">Research paper</span><span>Preprint</span></div>
+          <h3>ProTTS learns word stress and exposes emphasis control</h3>
+          <p>A FastSpeech 2 variant discovers relative word stress from prosodic features and accepts a user-provided stress mask at inference.</p>
+          <p class="takeaway"><strong>Why it matters</strong> The stress-mask interface is a design pattern for controlling call-agent emphasis without requiring labeled stress during training.</p>
+          <p><strong>Evidence</strong> The authors report MOS 3.96 versus 3.12 for their baseline and 83.5% listener preference. The paper reports on ISLE, LibriTTS, VCTK and separate stress or emphasis benchmarks.</p>
+          
+          
+          <div class="links">
+            
+            
+              
+              <a href="https://arxiv.org/abs/2611.19832" target="_blank" rel="noopener noreferrer">Source ↗</a>
+              
+              
+            
+              
+              <a href="https://arxiv.org/abs/2611.19832v1" target="_blank" rel="noopener noreferrer">Revision ↗</a>
+              
+              
+            
+            
+          </div>
+          <ul class="tags" aria-label="Topics"><li>Training</li><li>Pronunciation</li></ul>
+        </div>
+      </article>
+    
+      
+      
+      <article id="arxiv:2611.19787" class="entry" data-kind="paper" data-tags="Training|Cloning">
+        
+        <time class="stamp" datetime="2026-11-15">15 Nov 2026</time>
+        
+        <div>
+          <div class="meta"><span class="kind paper">Research paper</span><span>Preprint</span></div>
+          <h3>Qwen3-TTS post-training adapts prosody to the target text</h3>
+          <p>The authors combine preference optimization, sequence policy optimization, and self-distillation to make cloning more expressive under weak-reference conditions.</p>
+          <p class="takeaway"><strong>Why it matters</strong> The study isolates text-adaptive delivery as a separate evaluation axis for cloned voice agents.</p>
+          
+          
+          
+          <div class="links">
+            
+            
+              
+              <a href="https://arxiv.org/abs/2611.19787" target="_blank" rel="noopener noreferrer">Source ↗</a>
+              
+              
+            
+              
+              <a href="https://arxiv.org/abs/2611.19787v1" target="_blank" rel="noopener noreferrer">Revision ↗</a>
+              
+              
+            
+            
+          </div>
+          <ul class="tags" aria-label="Topics"><li>Training</li><li>Cloning</li></ul>
+        </div>
+      </article>
+    
+      
+      
+      <article id="hf-discovery:Momenrezk11/NAMAA-Egyptian-TTS" class="entry" data-kind="downloadable" data-tags="Arabic|Pronunciation|Cloning">
+        
+        <time class="stamp" datetime="2026-11-14">14 Nov 2026</time>
+        
+        <div>
+          <div class="meta"><span class="kind downloadable">Downloadable model</span></div>
+          <h3>NAMAA releases an Egyptian Arabic Chatterbox checkpoint</h3>
+          <p>The checkpoint targets conversational Egyptian Arabic and accepts optional reference audio for speaker and style conditioning.</p>
+          <p class="takeaway"><strong>Why it matters</strong> A useful Egyptian baseline for voice-agent prompts. The card flags Egyptian qāf, number pronunciation, and prompt-dependent inconsistencies.</p>
+          
+          
+          
+          <p class="licensing"><span>Weights · mit</span></p>
+          
+          <div class="links">
+            
+            
+              
+              <a href="https://huggingface.co/Momenrezk11/NAMAA-Egyptian-TTS" target="_blank" rel="noopener noreferrer">Source ↗</a>
+              
+              
+            
+              
+              <a href="https://huggingface.co/Momenrezk11/NAMAA-Egyptian-TTS/blob/813f3fc6a0d27c58cedb3fbfd61f32f8b2adb28c/README.md" target="_blank" rel="noopener noreferrer">Pinned model card ↗</a>
+              
+              
+            
+              
+              <a href="https://huggingface.co/spaces/omarelshehy/NAMAA-Egyptian-Voice" target="_blank" rel="noopener noreferrer">Project or demo ↗</a>
+              
+              
+            
+              
+            
+            
+          </div>
+          <ul class="tags" aria-label="Topics"><li>Arabic</li><li>Pronunciation</li><li>Cloning</li></ul>
+        </div>
+      </article>
+    
+      
+      
+      <article id="hf-discovery:MuntasirElagami/sudanese-chatterbox" class="entry" data-kind="downloadable" data-tags="Arabic|Cloning|Evaluation">
+        
+        <time class="stamp" datetime="2026-11-13">13 Nov 2026</time>
+        
+        <div>
+          <div class="meta"><span class="kind downloadable">Downloadable model</span></div>
+          <h3>Sudanese Chatterbox v0.1 publishes a dialect fine-tune</h3>
+          <p>The checkpoint adapts an Arabic-dialect Chatterbox model with 4.7 hours of Sudanese speech and supports reference-based cloning.</p>
+          <p class="takeaway"><strong>Why it matters</strong> The released test material gives you a starting point to compare dialect intelligibility and similarity against other Arabic checkpoints.</p>
+          <p><strong>Evidence</strong> On 50 sentences and four unseen Sudanese voices, the model card reports capped Whisper CER of 0.264 versus 0.474 for its base. Listener results come from a small blind round.</p>
+          
+          
+          <p class="licensing"><span>Weights · mit</span></p>
+          
+          <div class="links">
+            
+            
+              
+              <a href="https://huggingface.co/MuntasirElagami/sudanese-chatterbox" target="_blank" rel="noopener noreferrer">Source ↗</a>
+              
+              
+            
+              
+              <a href="https://huggingface.co/MuntasirElagami/sudanese-chatterbox/blob/462aa31d917117c373432cb2945378111f405e4c/README.md" target="_blank" rel="noopener noreferrer">Pinned model card ↗</a>
+              
+              
+            
+              
+              <a href="https://huggingface.co/oddadmix/lahgtna-chatterbox-v1" target="_blank" rel="noopener noreferrer">lahgtna-chatterbox-v1 ↗</a>
+              
+              
+            
+              
+              <a href="https://github.com/MontaserAlajamy/sudanese-arabic-tts/blob/main/results/README.md" target="_blank" rel="noopener noreferrer">results/README.md ↗</a>
+              
+              
+            
+              
+              <a href="https://github.com/MontaserAlajamy/sudanese-arabic-tts" target="_blank" rel="noopener noreferrer">project repository ↗</a>
+              
+              
+            
+              
+              <a href="https://huggingface.co/MuntasirElagami/sudanese-chatterbox/blob/462aa31d917117c373432cb2945378111f405e4c/samples/o03.mp3" target="_blank" rel="noopener noreferrer">o03.mp3 ↗</a>
+              
+              
+            
+              
+              <a href="https://huggingface.co/MuntasirElagami/sudanese-chatterbox/blob/462aa31d917117c373432cb2945378111f405e4c/samples/o07.mp3" target="_blank" rel="noopener noreferrer">o07.mp3 ↗</a>
+              
+              
+            
+              
+              <a href="https://huggingface.co/MuntasirElagami/sudanese-chatterbox/blob/462aa31d917117c373432cb2945378111f405e4c/samples/p02.mp3" target="_blank" rel="noopener noreferrer">p02.mp3 ↗</a>
+              
+              
+            
+              
+              <a href="https://huggingface.co/MuntasirElagami/sudanese-chatterbox/blob/462aa31d917117c373432cb2945378111f405e4c/samples/d01.mp3" target="_blank" rel="noopener noreferrer">d01.mp3 ↗</a>
+              
+              
+            
+              
+              <a href="https://huggingface.co/MuntasirElagami/sudanese-chatterbox/blob/462aa31d917117c373432cb2945378111f405e4c/samples/d02.mp3" target="_blank" rel="noopener noreferrer">d02.mp3 ↗</a>
+              
+              
+            
+            
+          </div>
+          <ul class="tags" aria-label="Topics"><li>Arabic</li><li>Cloning</li><li>Evaluation</li></ul>
+        </div>
+      </article>
+    
+      
+      
+      <article id="arxiv:2611.16051" class="entry" data-kind="paper" data-tags="Evaluation">
+        
+        <time class="stamp" datetime="2026-11-12">12 Nov 2026</time>
+        
+        <div>
+          <div class="meta"><span class="kind paper">Research paper</span><span>Preprint</span></div>
+          <h3>Customer-service listeners rank human-likeness and preference differently</h3>
+          <p>Two paired-choice studies compare synthetic voices and actor recordings for customer-service turns.</p>
+          <p class="takeaway"><strong>Why it matters</strong> Evaluate the voices you actually ship on conversational preference alongside naturalness. Voice choice within a provider can materially change the result.</p>
+          <p><strong>Evidence</strong> On 120 improvised customer-service turns spanning six commercial systems and eight voices per system, listeners picked synthesized speech over actors in 19% of human-likeness trials and 36% of preference trials.</p>
+          
+          
+          <div class="links">
+            
+            
+              
+              <a href="https://arxiv.org/abs/2611.16051" target="_blank" rel="noopener noreferrer">Source ↗</a>
+              
+              
+            
+              
+              <a href="https://arxiv.org/abs/2611.16051v1" target="_blank" rel="noopener noreferrer">Revision ↗</a>
+              
+              
+            
+            
+          </div>
+          <ul class="tags" aria-label="Topics"><li>Evaluation</li></ul>
+        </div>
+      </article>
+    
+      
+      
+      <article id="arxiv:2611.15464" class="entry" data-kind="paper" data-tags="Training|Cloning">
+        
+        <time class="stamp" datetime="2026-11-11">11 Nov 2026</time>
+        
+        <div>
+          <div class="meta"><span class="kind paper">Research paper</span><span>Preprint</span></div>
+          <h3>RSE-TTS reuses its generator to encode cloning references</h3>
+          <p>The Reconstructive Speaker Encoder shares the generation backbone and compresses reference audio and its transcript into eight vectors.</p>
+          <p class="takeaway"><strong>Why it matters</strong> Reusing the generator for conditioning is an option for keeping a cloning model small while preserving speaker similarity.</p>
+          <p><strong>Evidence</strong> The authors report 48% fewer encoder-generator parameters versus independent pretrained encoding, with lower WER and better similarity than the evaluated MOSS-TTS-Nano cloning modes on three English benchmarks.</p>
+          
+          
+          <div class="links">
+            
+            
+              
+              <a href="https://arxiv.org/abs/2611.15464" target="_blank" rel="noopener noreferrer">Source ↗</a>
+              
+              
+            
+              
+              <a href="https://arxiv.org/abs/2611.15464v1" target="_blank" rel="noopener noreferrer">Revision ↗</a>
+              
+              
+            
+              
+              <a href="https://voxnexusai.github.io/RSE-TTS/" target="_blank" rel="noopener noreferrer">Project or artifact ↗</a>
+              
+              
+            
+            
+          </div>
+          <ul class="tags" aria-label="Topics"><li>Training</li><li>Cloning</li></ul>
+        </div>
+      </article>
+    
+      
+      
+      <article id="hf-discovery:VoxDance-Lab/VoxMel-0.3B" class="entry" data-kind="downloadable" data-tags="Cloning|Training">
+        
+        <time class="stamp" datetime="2026-11-10">10 Nov 2026</time>
+        
+        <div>
+          <div class="meta"><span class="kind downloadable">Downloadable model</span></div>
+          <h3>VoxMel releases two English and Mandarin cloning checkpoints</h3>
+          <p>VoxDance Lab published 0.3B and 0.6B weights for zero-shot cloning using reference audio and its transcript.</p>
+          <p class="takeaway"><strong>Why it matters</strong> VoxMel provides a downloadable comparison point for direct spectrogram generation and transcript-conditioned cloning.</p>
+          
+          
+          
+          <p class="licensing"><span>Weights · apache-2.0</span></p>
+          
+          <div class="links">
+            
+            
+              
+              <a href="https://huggingface.co/VoxDance-Lab/VoxMel-0.3B" target="_blank" rel="noopener noreferrer">Source ↗</a>
+              
+              
+            
+              
+              <a href="https://huggingface.co/VoxDance-Lab/VoxMel-0.3B/blob/8a9b893d35bf575eda1b0380e984cb99fe333ae7/README.md" target="_blank" rel="noopener noreferrer">Pinned model card ↗</a>
+              
+              
+            
+              
+              <a href="https://voxdance.github.io/voxmel-demo/" target="_blank" rel="noopener noreferrer">Audio demos ↗</a>
+              
+              
+            
+              
+              <a href="https://github.com/VoxDance-Lab/VoxMel" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+              
+              
+            
+              
+              <a href="https://arxiv.org/abs/2611.20254" target="_blank" rel="noopener noreferrer">Technical report ↗</a>
+              
+              
+            
+              
+              <a href="https://huggingface.co/VoxDance-Lab/VoxMel-0.6B" target="_blank" rel="noopener noreferrer">VoxMel-0.6B ↗</a>
+              
+              
+            
+              
+              <a href="https://github.com/VoxDance-Lab/VoxMel#prepare-model-files" target="_blank" rel="noopener noreferrer">Prepare Model Files ↗</a>
+              
+              
+            
+              
+              <a href="https://github.com/VoxDance-Lab/VoxMel#web-demo" target="_blank" rel="noopener noreferrer">Gradio demo instructions ↗</a>
+              
+              
+            
+              
+              <a href="https://huggingface.co/VoxDance-Lab" target="_blank" rel="noopener noreferrer">VoxDance Lab ↗</a>
+              
+              
+            
+              
+            
+              
+              <a href="https://huggingface.co/VoxDance-Lab/VoxMel-0.6B/blob/6450fc40bda9c49239f7d249510cd94c9ff89672/README.md" target="_blank" rel="noopener noreferrer">Pinned model card ↗</a>
+              
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+            <a href="#arxiv:2611.20254" data-entry-link>VoxMel replaces a learned acoustic tokenizer with fixed Haar tiers</a>
+          </div>
+          <ul class="tags" aria-label="Topics"><li>Cloning</li><li>Training</li></ul>
+        </div>
+      </article>
+    
+      
+      
+      <article id="hf-discovery:Zyphra/ZONOS3-Mini" class="entry" data-kind="downloadable" data-tags="Real-time|Cloning|Languages">
+        
+        <time class="stamp" datetime="2026-11-09">09 Nov 2026</time>
+        
+        <div>
+          <div class="meta"><span class="kind downloadable">Downloadable model</span></div>
+          <h3>Zyphra ships ZONOS3-Mini for local and browser TTS</h3>
+          <p>Zyphra released weights for a 100M-active-parameter TTS model with voice cloning and controls for delivery, accent, and emotion.</p>
+          <p class="takeaway"><strong>Why it matters</strong> The browser and native runtimes make it a candidate for client-side voice agents. Measure first-audio latency on the devices you intend to support.</p>
+          <p><strong>Evidence</strong> The model card reports real-time operation on phones and laptops. It lists 43 supported languages.</p>
+          
+          
+          <p class="licensing"><span>Weights · apache-2.0</span></p>
+          
+          <div class="links">
+            
+            
+              
+              <a href="https://huggingface.co/Zyphra/ZONOS3-Mini" target="_blank" rel="noopener noreferrer">Source ↗</a>
+              
+              
+            
+              
+              <a href="https://huggingface.co/Zyphra/ZONOS3-Mini/blob/d2d142a86b1e6aeb4252679673c86ecd86177bf8/README.md" target="_blank" rel="noopener noreferrer">Pinned model card ↗</a>
+              
+              
+            
+              
+              <a href="https://cloud.zyphra.com/models/zyphra/ZONOS3-Mini" target="_blank" rel="noopener noreferrer">Zyphra Cloud ↗</a>
+              
+              
+            
+              
+              <a href="https://www.zyphra.com/our-work/zonos3-mini" target="_blank" rel="noopener noreferrer">blog post ↗</a>
+              
+              
+            
+              
+              <a href="https://zyphra.com/zonos3-mini/localplayground#cast" target="_blank" rel="noopener noreferrer">Zonos Voice Studio ↗</a>
+              
+              
+            
+              
+              <a href="https://zyphra.com/zonos3-mini/localplayground/lite" target="_blank" rel="noopener noreferrer">Lite ↗</a>
+              
+              
+            
+              
+              <a href="https://github.com/sgl-project/sglang-omni" target="_blank" rel="noopener noreferrer">SGLang-Omni ↗</a>
+              
+              
+            
+              
+              <a href="https://github.com/sgl-project/sglang-omni/blob/main/docs/get_started/installation.md" target="_blank" rel="noopener noreferrer">installation guide ↗</a>
+              
+              
+            
+              
+              <a href="https://github.com/sgl-project/sglang-omni/blob/main/docs/cookbook/zonos3.md" target="_blank" rel="noopener noreferrer">ZONOS3 cookbook ↗</a>
+              
+              
+            
+              
+              <a href="https://github.com/Zyphra/ZONOS3-Mini" target="_blank" rel="noopener noreferrer">ZONOS3-Mini GitHub repository ↗</a>
+              
+              
+            
+              
+            
+            
+          </div>
+          <ul class="tags" aria-label="Topics"><li>Real-time</li><li>Cloning</li><li>Languages</li></ul>
+        </div>
+      </article>
+    
+      
+      
+      <article id="elevenlabs:925dd817c200dc86887f9873" class="entry" data-kind="proprietary" data-tags="API|Cloning">
+        
+        <time class="stamp" datetime="2026-11-09">09 Nov 2026</time>
+        
+        <div>
+          <div class="meta"><span class="kind proprietary">Proprietary update</span></div>
+          <h3>ElevenAgents adds conversation-level clone strength</h3>
+          <p>The public agent API adds clone-strength controls to agent TTS settings and conversation and workflow overrides.</p>
+          <p class="takeaway"><strong>Why it matters</strong> A voice-agent integration can set clone adherence per conversation where the selected voice supports it.</p>
+          
+          
+          
+          <div class="links">
+            
+            
+              
+              <a href="https://elevenlabs.io/docs/changelog#2026-11-09-elevenagents-1" target="_blank" rel="noopener noreferrer">Source ↗</a>
+              
+              
+            
+              
+              <a href="https://elevenlabs.io/docs/api-reference/agents/create" target="_blank" rel="noopener noreferrer">Create agent ↗</a>
+              
+              
+            
+              
+              <a href="https://elevenlabs.io/docs/api-reference/conversations/list" target="_blank" rel="noopener noreferrer">List conversations ↗</a>
+              
+              
+            
+              
+              <a href="https://elevenlabs.io/docs/api-reference/conversations/get" target="_blank" rel="noopener noreferrer">Get conversation details ↗</a>
+              
+              
+            
+              
+              <a href="https://elevenlabs.io/docs/api-reference/conversations/analysis/run-evaluation" target="_blank" rel="noopener noreferrer">Run conversation evaluation ↗</a>
+              
+              
+            
+              
+              <a href="https://elevenlabs.io/docs/api-reference/agents/branches/list" target="_blank" rel="noopener noreferrer">List branches ↗</a>
+              
+              
+            
+              
+              <a href="https://elevenlabs.io/docs/api-reference/tests/test-invocations/get" target="_blank" rel="noopener noreferrer">test invocation endpoints ↗</a>
+              
+              
+            
+            
+          </div>
+          <ul class="tags" aria-label="Topics"><li>API</li><li>Cloning</li></ul>
+        </div>
+      </article>
+    
+      
+      
+      <article id="arxiv:2611.11179" class="entry" data-kind="paper" data-tags="Real-time|Cloning|Evaluation">
+        
+        <time class="stamp" datetime="2026-11-08">08 Nov 2026</time>
+        
+        <div>
+          <div class="meta"><span class="kind paper">Research paper</span><span>Preprint</span></div>
+          <h3>Few-step flow TTS can preserve similarity by changing first-step guidance</h3>
+          <p>The authors compare sampling rules and identify first-step classifier-free guidance as a cause of similarity loss under aggressive step reduction.</p>
+          <p class="takeaway"><strong>Why it matters</strong> A training-free sampler is worth comparing on few-step flow-matching decoders when latency targets put cloned voice similarity at risk.</p>
+          <p><strong>Evidence</strong> The paper reports recovery of 84–91% of two-step similarity loss on CosyVoice 2/3 with its first-step unguided sampler and no significant WER increase in that comparison.</p>
+          
+          
+          <div class="links">
+            
+            
+              
+              <a href="https://arxiv.org/abs/2611.11179" target="_blank" rel="noopener noreferrer">Source ↗</a>
+              
+              
+            
+              
+              <a href="https://arxiv.org/abs/2611.11179v1" target="_blank" rel="noopener noreferrer">Revision ↗</a>
+              
+              
+            
+              
+              <a href="https://github.com/16jhlee/FSU" target="_blank" rel="noopener noreferrer">Project or artifact ↗</a>
+              
+              
+            
+            
+          </div>
+          <ul class="tags" aria-label="Topics"><li>Real-time</li><li>Cloning</li><li>Evaluation</li></ul>
+        </div>
+      </article>
+    
+      
+      
+      <article id="arxiv:2611.10162" class="entry" data-kind="paper" data-tags="Real-time|Training|Evaluation">
+        
+        <time class="stamp" datetime="2026-11-06">06 Nov 2026</time>
+        
+        <div>
+          <div class="meta"><span class="kind paper">Research paper</span><span>Preprint</span></div>
+          <h3>M5-TTS reports sub-realtime CPU streaming for a 50M backbone</h3>
+          <p>M5-TTS combines local multi-token prediction with speaker similarity, pause feedback, and character-level error signals during post-training.</p>
+          <p class="takeaway"><strong>Why it matters</strong> The CPU results provide a concrete comparison for compact streaming models when hardware and warm-up conditions match.</p>
+          <p><strong>Evidence</strong> The authors report 0.653 RTF and 225 ms warm first-chunk latency on four Intel Xeon Gold 6530 cores. The 50M language-model count excludes the speech codec.</p>
+          
+          
+          <div class="links">
+            
+            
+              
+              <a href="https://arxiv.org/abs/2611.10162" target="_blank" rel="noopener noreferrer">Source ↗</a>
+              
+              
+            
+              
+              <a href="https://arxiv.org/abs/2611.10162v1" target="_blank" rel="noopener noreferrer">Revision ↗</a>
+              
+              
+            
+            <a href="#hf-discovery:ASLP-lab/M5-TTS" data-entry-link>M5-TTS releases compact voice-cloning and preset checkpoints</a>
+          </div>
+          <ul class="tags" aria-label="Topics"><li>Real-time</li><li>Training</li><li>Evaluation</li></ul>
+        </div>
+      </article>
+    
+      
+      
+      <article id="arxiv:2611.10035" class="entry" data-kind="paper" data-tags="Real-time|Languages">
+        
+        <time class="stamp" datetime="2026-11-05">05 Nov 2026</time>
+        
+        <div>
+          <div class="meta"><span class="kind paper">Research paper</span><span>Preprint</span></div>
+          <h3>Ninada splits an ONNX VITS graph for streaming on browsers and phones</h3>
+          <p>Ninada splits the prior, flow, and vocoder into streaming sub-sessions and uses different checkpoints for desktop WebGPU and mobile WASM.</p>
+          <p class="takeaway"><strong>Why it matters</strong> The split is directly relevant when an ONNX export emits entire clauses and delays first audio.</p>
+          <p><strong>Evidence</strong> The paper reports 89–155 ms audible startup on desktop WebGPU and 538–649 ms on a physical Google Pixel 10 Pro XL. The quality evaluation includes 480 held-out 24 kHz studio utterances.</p>
+          
+          
+          <div class="links">
+            
+            
+              
+              <a href="https://arxiv.org/abs/2611.10035" target="_blank" rel="noopener noreferrer">Source ↗</a>
+              
+              
+            
+              
+              <a href="https://arxiv.org/abs/2611.10035v2" target="_blank" rel="noopener noreferrer">Revision ↗</a>
+              
+              
+            
+              
+              <a href="https://hemanth.github.io/ninada/" target="_blank" rel="noopener noreferrer">Project or artifact ↗</a>
+              
+              
+            
+              
+              <a href="https://github.com/hemanth/ninada" target="_blank" rel="noopener noreferrer">Project or artifact ↗</a>
+              
+              
+            
+            
+          </div>
+          <ul class="tags" aria-label="Topics"><li>Real-time</li><li>Languages</li></ul>
+        </div>
+      </article>
+    
+      
+      
+      <article id="google:dbfbd6c4c94cda50faf07bca" class="entry" data-kind="proprietary" data-tags="API|Cloning">
+        
+        <time class="stamp" datetime="2026-11-04">04 Nov 2026</time>
+        
+        <div>
+          <div class="meta"><span class="kind proprietary">Proprietary update</span></div>
+          <h3>Gemini 3.8 TTS adds voice remixing</h3>
+          <p>Gemini can use text instructions to create a new stored voice from a prebuilt or previously designed voice. The changelog documents a new stored voice ID.</p>
+          <p class="takeaway"><strong>Why it matters</strong> Voice iteration can use natural-language adjustments while keeping the original voice available for comparison.</p>
+          
+          
+          
+          <div class="links">
+            
+            
+              
+              <a href="https://aistudio.google.com/docs/changelog" target="_blank" rel="noopener noreferrer">Source ↗</a>
+              
+              
+            
+              
+              <a href="https://aistudio.google.com/docs/voice-remixing" target="_blank" rel="noopener noreferrer">Voice remixing ↗</a>
+              
+              
+            
+              
+              <a href="https://aistudio.google.com/docs/voice-design" target="_blank" rel="noopener noreferrer">designed ↗</a>
+              
+              
+            
+              
+              <a href="https://aistudio.google.com/generate-speech" target="_blank" rel="noopener noreferrer">Google AI Studio ↗</a>
+              
+              
+            
+              
+              <a href="https://aistudio.google.com/docs/models/gemini-3.8-flash-tts" target="_blank" rel="noopener noreferrer">Gemini 3.8 Flash TTS ↗</a>
+              
+              
+            
+              
+              <a href="https://aistudio.google.com/docs/models/gemini-3.8-flash-lite-tts" target="_blank" rel="noopener noreferrer">Gemini 3.8 Flash-Lite TTS ↗</a>
+              
+              
+            
+            
+          </div>
+          <ul class="tags" aria-label="Topics"><li>API</li><li>Cloning</li></ul>
+        </div>
+      </article>
+    
+      
+      
+      <article id="arxiv:2611.06403" class="entry" data-kind="paper" data-tags="Pronunciation|Training">
+        
+        <time class="stamp" datetime="2026-11-04">04 Nov 2026</time>
+        
+        <div>
+          <div class="meta"><span class="kind paper">Research paper</span><span>Preprint</span></div>
+          <h3>Ruby-OPD targets Japanese pronunciation with text-only distillation</h3>
+          <p>The authors use Ruby text representations for pronunciation control and on-policy distillation over text paired with predicted pronunciations.</p>
+          <p class="takeaway"><strong>Why it matters</strong> The approach offers an experiment for ambiguous orthography when paired speech is scarce. The published experiment is in Japanese.</p>
+          <p><strong>Evidence</strong> The authors report 97.13% reading accuracy on Joyo-Kanji-Yomi from raw text.</p>
+          
+          
+          <div class="links">
+            
+            
+              
+              <a href="https://arxiv.org/abs/2611.06403" target="_blank" rel="noopener noreferrer">Source ↗</a>
+              
+              
+            
+              
+              <a href="https://arxiv.org/abs/2611.06403v1" target="_blank" rel="noopener noreferrer">Revision ↗</a>
+              
+              
+            
+            
+          </div>
+          <ul class="tags" aria-label="Topics"><li>Pronunciation</li><li>Training</li></ul>
+        </div>
+      </article>
+    
+      
+      
+      <article id="hf-discovery:ASLP-lab/M5-TTS" class="entry" data-kind="downloadable" data-tags="Real-time|Cloning|Languages">
+        
+        <time class="stamp" datetime="2026-11-02">02 Nov 2026</time>
+        
+        <div>
+          <div class="meta"><span class="kind downloadable">Downloadable model</span></div>
+          <h3>M5-TTS releases compact voice-cloning and preset checkpoints</h3>
+          <p>The release pairs a 50M-parameter language model with a separate audio codec. The model card lists six languages and two Chinese dialects.</p>
+          <p class="takeaway"><strong>Why it matters</strong> A practical candidate for a CPU streaming comparison. Keep the codec in end-to-end latency and memory measurements.</p>
+          
+          
+          
+          <p class="licensing"><span>Weights · apache-2.0</span></p>
+          
+          <div class="links">
+            
+            
+              
+              <a href="https://huggingface.co/ASLP-lab/M5-TTS" target="_blank" rel="noopener noreferrer">Source ↗</a>
+              
+              
+            
+              
+              <a href="https://huggingface.co/ASLP-lab/M5-TTS/blob/2d831de434c829f5c9c933712942a9a19bd631cb/README.md" target="_blank" rel="noopener noreferrer">Pinned model card ↗</a>
+              
+              
+            
+              
+              <a href="https://huggingface.co/ASLP-lab/M5-TTS/blob/2d831de434c829f5c9c933712942a9a19bd631cb/README_zh.md" target="_blank" rel="noopener noreferrer">简体中文 ↗</a>
+              
+              
+            
+              
+              <a href="https://github.com/ASLP-lab/M5-TTS" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+              
+              
+            
+              
+              <a href="https://aslp-lab.github.io/M5-TTS-Demo-Page/" target="_blank" rel="noopener noreferrer">Demo ↗</a>
+              
+              
+            
+              
+              <a href="https://huggingface.co/spaces/ASLP-lab/M5-TTS-Space" target="_blank" rel="noopener noreferrer">Space ↗</a>
+              
+              
+            
+              
+              <a href="https://huggingface.co/collections/ASLP-lab/m5-tts" target="_blank" rel="noopener noreferrer">Models ↗</a>
+              
+              
+            
+              
+              <a href="https://huggingface.co/ASLP-lab/M5-TTS-50M-CustomVoice" target="_blank" rel="noopener noreferrer">M5-TTS-50M-CustomVoice ↗</a>
+              
+              
+            
+              
+              <a href="https://huggingface.co/ASLP-lab/M5-TTS-Audio-Tokenizer" target="_blank" rel="noopener noreferrer">audio tokenizer ↗</a>
+              
+              
+            
+              
+              <a href="https://github.com/ASLP-lab/M5-TTS#quickstart" target="_blank" rel="noopener noreferrer">project README ↗</a>
+              
+              
+            
+              
+            
+              
+              <a href="https://huggingface.co/ASLP-lab/M5-TTS-50M-CustomVoice/blob/e871c4f80156efcd698fc22d4e6f55cd3e6c00d9/README.md" target="_blank" rel="noopener noreferrer">Pinned model card ↗</a>
+              
+              
+            
+              
+              <a href="https://huggingface.co/ASLP-lab/M5-TTS-50M-CustomVoice/blob/e871c4f80156efcd698fc22d4e6f55cd3e6c00d9/README_zh.md" target="_blank" rel="noopener noreferrer">简体中文 ↗</a>
+              
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+            <a href="#arxiv:2611.10162" data-entry-link>M5-TTS reports sub-realtime CPU streaming for a 50M backbone</a>
+          </div>
+          <ul class="tags" aria-label="Topics"><li>Real-time</li><li>Cloning</li><li>Languages</li></ul>
+        </div>
+      </article>
+    
+      
+      
+      <article id="elevenlabs:964816c743725a7337d42f80" class="entry" data-kind="proprietary" data-tags="API|Cloning">
+        
+        <time class="stamp" datetime="2026-11-02">02 Nov 2026</time>
+        
+        <div>
+          <div class="meta"><span class="kind proprietary">Proprietary update</span></div>
+          <h3>Eleven v4 clone fine-tuning opens to every workspace</h3>
+          <p>ElevenLabs expanded Professional Voice Clone fine-tuning to every workspace for v4 and v4 Turbo. Requests can inherit the voice’s saved clone strength.</p>
+          <p class="takeaway"><strong>Why it matters</strong> Pin clone strength in evaluation requests when you need comparable results across voices or workspaces.</p>
+          
+          
+          
+          <div class="links">
+            
+            
+              
+              <a href="https://elevenlabs.io/docs/changelog#2026-11-02-professional-voice-clones-on-eleven-v4" target="_blank" rel="noopener noreferrer">Source ↗</a>
+              
+              
+            
+              
+              <a href="https://elevenlabs.io/app/voice-lab" target="_blank" rel="noopener noreferrer">My Voices ↗</a>
+              
+              
+            
+              
+              <a href="https://elevenlabs.io/docs/overview/capabilities/text-to-speech/eleven-v4#voice-cloning" target="_blank" rel="noopener noreferrer">Eleven v4 ↗</a>
+              
+              
+            
+            
+          </div>
+          <ul class="tags" aria-label="Topics"><li>API</li><li>Cloning</li></ul>
+        </div>
+      </article>
+    
+      
+      
+      <article id="hf-discovery:Messam174/Sada-TTS-SA-v1.2" class="entry" data-kind="downloadable" data-tags="Arabic|Licensing">
+        
+        <time class="stamp" datetime="2026-10-29">29 Oct 2026</time>
+        
+        <div>
+          <div class="meta"><span class="kind downloadable">Downloadable model</span></div>
+          <h3>Sada v1.2 moves its Saudi voice to Chatterbox</h3>
+          <p>The Saudi conversational checkpoint moves from XTTS to Chatterbox Multilingual and provides fine-tuned T3 weights for the underlying model.</p>
+          <p class="takeaway"><strong>Why it matters</strong> The release gives you a 24 kHz Saudi conversational candidate. Its weights require Hugging Face access approval.</p>
+          
+          
+          
+          <p class="licensing"><span>Weights · mit</span><span>Gated weights</span><span>The repository is gated. Inference requires the Chatterbox Multilingual base model.</span></p>
+          
+          <div class="links">
+            
+            
+              
+              <a href="https://huggingface.co/Messam174/Sada-TTS-SA-v1.2" target="_blank" rel="noopener noreferrer">Source ↗</a>
+              
+              
+            
+              
+              <a href="https://huggingface.co/Messam174/Sada-TTS-SA-v1.2/blob/1dc0ef109dc219943204a29b3e3ddb8e0d856fbb/README.md" target="_blank" rel="noopener noreferrer">Pinned model card ↗</a>
+              
+              
+            
+              
+              <a href="https://huggingface.co/Messam174/Sada-TTS-SA-v1" target="_blank" rel="noopener noreferrer">Sada-TTS-SA-v1 ↗</a>
+              
+              
+            
+              
+              <a href="https://huggingface.co/Messam174/Sada-TTS-SA-v1.2/blob/1dc0ef109dc219943204a29b3e3ddb8e0d856fbb/evaluation/per_utterance_metrics.csv" target="_blank" rel="noopener noreferrer">`evaluation/per_utterance_metrics.csv` ↗</a>
+              
+              
+            
+              
+              <a href="https://huggingface.co/Messam174/Sada-TTS-SA-v1.2/blob/1dc0ef109dc219943204a29b3e3ddb8e0d856fbb/evaluation/summary.json" target="_blank" rel="noopener noreferrer">`evaluation/summary.json` ↗</a>
+              
+              
+            
+              
+              <a href="https://huggingface.co/Messam174/Sada-TTS-SA-v1.2/blob/1dc0ef109dc219943204a29b3e3ddb8e0d856fbb/evaluation/plots" target="_blank" rel="noopener noreferrer">`evaluation/plots/` ↗</a>
+              
+              
+            
+              
+              <a href="https://huggingface.co/Messam174/Sada-TTS-SA-v1.2/blob/1dc0ef109dc219943204a29b3e3ddb8e0d856fbb/TRAINING_DETAILS.md" target="_blank" rel="noopener noreferrer">`TRAINING_DETAILS.md` ↗</a>
+              
+              
+            
+              
+              <a href="https://huggingface.co/Messam174/Sada-TTS-SA-v1.2/blob/1dc0ef109dc219943204a29b3e3ddb8e0d856fbb/training_config.json" target="_blank" rel="noopener noreferrer">`training_config.json` ↗</a>
+              
+              
+            
+              
+              <a href="https://huggingface.co/Messam174/Sada-TTS-SA-v1.2/resolve/main/assets/audio/sample_akhuk.wav" target="_blank" rel="noopener noreferrer">Project or demo ↗</a>
+              
+              
+            
+              
+              <a href="https://huggingface.co/Messam174/Sada-TTS-SA-v1.2/resolve/main/assets/audio/sample_tawil_alomr.wav" target="_blank" rel="noopener noreferrer">Project or demo ↗</a>
+              
+              
+            
+            
+          </div>
+          <ul class="tags" aria-label="Topics"><li>Arabic</li><li>Licensing</li></ul>
+        </div>
+      </article>
+    
+      
+      
+      <article id="elevenlabs:68f97a660601869172af6c0e" class="entry" data-kind="proprietary" data-tags="API|Cloning">
+        
+        <time class="stamp" datetime="2026-10-26">26 Oct 2026</time>
+        
+        <div>
+          <div class="meta"><span class="kind proprietary">Proprietary update</span></div>
+          <h3>ElevenLabs deprecates use_pvc_as_ivc for dialogue</h3>
+          <p>The v4 APIs add a 0–1 clone_strength setting for fine-tuned Professional Voice Clones. The dialogue endpoints deprecate use_pvc_as_ivc.</p>
+          <p class="takeaway"><strong>Why it matters</strong> This changes how dialogue requests control fidelity to a clone&#39;s training voice.</p>
+          
+          <p class="inline-action"><strong>Deprecation</strong> Update dialogue clients that send use_pvc_as_ivc to use clone_strength and validate the result with your fine-tuned v4 voices.</p>
+          
+          <div class="links">
+            
+            
+              
+              <a href="https://elevenlabs.io/docs/changelog#2026-10-26-clone-strength-for-v4-voices" target="_blank" rel="noopener noreferrer">Source ↗</a>
+              
+              
+            
+              
+              <a href="https://elevenlabs.io/docs/api-reference/text-to-speech/convert" target="_blank" rel="noopener noreferrer">Create speech ↗</a>
+              
+              
+            
+              
+              <a href="https://elevenlabs.io/docs/api-reference/text-to-dialogue/convert" target="_blank" rel="noopener noreferrer">Create dialogue ↗</a>
+              
+              
+            
+              
+              <a href="https://elevenlabs.io/docs/changelog#2026-10-26-text-to-speech-and-text-to-dialogue-1" target="_blank" rel="noopener noreferrer">Source ↗</a>
+              
+              
+            
+              
+            
+              
+              <a href="https://elevenlabs.io/docs/api-reference/text-to-dialogue/stream" target="_blank" rel="noopener noreferrer">Stream dialogue ↗</a>
+              
+              
+            
+              
+              <a href="https://elevenlabs.io/docs/api-reference/voices/settings/get" target="_blank" rel="noopener noreferrer">Get voice settings ↗</a>
+              
+              
+            
+              
+              <a href="https://elevenlabs.io/docs/api-reference/voices/get" target="_blank" rel="noopener noreferrer">Get voice ↗</a>
+              
+              
+            
+              
+              <a href="https://elevenlabs.io/docs/api-reference/voices/search" target="_blank" rel="noopener noreferrer">List voices ↗</a>
+              
+              
+            
+            
+          </div>
+          <ul class="tags" aria-label="Topics"><li>API</li><li>Cloning</li></ul>
+        </div>
+      </article>
+    
+      
+      
+      <article id="arxiv:2610.32187" class="entry" data-kind="paper" data-tags="Real-time|Training">
+        
+        <time class="stamp" datetime="2026-10-23">23 Oct 2026</time>
+        
+        <div>
+          <div class="meta"><span class="kind paper">Research paper</span><span>Preprint</span></div>
+          <h3>Uni-Stream combines streaming synthesis and recognition</h3>
+          <p>Uni-Stream interleaves text and speech and uses two-stage training to support speech synthesis and recognition in one model.</p>
+          <p class="takeaway"><strong>Why it matters</strong> Its streaming data setup is relevant when comparing a unified speech model with separate recognition and synthesis services.</p>
+          
+          
+          
+          <div class="links">
+            
+            
+              
+              <a href="https://arxiv.org/abs/2610.32187" target="_blank" rel="noopener noreferrer">Source ↗</a>
+              
+              
+            
+              
+              <a href="https://arxiv.org/abs/2610.32187v1" target="_blank" rel="noopener noreferrer">Revision ↗</a>
+              
+              
+            
+            
+          </div>
+          <ul class="tags" aria-label="Topics"><li>Real-time</li><li>Training</li></ul>
+        </div>
+      </article>
+    
+      
+      
+      <article id="arxiv:2610.31470" class="entry" data-kind="paper" data-tags="Evaluation|Pronunciation">
+        
+        <time class="stamp" datetime="2026-10-22">22 Oct 2026</time>
+        
+        <div>
+          <div class="meta"><span class="kind paper">Research paper</span><span>Preprint</span></div>
+          <h3>ASR errors can inflate apparent TTS rare-word error</h3>
+          <p>The authors transcribe human recordings as well as synthesized speech and use multiple recognizer families to adjudicate rare words.</p>
+          <p class="takeaway"><strong>Why it matters</strong> Include a human-audio reference floor and manual checks before interpreting apparent TTS errors on names, code-switches, and rare words.</p>
+          <p><strong>Evidence</strong> The paper reports that the evaluation recognizer missed 33–67% of very rare words in human LibriSpeech and FLEURS recordings. On audible very rare LibriSpeech words, multi-recognizer checking reduced apparent TTS error from 10–13% to 3–5%.</p>
+          
+          
+          <div class="links">
+            
+            
+              
+              <a href="https://arxiv.org/abs/2610.31470" target="_blank" rel="noopener noreferrer">Source ↗</a>
+              
+              
+            
+              
+              <a href="https://arxiv.org/abs/2610.31470v1" target="_blank" rel="noopener noreferrer">Revision ↗</a>
+              
+              
+            
+            
+          </div>
+          <ul class="tags" aria-label="Topics"><li>Evaluation</li><li>Pronunciation</li></ul>
+        </div>
+      </article>
+    
+      
+      
+      <article id="elevenlabs:3fa3839e03df70365f81f14c" class="entry" data-kind="proprietary" data-tags="API|Real-time">
+        
+        <time class="stamp" datetime="2026-10-19">19 Oct 2026</time>
+        
+        <div>
+          <div class="meta"><span class="kind proprietary">Proprietary update</span></div>
+          <h3>Eleven Realtime rolls out integrated voice-agent models</h3>
+          <p>ElevenLabs announced Mini and Max configurations that manage language model, recognition, and synthesis together within ElevenAgents.</p>
+          <p class="takeaway"><strong>Why it matters</strong> Compare full conversation latency and voice behavior when evaluating this integrated path against a separately hosted TTS service.</p>
+          
+          
+          
+          <div class="links">
+            
+            
+              
+              <a href="https://elevenlabs.io/docs/changelog#2026-10-19-eleven-realtime" target="_blank" rel="noopener noreferrer">Source ↗</a>
+              
+              
+            
+              
+              <a href="https://elevenlabs.io/docs/api-reference/conversations/create-client-secret" target="_blank" rel="noopener noreferrer">Create realtime client secret ↗</a>
+              
+              
+            
+              
+              <a href="https://elevenlabs.io/docs/eleven-agents/customization/realtime-models" target="_blank" rel="noopener noreferrer">Realtime models Choose a Realtime model and configure an agent’s voice mode. ↗</a>
+              
+              
+            
+              
+              <a href="https://elevenlabs.io/docs/eleven-agents/guides/openai-realtime-compatibility" target="_blank" rel="noopener noreferrer">OpenAI Realtime API compatibility Connect an existing OpenAI Realtime client to ElevenLabs. ↗</a>
+              
+              
+            
+            
+          </div>
+          <ul class="tags" aria-label="Topics"><li>API</li><li>Real-time</li></ul>
+        </div>
+      </article>
+    
+    </div>
+    <p id="no-results" class="empty" hidden>No matching entries.</p>
+  </section>
+  <section id="archive" class="panel archive">
+    <div class="section-head"><h2>Weekly Archive</h2><span>Cairo calendar weeks</span></div>
+    
+    <details><summary><time datetime="2026-11-09">Week of 2026-11-09</time><span>10 entries</span></summary>
+      <ul><li><a href="#hf-discovery:Momenrezk11/NAMAA-Egyptian-TTS" data-entry-link>NAMAA releases an Egyptian Arabic Chatterbox checkpoint</a><p>A useful Egyptian baseline for voice-agent prompts. The card flags Egyptian qāf, number pronunciation, and prompt-dependent inconsistencies.</p></li><li><a href="#hf-discovery:MuntasirElagami/sudanese-chatterbox" data-entry-link>Sudanese Chatterbox v0.1 publishes a dialect fine-tune</a><p>The released test material gives you a starting point to compare dialect intelligibility and similarity against other Arabic checkpoints.</p></li><li><a href="#hf-discovery:Zyphra/ZONOS3-Mini" data-entry-link>Zyphra ships ZONOS3-Mini for local and browser TTS</a><p>The browser and native runtimes make it a candidate for client-side voice agents. Measure first-audio latency on the devices you intend to support.</p></li><li><a href="#arxiv:2611.20254" data-entry-link>VoxMel replaces a learned acoustic tokenizer with fixed Haar tiers</a><p>A different acoustic target to compare against token-based models, especially when testing simplifications to the speech front end.</p></li><li><a href="#arxiv:2611.19832" data-entry-link>ProTTS learns word stress and exposes emphasis control</a><p>The stress-mask interface is a design pattern for controlling call-agent emphasis without requiring labeled stress during training.</p></li><li><a href="#arxiv:2611.19787" data-entry-link>Qwen3-TTS post-training adapts prosody to the target text</a><p>The study isolates text-adaptive delivery as a separate evaluation axis for cloned voice agents.</p></li><li><a href="#arxiv:2611.16051" data-entry-link>Customer-service listeners rank human-likeness and preference differently</a><p>Evaluate the voices you actually ship on conversational preference alongside naturalness. Voice choice within a provider can materially change the result.</p></li><li><a href="#arxiv:2611.15464" data-entry-link>RSE-TTS reuses its generator to encode cloning references</a><p>Reusing the generator for conditioning is an option for keeping a cloning model small while preserving speaker similarity.</p></li><li><a href="#hf-discovery:VoxDance-Lab/VoxMel-0.3B" data-entry-link>VoxMel releases two English and Mandarin cloning checkpoints</a><p>VoxMel provides a downloadable comparison point for direct spectrogram generation and transcript-conditioned cloning.</p></li><li><a href="#elevenlabs:925dd817c200dc86887f9873" data-entry-link>ElevenAgents adds conversation-level clone strength</a><p>A voice-agent integration can set clone adherence per conversation where the selected voice supports it.</p></li></ul>
+      
+    </details>
+    
+    <details><summary><time datetime="2026-11-02">Week of 2026-11-02</time><span>7 entries</span></summary>
+      <ul><li><a href="#arxiv:2611.11179" data-entry-link>Few-step flow TTS can preserve similarity by changing first-step guidance</a><p>A training-free sampler is worth comparing on few-step flow-matching decoders when latency targets put cloned voice similarity at risk.</p></li><li><a href="#arxiv:2611.10162" data-entry-link>M5-TTS reports sub-realtime CPU streaming for a 50M backbone</a><p>The CPU results provide a concrete comparison for compact streaming models when hardware and warm-up conditions match.</p></li><li><a href="#arxiv:2611.10035" data-entry-link>Ninada splits an ONNX VITS graph for streaming on browsers and phones</a><p>The split is directly relevant when an ONNX export emits entire clauses and delays first audio.</p></li><li><a href="#hf-discovery:ASLP-lab/M5-TTS" data-entry-link>M5-TTS releases compact voice-cloning and preset checkpoints</a><p>A practical candidate for a CPU streaming comparison. Keep the codec in end-to-end latency and memory measurements.</p></li><li><a href="#google:dbfbd6c4c94cda50faf07bca" data-entry-link>Gemini 3.8 TTS adds voice remixing</a><p>Voice iteration can use natural-language adjustments while keeping the original voice available for comparison.</p></li><li><a href="#arxiv:2611.06403" data-entry-link>Ruby-OPD targets Japanese pronunciation with text-only distillation</a><p>The approach offers an experiment for ambiguous orthography when paired speech is scarce. The published experiment is in Japanese.</p></li><li><a href="#elevenlabs:964816c743725a7337d42f80" data-entry-link>Eleven v4 clone fine-tuning opens to every workspace</a><p>Pin clone strength in evaluation requests when you need comparable results across voices or workspaces.</p></li></ul>
+      
+    </details>
+    
+    <details><summary><time datetime="2026-10-26">Week of 2026-10-26</time><span>2 entries</span></summary>
+      <ul><li><a href="#elevenlabs:68f97a660601869172af6c0e" data-entry-link>ElevenLabs deprecates use_pvc_as_ivc for dialogue</a><p>This changes how dialogue requests control fidelity to a clone&#39;s training voice.</p></li><li><a href="#hf-discovery:Messam174/Sada-TTS-SA-v1.2" data-entry-link>Sada v1.2 moves its Saudi voice to Chatterbox</a><p>The release gives you a 24 kHz Saudi conversational candidate. Its weights require Hugging Face access approval.</p></li></ul>
+      
+    </details>
+    
+    <details><summary><time datetime="2026-10-19">Week of 2026-10-19</time><span>3 entries</span></summary>
+      <ul><li><a href="#arxiv:2610.32187" data-entry-link>Uni-Stream combines streaming synthesis and recognition</a><p>Its streaming data setup is relevant when comparing a unified speech model with separate recognition and synthesis services.</p></li><li><a href="#elevenlabs:3fa3839e03df70365f81f14c" data-entry-link>Eleven Realtime rolls out integrated voice-agent models</a><p>Compare full conversation latency and voice behavior when evaluating this integrated path against a separately hosted TTS service.</p></li><li><a href="#arxiv:2610.31470" data-entry-link>ASR errors can inflate apparent TTS rare-word error</a><p>Include a human-audio reference floor and manual checks before interpreting apparent TTS errors on names, code-switches, and rare words.</p></li></ul>
+      
+    </details>
+    
+    <details><summary><time datetime="2026-10-12">Week of 2026-10-12</time><span>0 entries</span></summary>
+      <p class="empty">No curated entries.</p>
+    </details>
+    
+  </section>
+</main>
+</body>
+</html>
