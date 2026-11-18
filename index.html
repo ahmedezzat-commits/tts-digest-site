@@ -25,9 +25,9 @@
       <p>Model releases, provider updates, and research. Arabic speech and real-time deployment first.</p>
     </div>
     <dl class="stats">
-      <div><dt>This week</dt><dd>2</dd></div>
+      <div><dt>This week</dt><dd>4</dd></div>
       <div><dt>Need action</dt><dd>1</dd></div>
-      <div><dt>Sources checked</dt><dd>14<span>/14</span></dd></div>
+      <div><dt>Sources checked</dt><dd>13<span>/14</span></dd></div>
     </dl>
   </section>
   <div class="overview">
@@ -38,6 +38,18 @@
         <div class="meta"><span class="kind downloadable">Downloadable model</span><span class="focus">Priority</span></div>
         <h3><a href="#hf-discovery:algerian-nlp/Hadra-TTS-kokoro" data-entry-link>Hadra adapts Kokoro 82M to Algerian Darja</a></h3>
         <p>A compact dialect candidate with documented Darja–French support. Arabic–English behavior remains an open evaluation question.</p>
+      </article>
+      
+      <article class="brief-row">
+        <div class="meta"><span class="kind downloadable">Downloadable model</span><span class="focus">Priority</span></div>
+        <h3><a href="#hf-discovery:touati-kamel/Hadra-TTS-piper" data-entry-link>Hadra releases a three-voice Algerian Darja Piper model</a></h3>
+        <p>A compact candidate for local dialect agents. The example mixes Darja and French; Arabic-English handling is untested. Validate pronunciation and first-audio latency before deployment.</p>
+      </article>
+      
+      <article class="brief-row">
+        <div class="meta"><span class="kind downloadable">Downloadable model</span></div>
+        <h3><a href="#hf-discovery:Zyphra/ZONOS3-Mini" data-entry-link>ZONOS3-Mini adds a speech-edit LoRA artifact</a></h3>
+        <p>Track the adapter as an integration update. Arabic is listed among 43 languages, but this revision supplies no dialect-specific or Arabic-English code-switching validation.</p>
       </article>
       
       <article class="brief-row">
@@ -58,8 +70,8 @@
       
     </aside>
   </div>
-  <details class="health">
-    <summary><strong>Source checks</strong><span>14 of 14 complete · Last check <time datetime="2026-11-17T17:07:50.687573+02:00">17 Nov 2026, 17:07 Cairo</time></span></summary>
+  <details class="health" open>
+    <summary><strong>Source checks</strong><span>13 of 14 complete · Last check <time datetime="2026-11-18T08:35:10.634584+02:00">18 Nov 2026, 08:35 Cairo</time></span></summary>
     <ul>
       
       <li><strong>F5-TTS</strong><span>github</span><span class="ok">Ok</span></li>
@@ -88,12 +100,12 @@
       
       <li><strong>Google</strong><span>vendor</span><span class="ok">Ok</span></li>
       
-      <li><strong>arXiv</strong><span>arxiv</span><span class="ok">Ok</span></li>
+      <li><strong>arXiv</strong><span>arxiv</span><span class="failed">Failed</span></li>
       
     </ul>
   </details>
   <section id="timeline" class="timeline">
-    <div class="section-head"><h2>Timeline</h2><span id="shown" aria-live="polite">24 entries</span></div>
+    <div class="section-head"><h2>Timeline</h2><span id="shown" aria-live="polite">26 entries</span></div>
     <div class="toolbar">
       <label class="query"><span>Search updates</span><input id="search" type="search" placeholder="Model, topic, or keyword"></label>
       <div class="filters" aria-label="Entry filters">
@@ -139,6 +151,130 @@
             
           </div>
           <ul class="tags" aria-label="Topics"><li>Arabic</li><li>Code-switching</li><li>Pronunciation</li></ul>
+        </div>
+      </article>
+    
+      
+      
+      <article id="hf-discovery:Zyphra/ZONOS3-Mini" class="entry" data-kind="downloadable" data-tags="Arabic|Cloning|Languages">
+        
+        <time class="stamp" datetime="2026-11-17">17 Nov 2026</time>
+        
+        <div>
+          <div class="meta"><span class="kind downloadable">Downloadable model</span></div>
+          <h3>ZONOS3-Mini adds a speech-edit LoRA artifact</h3>
+          <p>The November 17 revision adds a speech-edit LoRA for lm/zonos3_mini, rebuilt from the existing accent and edit GGUF assets; the local/browser TTS release remains the same model family.</p>
+          <p class="takeaway"><strong>Why it matters</strong> Track the adapter as an integration update. Arabic is listed among 43 languages, but this revision supplies no dialect-specific or Arabic-English code-switching validation.</p>
+          <p><strong>Evidence</strong> Official commit 2921b8821772b0bd10a04456863d21abf9d2f283 identifies the speech-edit LoRA addition. The pinned card lists Arabic and Apache-2.0 weights; the commit does not establish a new latency result.</p>
+          
+          
+          <p class="licensing"><span>Weights · apache-2.0</span></p>
+          
+          <div class="links">
+            
+            
+              
+              <a href="https://huggingface.co/Zyphra/ZONOS3-Mini" target="_blank" rel="noopener noreferrer">Source ↗</a>
+              
+              
+            
+              
+              <a href="https://huggingface.co/Zyphra/ZONOS3-Mini/blob/2921b8821772b0bd10a04456863d21abf9d2f283/README.md" target="_blank" rel="noopener noreferrer">Pinned model card ↗</a>
+              
+              
+            
+              
+              <a href="https://cloud.zyphra.com/models/zyphra/ZONOS3-Mini" target="_blank" rel="noopener noreferrer">Zyphra Cloud ↗</a>
+              
+              
+            
+              
+              <a href="https://www.zyphra.com/our-work/zonos3-mini" target="_blank" rel="noopener noreferrer">blog post ↗</a>
+              
+              
+            
+              
+              <a href="https://zyphra.com/zonos3-mini/localplayground#cast" target="_blank" rel="noopener noreferrer">Zonos Voice Studio ↗</a>
+              
+              
+            
+              
+              <a href="https://zyphra.com/zonos3-mini/localplayground/lite" target="_blank" rel="noopener noreferrer">Lite ↗</a>
+              
+              
+            
+              
+              <a href="https://github.com/sgl-project/sglang-omni" target="_blank" rel="noopener noreferrer">SGLang-Omni ↗</a>
+              
+              
+            
+              
+              <a href="https://github.com/sgl-project/sglang-omni/blob/main/docs/get_started/installation.md" target="_blank" rel="noopener noreferrer">installation guide ↗</a>
+              
+              
+            
+              
+              <a href="https://github.com/sgl-project/sglang-omni/blob/main/docs/cookbook/zonos3.md" target="_blank" rel="noopener noreferrer">ZONOS3 cookbook ↗</a>
+              
+              
+            
+              
+              <a href="https://github.com/Zyphra/ZONOS3-Mini" target="_blank" rel="noopener noreferrer">ZONOS3-Mini GitHub repository ↗</a>
+              
+              
+            
+              
+              <a href="https://huggingface.co/Zyphra/ZONOS3-Mini/commit/2921b8821772b0bd10a04456863d21abf9d2f283" target="_blank" rel="noopener noreferrer">Official artifact change ↗</a>
+              
+              
+            
+              
+            
+            
+          </div>
+          <ul class="tags" aria-label="Topics"><li>Arabic</li><li>Cloning</li><li>Languages</li></ul>
+        </div>
+      </article>
+    
+      
+      
+      <article id="hf-discovery:touati-kamel/Hadra-TTS-piper" class="entry" data-kind="downloadable" data-tags="Arabic|Code-switching|Real-time|Pronunciation">
+        
+        <time class="stamp" datetime="2026-11-16">16 Nov 2026</time>
+        
+        <div>
+          <div class="meta"><span class="kind downloadable">Downloadable model</span></div>
+          <h3>Hadra releases a three-voice Algerian Darja Piper model</h3>
+          <p>Hadra provides a 28.4M-parameter VITS model, ONNX graph/config and three voice samples for Algerian Darja, producing 22.05 kHz mono audio.</p>
+          <p class="takeaway"><strong>Why it matters</strong> A compact candidate for local dialect agents. The example mixes Darja and French; Arabic-English handling is untested. Validate pronunciation and first-audio latency before deployment.</p>
+          <p><strong>Evidence</strong> The pinned card describes Kahwa, Rawi and Loubna and claims under 50 ms on Raspberry Pi 4 / modern CPU, without utterance length, concurrency or a definition of latency. The pinned file tree includes model.onnx, model.onnx.json and voice samples.</p>
+          
+          
+          <p class="licensing"><span>Weights · mit</span><span>Repository is ungated and declares MIT weights. The card does not document upstream weight terms or dataset permissions; permissive metadata alone does not establish training-data rights.</span></p>
+          
+          <div class="links">
+            
+            
+              
+              <a href="https://huggingface.co/touati-kamel/Hadra-TTS-piper" target="_blank" rel="noopener noreferrer">Source ↗</a>
+              
+              
+            
+              
+              <a href="https://huggingface.co/touati-kamel/Hadra-TTS-piper/blob/7155d237b2f5151a07197c944b7f708e543fc4fe/README.md" target="_blank" rel="noopener noreferrer">Pinned model card ↗</a>
+              
+              
+            
+              
+            
+              
+              <a href="https://huggingface.co/touati-kamel/Hadra-TTS-piper/tree/7155d237b2f5151a07197c944b7f708e543fc4fe" target="_blank" rel="noopener noreferrer">Pinned model files ↗</a>
+              
+              
+            
+            <a href="#hf-discovery:algerian-nlp/Hadra-TTS-kokoro" data-entry-link>Hadra adapts Kokoro 82M to Algerian Darja</a>
+          </div>
+          <ul class="tags" aria-label="Topics"><li>Arabic</li><li>Code-switching</li><li>Real-time</li><li>Pronunciation</li></ul>
         </div>
       </article>
     
@@ -323,6 +459,75 @@
             
           </div>
           <ul class="tags" aria-label="Topics"><li>Arabic</li><li>Pronunciation</li><li>Cloning</li></ul>
+        </div>
+      </article>
+    
+      
+      
+      <article id="hf-discovery:oguzeldereli/ttf-VoxCPM2" class="entry" data-kind="downloadable" data-tags="Arabic|Real-time|Cloning|Licensing|Evaluation">
+        
+        <time class="stamp" datetime="2026-11-14">14 Nov 2026</time>
+        
+        <div>
+          <div class="meta"><span class="kind downloadable">Downloadable model</span></div>
+          <h3>Ternary VoxCPM2 update restores the DiT to 8-bit</h3>
+          <p>The November 17 community release keeps ternary language models, replaces the buzzy ternary DiT with Q8_0 and adds 1,500 distillation steps. The split model is 827 MB plus a recommended 100 MB VAE, now including the cloning encoder.</p>
+          <p class="takeaway"><strong>Why it matters</strong> A substantive compression fix worth testing for local TTS. Arabic is listed, but no Arabic-specific or Arabic-English result is reported. Commercial deployment must account for the runtime license.</p>
+          <p><strong>Evidence</strong> Uploader reports RTF 0.16 over 240 FLEURS sentences on an idle RTX 4070 Ti SUPER; laptop i9-14900HX (7 cores, AVX-VNNI) RTF is 0.8-1.1. These are synthesis RTF, not first-audio latency. English WER is 2.61% versus 2.70% full precision on 100 paired items (Whisper-large-v3); Chinese CER worsens to 2.5% from 0.72% on 20 items. Listening evidence is one blind listener, 16 clips per model. No broad quality parity is established.</p>
+          
+          
+          <p class="licensing"><span>Code · PolyForm Noncommercial 1.0.0 (ttf-home)</span><span>Weights · apache-2.0</span><span>Ungated weights and the declared VoxCPM2 base license are Apache-2.0, but the supplied ttf-home runtime is PolyForm Noncommercial 1.0.0. Split Q8_0 files require the November 17 runtime; cloning needs the updated VAE encoder.</span></p>
+          
+          <div class="links">
+            
+            
+              
+              <a href="https://huggingface.co/oguzeldereli/ttf-VoxCPM2" target="_blank" rel="noopener noreferrer">Source ↗</a>
+              
+              
+            
+              
+              <a href="https://huggingface.co/oguzeldereli/ttf-VoxCPM2/blob/2337cd369825478238a6ee4d97eb749b37cc8324/README.md" target="_blank" rel="noopener noreferrer">Pinned model card ↗</a>
+              
+              
+            
+              
+              <a href="https://huggingface.co/openbmb/VoxCPM2" target="_blank" rel="noopener noreferrer">VoxCPM2 ↗</a>
+              
+              
+            
+              
+              <a href="https://github.com/oguzeldereli/ttf-home" target="_blank" rel="noopener noreferrer">ttf-home ↗</a>
+              
+              
+            
+              
+              <a href="https://github.com/oguzeldereli/ttf-conversion" target="_blank" rel="noopener noreferrer">ttf-conversion ↗</a>
+              
+              
+            
+              
+              <a href="https://github.com/oguzeldereli/ttf-ternary" target="_blank" rel="noopener noreferrer">TTF ↗</a>
+              
+              
+            
+              
+              <a href="https://github.com/oguzeldereli/ttf-conversion):" target="_blank" rel="noopener noreferrer">Project or demo ↗</a>
+              
+              
+            
+              
+            
+              
+              <a href="https://huggingface.co/oguzeldereli/ttf-VoxCPM2/tree/2337cd369825478238a6ee4d97eb749b37cc8324/split" target="_blank" rel="noopener noreferrer">Pinned split artifacts ↗</a>
+              
+              
+            
+              
+            
+            
+          </div>
+          <ul class="tags" aria-label="Topics"><li>Arabic</li><li>Real-time</li><li>Cloning</li><li>Licensing</li><li>Evaluation</li></ul>
         </div>
       </article>
     
@@ -558,83 +763,6 @@
             <a href="#arxiv:2611.20254" data-entry-link>VoxMel replaces a learned acoustic tokenizer with fixed Haar tiers</a>
           </div>
           <ul class="tags" aria-label="Topics"><li>Cloning</li><li>Training</li></ul>
-        </div>
-      </article>
-    
-      
-      
-      <article id="hf-discovery:Zyphra/ZONOS3-Mini" class="entry" data-kind="downloadable" data-tags="Real-time|Cloning|Languages">
-        
-        <time class="stamp" datetime="2026-11-09">09 Nov 2026</time>
-        
-        <div>
-          <div class="meta"><span class="kind downloadable">Downloadable model</span></div>
-          <h3>Zyphra ships ZONOS3-Mini for local and browser TTS</h3>
-          <p>Zyphra released weights for a 100M-active-parameter TTS model with voice cloning and controls for delivery, accent, and emotion.</p>
-          <p class="takeaway"><strong>Why it matters</strong> The browser and native runtimes make it a candidate for client-side voice agents. Measure first-audio latency on the devices you intend to support.</p>
-          <p><strong>Evidence</strong> The model card reports real-time operation on phones and laptops. It lists 43 supported languages.</p>
-          
-          
-          <p class="licensing"><span>Weights · apache-2.0</span></p>
-          
-          <div class="links">
-            
-            
-              
-              <a href="https://huggingface.co/Zyphra/ZONOS3-Mini" target="_blank" rel="noopener noreferrer">Source ↗</a>
-              
-              
-            
-              
-              <a href="https://huggingface.co/Zyphra/ZONOS3-Mini/blob/d2d142a86b1e6aeb4252679673c86ecd86177bf8/README.md" target="_blank" rel="noopener noreferrer">Pinned model card ↗</a>
-              
-              
-            
-              
-              <a href="https://cloud.zyphra.com/models/zyphra/ZONOS3-Mini" target="_blank" rel="noopener noreferrer">Zyphra Cloud ↗</a>
-              
-              
-            
-              
-              <a href="https://www.zyphra.com/our-work/zonos3-mini" target="_blank" rel="noopener noreferrer">blog post ↗</a>
-              
-              
-            
-              
-              <a href="https://zyphra.com/zonos3-mini/localplayground#cast" target="_blank" rel="noopener noreferrer">Zonos Voice Studio ↗</a>
-              
-              
-            
-              
-              <a href="https://zyphra.com/zonos3-mini/localplayground/lite" target="_blank" rel="noopener noreferrer">Lite ↗</a>
-              
-              
-            
-              
-              <a href="https://github.com/sgl-project/sglang-omni" target="_blank" rel="noopener noreferrer">SGLang-Omni ↗</a>
-              
-              
-            
-              
-              <a href="https://github.com/sgl-project/sglang-omni/blob/main/docs/get_started/installation.md" target="_blank" rel="noopener noreferrer">installation guide ↗</a>
-              
-              
-            
-              
-              <a href="https://github.com/sgl-project/sglang-omni/blob/main/docs/cookbook/zonos3.md" target="_blank" rel="noopener noreferrer">ZONOS3 cookbook ↗</a>
-              
-              
-            
-              
-              <a href="https://github.com/Zyphra/ZONOS3-Mini" target="_blank" rel="noopener noreferrer">ZONOS3-Mini GitHub repository ↗</a>
-              
-              
-            
-              
-            
-            
-          </div>
-          <ul class="tags" aria-label="Topics"><li>Real-time</li><li>Cloning</li><li>Languages</li></ul>
         </div>
       </article>
     
@@ -1287,7 +1415,7 @@
     <div class="section-head"><h2>Weekly Archive</h2><span>Cairo calendar weeks</span></div>
     
     <details><summary><time datetime="2026-11-09">Week of 2026-11-09</time><span>10 entries</span></summary>
-      <ul><li><a href="#hf-discovery:Momenrezk11/NAMAA-Egyptian-TTS" data-entry-link>NAMAA releases an Egyptian Arabic Chatterbox checkpoint</a><p>A useful Egyptian baseline for voice-agent prompts. The card flags Egyptian qāf, number pronunciation, and prompt-dependent inconsistencies.</p></li><li><a href="#hf-discovery:MuntasirElagami/sudanese-chatterbox" data-entry-link>Sudanese Chatterbox v0.1 publishes a dialect fine-tune</a><p>The released test material gives you a starting point to compare dialect intelligibility and similarity against other Arabic checkpoints.</p></li><li><a href="#hf-discovery:Zyphra/ZONOS3-Mini" data-entry-link>Zyphra ships ZONOS3-Mini for local and browser TTS</a><p>The browser and native runtimes make it a candidate for client-side voice agents. Measure first-audio latency on the devices you intend to support.</p></li><li><a href="#arxiv:2611.20254" data-entry-link>VoxMel replaces a learned acoustic tokenizer with fixed Haar tiers</a><p>A different acoustic target to compare against token-based models, especially when testing simplifications to the speech front end.</p></li><li><a href="#arxiv:2611.19832" data-entry-link>ProTTS learns word stress and exposes emphasis control</a><p>The stress-mask interface is a design pattern for controlling call-agent emphasis without requiring labeled stress during training.</p></li><li><a href="#arxiv:2611.19787" data-entry-link>Qwen3-TTS post-training adapts prosody to the target text</a><p>The study isolates text-adaptive delivery as a separate evaluation axis for cloned voice agents.</p></li><li><a href="#arxiv:2611.16051" data-entry-link>Customer-service listeners rank human-likeness and preference differently</a><p>Evaluate the voices you actually ship on conversational preference alongside naturalness. Voice choice within a provider can materially change the result.</p></li><li><a href="#arxiv:2611.15464" data-entry-link>RSE-TTS reuses its generator to encode cloning references</a><p>Reusing the generator for conditioning is an option for keeping a cloning model small while preserving speaker similarity.</p></li><li><a href="#hf-discovery:VoxDance-Lab/VoxMel-0.3B" data-entry-link>VoxMel releases two English and Mandarin cloning checkpoints</a><p>VoxMel provides a downloadable comparison point for direct spectrogram generation and transcript-conditioned cloning.</p></li><li><a href="#elevenlabs:925dd817c200dc86887f9873" data-entry-link>ElevenAgents adds conversation-level clone strength</a><p>A voice-agent integration can set clone adherence per conversation where the selected voice supports it.</p></li></ul>
+      <ul><li><a href="#hf-discovery:Momenrezk11/NAMAA-Egyptian-TTS" data-entry-link>NAMAA releases an Egyptian Arabic Chatterbox checkpoint</a><p>A useful Egyptian baseline for voice-agent prompts. The card flags Egyptian qāf, number pronunciation, and prompt-dependent inconsistencies.</p></li><li><a href="#hf-discovery:MuntasirElagami/sudanese-chatterbox" data-entry-link>Sudanese Chatterbox v0.1 publishes a dialect fine-tune</a><p>The released test material gives you a starting point to compare dialect intelligibility and similarity against other Arabic checkpoints.</p></li><li><a href="#arxiv:2611.20254" data-entry-link>VoxMel replaces a learned acoustic tokenizer with fixed Haar tiers</a><p>A different acoustic target to compare against token-based models, especially when testing simplifications to the speech front end.</p></li><li><a href="#arxiv:2611.19832" data-entry-link>ProTTS learns word stress and exposes emphasis control</a><p>The stress-mask interface is a design pattern for controlling call-agent emphasis without requiring labeled stress during training.</p></li><li><a href="#arxiv:2611.19787" data-entry-link>Qwen3-TTS post-training adapts prosody to the target text</a><p>The study isolates text-adaptive delivery as a separate evaluation axis for cloned voice agents.</p></li><li><a href="#hf-discovery:oguzeldereli/ttf-VoxCPM2" data-entry-link>Ternary VoxCPM2 update restores the DiT to 8-bit</a><p>A substantive compression fix worth testing for local TTS. Arabic is listed, but no Arabic-specific or Arabic-English result is reported. Commercial deployment must account for the runtime license.</p></li><li><a href="#arxiv:2611.16051" data-entry-link>Customer-service listeners rank human-likeness and preference differently</a><p>Evaluate the voices you actually ship on conversational preference alongside naturalness. Voice choice within a provider can materially change the result.</p></li><li><a href="#arxiv:2611.15464" data-entry-link>RSE-TTS reuses its generator to encode cloning references</a><p>Reusing the generator for conditioning is an option for keeping a cloning model small while preserving speaker similarity.</p></li><li><a href="#hf-discovery:VoxDance-Lab/VoxMel-0.3B" data-entry-link>VoxMel releases two English and Mandarin cloning checkpoints</a><p>VoxMel provides a downloadable comparison point for direct spectrogram generation and transcript-conditioned cloning.</p></li><li><a href="#elevenlabs:925dd817c200dc86887f9873" data-entry-link>ElevenAgents adds conversation-level clone strength</a><p>A voice-agent integration can set clone adherence per conversation where the selected voice supports it.</p></li></ul>
       
     </details>
     
