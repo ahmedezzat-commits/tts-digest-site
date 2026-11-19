@@ -25,14 +25,32 @@
       <p>Model releases, provider updates, and research. Arabic speech and real-time deployment first.</p>
     </div>
     <dl class="stats">
-      <div><dt>This week</dt><dd>4</dd></div>
-      <div><dt>Need action</dt><dd>1</dd></div>
+      <div><dt>This week</dt><dd>9</dd></div>
+      <div><dt>Need action</dt><dd>3</dd></div>
       <div><dt>Sources checked</dt><dd>13<span>/14</span></dd></div>
     </dl>
   </section>
   <div class="overview">
     <section class="panel" id="week">
       <div class="section-head"><h2>This Week</h2><a href="#timeline">Browse timeline ↓</a></div>
+      
+      <article class="brief-row">
+        <div class="meta"><span class="kind proprietary">Proprietary update</span><span class="focus">Priority</span></div>
+        <h3><a href="#elevenlabs:e3361a7cd0a66af60c89aa89" data-entry-link>ElevenLabs Realtime honors expressive mode and exposes usage</a></h3>
+        <p>Regression-test expressive delivery, event correlation and usage accounting in live agents. This is a behavior/API update with no new latency or Arabic dialect/code-switching benchmark.</p>
+      </article>
+      
+      <article class="brief-row">
+        <div class="meta"><span class="kind proprietary">Proprietary update</span></div>
+        <h3><a href="#elevenlabs:49651a906be30c597b8031ae" data-entry-link>ElevenLabs deprecates language-specific TTS normalization parameter</a></h3>
+        <p>Audit callers that set this field and regression-test number, date and identifier pronunciation in Arabic and mixed Arabic-English prompts. The notice does not specify a replacement, removal date or locale behavior change.</p>
+      </article>
+      
+      <article class="brief-row">
+        <div class="meta"><span class="kind downloadable">Downloadable model</span><span class="focus">Priority</span></div>
+        <h3><a href="#hf-discovery:touati-kamel/Hadra-TTS-piper" data-entry-link>Hadra Piper adds a 75-clip Darja benchmark and clarifies personas</a></h3>
+        <p>Use the prompts for dialect listening checks. French words are mapped into Arabic spelling; Arabic-English support remains unvalidated. The reported CPU RTF cannot establish conversational first-audio latency.</p>
+      </article>
       
       <article class="brief-row">
         <div class="meta"><span class="kind downloadable">Downloadable model</span><span class="focus">Priority</span></div>
@@ -42,25 +60,31 @@
       
       <article class="brief-row">
         <div class="meta"><span class="kind downloadable">Downloadable model</span><span class="focus">Priority</span></div>
-        <h3><a href="#hf-discovery:touati-kamel/Hadra-TTS-piper" data-entry-link>Hadra releases a three-voice Algerian Darja Piper model</a></h3>
-        <p>A compact candidate for local dialect agents. The example mixes Darja and French; Arabic-English handling is untested. Validate pronunciation and first-audio latency before deployment.</p>
+        <h3><a href="#hf-discovery:touati-kamel/Hadra-TTS-kokoro" data-entry-link>Hadra Kokoro adds Darja samples, but its quickstart bypasses the checkpoint</a></h3>
+        <p>Inspect the released checkpoints directly before evaluating Darja. The recommended pipeline constructs KPipeline(lang_code=&#39;a&#39;) and uses am_adam without loading the Hadra checkpoint or voice tensors. Its results therefore cannot establish this fine-tune&#39;s behavior. Arabic-English remains untested.</p>
       </article>
       
       <article class="brief-row">
         <div class="meta"><span class="kind downloadable">Downloadable model</span></div>
-        <h3><a href="#hf-discovery:Zyphra/ZONOS3-Mini" data-entry-link>ZONOS3-Mini adds a speech-edit LoRA artifact</a></h3>
-        <p>Track the adapter as an integration update. Arabic is listed among 43 languages, but this revision supplies no dialect-specific or Arabic-English code-switching validation.</p>
-      </article>
-      
-      <article class="brief-row">
-        <div class="meta"><span class="kind paper">Research paper</span></div>
-        <h3><a href="#arxiv:2611.20822" data-entry-link>Zero-shot TTS evaluation can miss voice representation gaps</a></h3>
-        <p>Audit speaker groups with listener judgments alongside embedding similarity and automated quality scores.</p>
+        <h3><a href="#hf-discovery:oguzeldereli/ttf-VoxCPM2" data-entry-link>Ternary VoxCPM2 revises its Chinese quality comparison</a></h3>
+        <p>The earlier apparent Chinese regression partly reflected ASR script and number formatting. The new small test does not establish broad quality parity, Arabic dialect quality or Arabic-English code-switching reliability.</p>
       </article>
       
     </section>
     <aside class="panel action-panel" id="actions">
-      <div class="section-head"><h2>Action Needed</h2><span class="count">1</span></div>
+      <div class="section-head"><h2>Action Needed</h2><span class="count">3</span></div>
+      
+      <article class="action-row">
+        <div class="meta"><strong>Deprecation</strong><time datetime="2026-12-15">15 Dec 2026</time></div>
+        <h3><a href="#elevenlabs:e3361a7cd0a66af60c89aa89" data-entry-link>ElevenLabs Realtime honors expressive mode and exposes usage</a></h3>
+        <p>Review ElevenAgents GPT-4.1/4o-family routing before the announced 10% fallback rollout on December 15, 2026.</p>
+      </article>
+      
+      <article class="action-row">
+        <div class="meta"><strong>Deprecation</strong></div>
+        <h3><a href="#elevenlabs:49651a906be30c597b8031ae" data-entry-link>ElevenLabs deprecates language-specific TTS normalization parameter</a></h3>
+        <p>Audit apply_language_text_normalization usage across ElevenLabs HTTP TTS callers; no removal deadline is announced.</p>
+      </article>
       
       <article class="action-row">
         <div class="meta"><strong>Deprecation</strong></div>
@@ -71,7 +95,7 @@
     </aside>
   </div>
   <details class="health" open>
-    <summary><strong>Source checks</strong><span>13 of 14 complete · Last check <time datetime="2026-11-18T08:35:10.634584+02:00">18 Nov 2026, 08:35 Cairo</time></span></summary>
+    <summary><strong>Source checks</strong><span>13 of 14 complete · Last check <time datetime="2026-11-19T08:36:06.536612+02:00">19 Nov 2026, 08:36 Cairo</time></span></summary>
     <ul>
       
       <li><strong>F5-TTS</strong><span>github</span><span class="ok">Ok</span></li>
@@ -105,7 +129,7 @@
     </ul>
   </details>
   <section id="timeline" class="timeline">
-    <div class="section-head"><h2>Timeline</h2><span id="shown" aria-live="polite">26 entries</span></div>
+    <div class="section-head"><h2>Timeline</h2><span id="shown" aria-live="polite">30 entries</span></div>
     <div class="toolbar">
       <label class="query"><span>Search updates</span><input id="search" type="search" placeholder="Model, topic, or keyword"></label>
       <div class="filters" aria-label="Entry filters">
@@ -118,6 +142,243 @@
       </div>
     </div>
     <div id="feed">
+    
+      
+      
+      <article id="hf-discovery:touati-kamel/Hadra-TTS-piper" class="entry" data-kind="downloadable" data-tags="Arabic|Code-switching|Real-time|Evaluation|Licensing">
+        
+        <time class="stamp" datetime="2026-11-18">18 Nov 2026</time>
+        
+        <div>
+          <div class="meta"><span class="kind downloadable">Downloadable model</span></div>
+          <h3>Hadra Piper adds a 75-clip Darja benchmark and clarifies personas</h3>
+          <p>The revised Algerian Darja card reports 25 prompts across three persona presets, covering French loanwords, slang, numbers, proverbs and long narratives. Its quickstart identifies a single-speaker graph: personas vary duration/noise settings rather than establish three distinct speakers.</p>
+          <p class="takeaway"><strong>Why it matters</strong> Use the prompts for dialect listening checks. French words are mapped into Arabic spelling; Arabic-English support remains unvalidated. The reported CPU RTF cannot establish conversational first-audio latency.</p>
+          <p><strong>Evidence</strong> Uploader claims mean RTF 0.124 over 75 clips at 22.05 kHz PCM_16 mono, described as one CPU core, but gives no CPU model, warm-up policy, concurrency or TTFA. The claimed 75/75 quality pass lacks a documented listener/ASR protocol. The card names ar_JO-kareem-medium as the base; the base card identifies one speaker and defers dataset licensing to its source.</p>
+          
+          
+          <p class="licensing"><span>Weights · mit</span><span>Ungated repository declares MIT weights. Its upstream base card does not establish dataset permissions; verify that lineage before commercial use.</span></p>
+          
+          <div class="links">
+            
+            
+              
+              <a href="https://huggingface.co/touati-kamel/Hadra-TTS-piper" target="_blank" rel="noopener noreferrer">Source ↗</a>
+              
+              
+            
+              
+              <a href="https://huggingface.co/touati-kamel/Hadra-TTS-piper/blob/d59cd871070da801494f7fda46e060cd18a158eb/README.md" target="_blank" rel="noopener noreferrer">Pinned model card ↗</a>
+              
+              
+            
+              
+              <a href="https://img.shields.io/badge/Live%20Benchmark-Netlify%20Dashboard-0150FC?style=for-the-badge&amp;logo=netlify&amp;logoColor=white" target="_blank" rel="noopener noreferrer">![Live Benchmark ↗</a>
+              
+              
+            
+              
+              <a href="https://img.shields.io/badge/Hugging%20Face-Model%20Card-FFD21E?style=for-the-badge&amp;logo=huggingface&amp;logoColor=black" target="_blank" rel="noopener noreferrer">![Model on Hugging Face ↗</a>
+              
+              
+            
+              
+              <a href="https://img.shields.io/badge/Architecture-VITS%20ONNX-09B6A2?style=for-the-badge" target="_blank" rel="noopener noreferrer">![Architecture ↗</a>
+              
+              
+            
+              
+              <a href="https://img.shields.io/badge/Size-63%20MB-blue?style=for-the-badge" target="_blank" rel="noopener noreferrer">![Model Size ↗</a>
+              
+              
+            
+              
+              <a href="https://img.shields.io/badge/Speed-0.124x%20RTF%20(CPU" target="_blank" rel="noopener noreferrer">![Inference Speed ↗</a>
+              
+              
+            
+              
+              <a href="https://img.shields.io/badge/License-MIT-lightgrey?style=for-the-badge" target="_blank" rel="noopener noreferrer">![License: MIT ↗</a>
+              
+              
+            
+              
+              <a href="https://hadra-piper-benchmark.netlify.app/" target="_blank" rel="noopener noreferrer">Explore the Live Hadra Piper Benchmark Dashboard (Netlify) ↗</a>
+              
+              
+            
+              
+              <a href="https://github.com/rhasspy/piper" target="_blank" rel="noopener noreferrer">Rhasspy Piper ↗</a>
+              
+              
+            
+              
+            
+              
+            
+              
+              <a href="https://huggingface.co/rhasspy/piper-voices/blob/main/ar/ar_JO/kareem/medium/MODEL_CARD" target="_blank" rel="noopener noreferrer">Upstream voice card ↗</a>
+              
+              
+            
+            <a href="#hf-discovery:algerian-nlp/Hadra-TTS-kokoro" data-entry-link>Hadra adapts Kokoro 82M to Algerian Darja</a>
+          </div>
+          <ul class="tags" aria-label="Topics"><li>Arabic</li><li>Code-switching</li><li>Real-time</li><li>Evaluation</li><li>Licensing</li></ul>
+        </div>
+      </article>
+    
+      
+      
+      <article id="hf-discovery:oguzeldereli/ttf-VoxCPM2" class="entry" data-kind="downloadable" data-tags="Arabic|Evaluation|Licensing|Real-time">
+        
+        <time class="stamp" datetime="2026-11-18">18 Nov 2026</time>
+        
+        <div>
+          <div class="meta"><span class="kind downloadable">Downloadable model</span></div>
+          <h3>Ternary VoxCPM2 revises its Chinese quality comparison</h3>
+          <p>The November 18 card replaces the earlier 20-sentence Chinese CER result with a longer normalized comparison; the November 17 ternary-LM/Q8_0-DiT release is unchanged.</p>
+          <p class="takeaway"><strong>Why it matters</strong> The earlier apparent Chinese regression partly reflected ASR script and number formatting. The new small test does not establish broad quality parity, Arabic dialect quality or Arabic-English code-switching reliability.</p>
+          <p><strong>Evidence</strong> Uploader reports 0.91% full-precision versus 1.48% compressed Chinese CER on 30 FLEURS test sentences, 1,049 characters and two seeds, using Whisper-large-v3 after Traditional-to-Simplified and numeral normalization. Paired-bootstrap difference: +0.57 percentage points, 95% interval [-0.09, +1.41]. This supersedes 0.72% versus 2.5%. Existing RTF 0.16 is generation time/audio duration over 240 sentences on an idle RTX 4070 Ti SUPER, not first-audio latency.</p>
+          
+          
+          <p class="licensing"><span>Code · PolyForm Noncommercial 1.0.0 (ttf-home)</span><span>Weights · apache-2.0</span><span>Ungated Apache-2.0 weights; ttf-home runtime remains PolyForm Noncommercial 1.0.0. Split Q8_0 files need the November 17 runtime; reference cloning needs the VAE encoder.</span></p>
+          
+          <div class="links">
+            
+            
+              
+              <a href="https://huggingface.co/oguzeldereli/ttf-VoxCPM2" target="_blank" rel="noopener noreferrer">Source ↗</a>
+              
+              
+            
+              
+              <a href="https://huggingface.co/oguzeldereli/ttf-VoxCPM2/blob/dc1b4121db5434b3b4005ac8972f65c3a96ba9dd/README.md" target="_blank" rel="noopener noreferrer">Pinned model card ↗</a>
+              
+              
+            
+              
+              <a href="https://huggingface.co/openbmb/VoxCPM2" target="_blank" rel="noopener noreferrer">VoxCPM2 ↗</a>
+              
+              
+            
+              
+              <a href="https://github.com/oguzeldereli/ttf-home" target="_blank" rel="noopener noreferrer">ttf-home ↗</a>
+              
+              
+            
+              
+              <a href="https://github.com/oguzeldereli/ttf-conversion" target="_blank" rel="noopener noreferrer">ttf-conversion ↗</a>
+              
+              
+            
+              
+              <a href="https://github.com/oguzeldereli/ttf-ternary" target="_blank" rel="noopener noreferrer">TTF ↗</a>
+              
+              
+            
+              
+              <a href="https://github.com/oguzeldereli/ttf-conversion):" target="_blank" rel="noopener noreferrer">Project or demo ↗</a>
+              
+              
+            
+              
+              <a href="https://huggingface.co/oguzeldereli/ttf-VoxCPM2/blob/dc1b4121db5434b3b4005ac8972f65c3a96ba9dd/README.md#quality-and-speed" target="_blank" rel="noopener noreferrer">Pinned corrected evaluation ↗</a>
+              
+              
+            
+              
+              <a href="https://huggingface.co/oguzeldereli/ttf-VoxCPM2/commit/dc1b4121db5434b3b4005ac8972f65c3a96ba9dd" target="_blank" rel="noopener noreferrer">Evaluation revision ↗</a>
+              
+              
+            
+              
+            
+            
+          </div>
+          <ul class="tags" aria-label="Topics"><li>Arabic</li><li>Evaluation</li><li>Licensing</li><li>Real-time</li></ul>
+        </div>
+      </article>
+    
+      
+      
+      <article id="hf-discovery:abdullah/tiny-voca-ar" class="entry" data-kind="downloadable" data-tags="Arabic|Pronunciation|Training|Evaluation|Licensing">
+        
+        <time class="stamp" datetime="2026-11-18">18 Nov 2026</time>
+        
+        <div>
+          <div class="meta"><span class="kind downloadable">Downloadable model</span></div>
+          <h3>tiny-voca-ar releases a 4.5M MSA model with unresolved voice rights</h3>
+          <p>A from-scratch, single-male-voice Arabic port of tiny-voca publishes PyTorch and ONNX artifacts for 24 kHz mono output. It requires fully diacritized Modern Standard Arabic and includes spoken expansion of numbers and identifiers.</p>
+          <p class="takeaway"><strong>Why it matters</strong> A compact Arabic frontend/distillation reference, pending native listening validation and voice clearance. It provides no dialect, Arabic-English or measured real-time result; undiacritized input is refused.</p>
+          <p><strong>Evidence</strong> Pinned card reports 4,537,867 parameters and 79,955 steps, using 5,968 training clips from 6,179 accepted SILMA-generated clips (12.12 hours). On 43 held-out sentences, Whisper-large-v3-turbo WER after stripping diacritics is 5.32% versus teacher 7%; automatic vowel judges cannot resolve shadda or ظ/ذ, and native listening gate H4 has not run. Pinned file inventory includes checkpoint, ONNX, evaluation.json and three samples.</p>
+          
+          
+          <p class="licensing"><span>Code · apache-2.0 (declared upstream tiny-voca)</span><span>Weights · apache-2.0</span><span>Repository is ungated and declares Apache-2.0, with CC BY 4.0 attributions. Author explicitly says not cleared for client use: reference-speaker consent for avatar cloning is unresolved, SILMA teacher pretraining lineage is undisclosed, and H4 listening remains pending. Only M2 is trained; F2 produces noise.</span></p>
+          
+          <div class="links">
+            
+            
+              
+              <a href="https://huggingface.co/abdullah/tiny-voca-ar" target="_blank" rel="noopener noreferrer">Source ↗</a>
+              
+              
+            
+              
+              <a href="https://huggingface.co/abdullah/tiny-voca-ar/blob/dcdf56c10c536d4df74576f036b512c0d212e17f/README.md" target="_blank" rel="noopener noreferrer">Pinned model card ↗</a>
+              
+              
+            
+              
+              <a href="https://github.com/n4ze3m/tiny-voca" target="_blank" rel="noopener noreferrer">tiny-voca ↗</a>
+              
+              
+            
+              
+              <a href="https://huggingface.co/abdullah/tiny-voca-ar/blob/dcdf56c10c536d4df74576f036b512c0d212e17f/README.md#reference-voice" target="_blank" rel="noopener noreferrer">Reference voice ↗</a>
+              
+              
+            
+              
+              <a href="https://huggingface.co/abdullah/tiny-voca-ar/blob/dcdf56c10c536d4df74576f036b512c0d212e17f/README.md#limitations" target="_blank" rel="noopener noreferrer">Limitations ↗</a>
+              
+              
+            
+              
+              <a href="https://huggingface.co/datasets/abdullah/tiny-voca-ar" target="_blank" rel="noopener noreferrer">abdullah/tiny-voca-ar ↗</a>
+              
+              
+            
+              
+              <a href="https://huggingface.co/datasets/MBZUAI/ClArTTS" target="_blank" rel="noopener noreferrer">ClArTTS ↗</a>
+              
+              
+            
+              
+              <a href="https://huggingface.co/silma-ai/silma-tts" target="_blank" rel="noopener noreferrer">SILMA TTS ↗</a>
+              
+              
+            
+              
+            
+              
+              <a href="https://huggingface.co/abdullah/tiny-voca-ar/blob/dcdf56c10c536d4df74576f036b512c0d212e17f/README.md#evaluation" target="_blank" rel="noopener noreferrer">Evaluation ↗</a>
+              
+              
+            
+              
+            
+              
+              <a href="https://huggingface.co/abdullah/tiny-voca-ar/tree/dcdf56c10c536d4df74576f036b512c0d212e17f" target="_blank" rel="noopener noreferrer">Pinned artifacts ↗</a>
+              
+              
+            
+              
+            
+            
+          </div>
+          <ul class="tags" aria-label="Topics"><li>Arabic</li><li>Pronunciation</li><li>Training</li><li>Evaluation</li><li>Licensing</li></ul>
+        </div>
+      </article>
     
       
       
@@ -151,6 +412,83 @@
             
           </div>
           <ul class="tags" aria-label="Topics"><li>Arabic</li><li>Code-switching</li><li>Pronunciation</li></ul>
+        </div>
+      </article>
+    
+      
+      
+      <article id="elevenlabs:e3361a7cd0a66af60c89aa89" class="entry" data-kind="proprietary" data-tags="Real-time|API">
+        
+        <time class="stamp" datetime="2026-11-17">17 Nov 2026</time>
+        
+        <div>
+          <div class="meta"><span class="kind proprietary">Proprietary update</span></div>
+          <h3>ElevenLabs Realtime honors expressive mode and exposes usage</h3>
+          <p>The November 17 changelog says Realtime agents now honor tts.expressive_mode, response.done includes usage, and tool-call responses report the initiating LLM call&#39;s usage. Rejected client events echo event_id; malformed conversation items are rejected.</p>
+          <p class="takeaway"><strong>Why it matters</strong> Regression-test expressive delivery, event correlation and usage accounting in live agents. This is a behavior/API update with no new latency or Arabic dialect/code-switching benchmark.</p>
+          <p><strong>Evidence</strong> Official changelog also says interrupted turns stop sending stale custom-LLM retries and mid-turn fallback no longer repeats or joins words. The same notice schedules GPT-4.1/4o-family fallback to gpt-6-luna for 10% of requests December 15 and all January 9, ahead of January 14 shutdown; these are ElevenLabs-reported routing dates.</p>
+          <p class="inline-action"><strong>Deprecation</strong> Review ElevenAgents GPT-4.1/4o-family routing before the announced 10% fallback rollout on December 15, 2026.</p>
+          
+          <div class="links">
+            
+            
+              
+              <a href="https://elevenlabs.io/docs/changelog#2026-11-17-all-changes" target="_blank" rel="noopener noreferrer">Source ↗</a>
+              
+              
+            
+              
+              <a href="https://elevenlabs.io/docs/eleven-agents/customization/llm" target="_blank" rel="noopener noreferrer">Models ↗</a>
+              
+              
+            
+              
+              <a href="https://elevenlabs.io/docs/api-reference/knowledge-base/get-chunking-override" target="_blank" rel="noopener noreferrer">Get chunking override ↗</a>
+              
+              
+            
+              
+              <a href="https://elevenlabs.io/docs/api-reference/knowledge-base/update-chunking-override" target="_blank" rel="noopener noreferrer">Update chunking override ↗</a>
+              
+              
+            
+              
+              <a href="https://elevenlabs.io/docs/eleven-agents/customization/knowledge-base" target="_blank" rel="noopener noreferrer">Knowledge base ↗</a>
+              
+              
+            
+              
+              <a href="https://elevenlabs.io/docs/api-reference/conversations/list" target="_blank" rel="noopener noreferrer">List conversations ↗</a>
+              
+              
+            
+              
+              <a href="https://elevenlabs.io/docs/api-reference/conversations/get-file" target="_blank" rel="noopener noreferrer">Get conversation file ↗</a>
+              
+              
+            
+              
+              <a href="https://elevenlabs.io/docs/eleven-agents/customization/procedures/structured-procedures" target="_blank" rel="noopener noreferrer">Structured procedures ↗</a>
+              
+              
+            
+              
+              <a href="https://elevenlabs.io/docs/api-reference/llm/calculate" target="_blank" rel="noopener noreferrer">LLM usage calculator ↗</a>
+              
+              
+            
+              
+              <a href="https://elevenlabs.io/docs/eleven-agents/customization/realtime-models" target="_blank" rel="noopener noreferrer">Realtime models ↗</a>
+              
+              
+            
+              
+            
+              
+            
+            
+          </div>
+          <ul class="tags" aria-label="Topics"><li>Real-time</li><li>API</li></ul>
         </div>
       </article>
     
@@ -238,43 +576,102 @@
     
       
       
-      <article id="hf-discovery:touati-kamel/Hadra-TTS-piper" class="entry" data-kind="downloadable" data-tags="Arabic|Code-switching|Real-time|Pronunciation">
+      <article id="elevenlabs:49651a906be30c597b8031ae" class="entry" data-kind="proprietary" data-tags="API|Pronunciation">
         
-        <time class="stamp" datetime="2026-11-16">16 Nov 2026</time>
+        <time class="stamp" datetime="2026-11-17">17 Nov 2026</time>
         
         <div>
-          <div class="meta"><span class="kind downloadable">Downloadable model</span></div>
-          <h3>Hadra releases a three-voice Algerian Darja Piper model</h3>
-          <p>Hadra provides a 28.4M-parameter VITS model, ONNX graph/config and three voice samples for Algerian Darja, producing 22.05 kHz mono audio.</p>
-          <p class="takeaway"><strong>Why it matters</strong> A compact candidate for local dialect agents. The example mixes Darja and French; Arabic-English handling is untested. Validate pronunciation and first-audio latency before deployment.</p>
-          <p><strong>Evidence</strong> The pinned card describes Kahwa, Rawi and Loubna and claims under 50 ms on Raspberry Pi 4 / modern CPU, without utterance length, concurrency or a definition of latency. The pinned file tree includes model.onnx, model.onnx.json and voice samples.</p>
-          
-          
-          <p class="licensing"><span>Weights · mit</span><span>Repository is ungated and declares MIT weights. The card does not document upstream weight terms or dataset permissions; permissive metadata alone does not establish training-data rights.</span></p>
+          <div class="meta"><span class="kind proprietary">Proprietary update</span></div>
+          <h3>ElevenLabs deprecates language-specific TTS normalization parameter</h3>
+          <p>The November 17 API changelog marks apply_language_text_normalization deprecated on Text to Speech, Stream, With timestamps and Stream with timestamps.</p>
+          <p class="takeaway"><strong>Why it matters</strong> Audit callers that set this field and regression-test number, date and identifier pronunciation in Arabic and mixed Arabic-English prompts. The notice does not specify a replacement, removal date or locale behavior change.</p>
+          <p><strong>Evidence</strong> The official endpoint-change list names all four HTTP TTS variants; it does not claim that all text normalization is removed. The same release changes unknown-model errors on stream-input and multi-stream-input WebSockets to close code 1008 model_not_found instead of 1011.</p>
+          <p class="inline-action"><strong>Deprecation</strong> Audit apply_language_text_normalization usage across ElevenLabs HTTP TTS callers; no removal deadline is announced.</p>
           
           <div class="links">
             
             
               
-              <a href="https://huggingface.co/touati-kamel/Hadra-TTS-piper" target="_blank" rel="noopener noreferrer">Source ↗</a>
+              <a href="https://elevenlabs.io/docs/changelog#2026-11-17-text-to-speech-1" target="_blank" rel="noopener noreferrer">Source ↗</a>
               
               
             
               
-              <a href="https://huggingface.co/touati-kamel/Hadra-TTS-piper/blob/7155d237b2f5151a07197c944b7f708e543fc4fe/README.md" target="_blank" rel="noopener noreferrer">Pinned model card ↗</a>
+              <a href="https://elevenlabs.io/docs/api-reference/text-to-speech/convert" target="_blank" rel="noopener noreferrer">Text to Speech ↗</a>
+              
+              
+            
+              
+              <a href="https://elevenlabs.io/docs/api-reference/text-to-speech/stream" target="_blank" rel="noopener noreferrer">Stream ↗</a>
+              
+              
+            
+              
+              <a href="https://elevenlabs.io/docs/api-reference/text-to-speech/convert-with-timestamps" target="_blank" rel="noopener noreferrer">With timestamps ↗</a>
+              
+              
+            
+              
+              <a href="https://elevenlabs.io/docs/api-reference/text-to-speech/stream-with-timestamps" target="_blank" rel="noopener noreferrer">Stream with timestamps ↗</a>
               
               
             
               
             
               
-              <a href="https://huggingface.co/touati-kamel/Hadra-TTS-piper/tree/7155d237b2f5151a07197c944b7f708e543fc4fe" target="_blank" rel="noopener noreferrer">Pinned model files ↗</a>
-              
-              
             
-            <a href="#hf-discovery:algerian-nlp/Hadra-TTS-kokoro" data-entry-link>Hadra adapts Kokoro 82M to Algerian Darja</a>
+            
           </div>
-          <ul class="tags" aria-label="Topics"><li>Arabic</li><li>Code-switching</li><li>Real-time</li><li>Pronunciation</li></ul>
+          <ul class="tags" aria-label="Topics"><li>API</li><li>Pronunciation</li></ul>
+        </div>
+      </article>
+    
+      
+      
+      <article id="hf-discovery:touati-kamel/Hadra-TTS-kokoro" class="entry" data-kind="downloadable" data-tags="Arabic|Code-switching|Pronunciation|Evaluation">
+        
+        <time class="stamp" datetime="2026-11-16">16 Nov 2026</time>
+        
+        <div>
+          <div class="meta"><span class="kind downloadable">Downloadable model</span></div>
+          <h3>Hadra Kokoro adds Darja samples, but its quickstart bypasses the checkpoint</h3>
+          <p>This uploader&#39;s revised card adds a 75-generation, 24 kHz benchmark across French loanwords, regional phonology, numbers and stress prompts, alongside downloadable Kokoro checkpoints and three voice tensors.</p>
+          <p class="takeaway"><strong>Why it matters</strong> Inspect the released checkpoints directly before evaluating Darja. The recommended pipeline constructs KPipeline(lang_code=&#39;a&#39;) and uses am_adam without loading the Hadra checkpoint or voice tensors. Its results therefore cannot establish this fine-tune&#39;s behavior. Arabic-English remains untested.</p>
+          <p><strong>Evidence</strong> The card claims 75/75 passes and 93.5% energy below 2 kHz; spectral-energy allocation is not a pronunciation or intelligibility score. It supplies no native listener protocol, ASR accuracy or latency measurement. The direct-loading section names kokoro_arabic.pth and voices/kahwa.pt, while the recommended generation example never loads them.</p>
+          
+          
+          <p class="licensing"><span>Weights · apache-2.0</span><span>Ungated weights declare Apache-2.0 and hexgrad/Kokoro-82M lineage. Listed Algerian podcast/story datasets do not by themselves establish speaker consent or complete data rights.</span></p>
+          
+          <div class="links">
+            
+            
+              
+              <a href="https://huggingface.co/touati-kamel/Hadra-TTS-kokoro" target="_blank" rel="noopener noreferrer">Source ↗</a>
+              
+              
+            
+              
+              <a href="https://huggingface.co/touati-kamel/Hadra-TTS-kokoro/blob/9bf067cc1f484422c3791ca1d0b64636c82fe8e0/README.md" target="_blank" rel="noopener noreferrer">Pinned model card ↗</a>
+              
+              
+            
+              
+              <a href="https://hadra-kokoro-benchmark.netlify.app/" target="_blank" rel="noopener noreferrer">Explore the Live Hadra Kokoro Benchmark Dashboard (Netlify) ↗</a>
+              
+              
+            
+              
+              <a href="https://hadra-kokoro-benchmark.netlify.app/)**" target="_blank" rel="noopener noreferrer">Project or demo ↗</a>
+              
+              
+            
+              
+            
+              
+            
+            <a href="#hf-discovery:algerian-nlp/Hadra-TTS-kokoro" data-entry-link>Hadra adapts Kokoro 82M to Algerian Darja</a><a href="#hf-discovery:touati-kamel/Hadra-TTS-piper" data-entry-link>Hadra Piper adds a 75-clip Darja benchmark and clarifies personas</a>
+          </div>
+          <ul class="tags" aria-label="Topics"><li>Arabic</li><li>Code-switching</li><li>Pronunciation</li><li>Evaluation</li></ul>
         </div>
       </article>
     
@@ -459,75 +856,6 @@
             
           </div>
           <ul class="tags" aria-label="Topics"><li>Arabic</li><li>Pronunciation</li><li>Cloning</li></ul>
-        </div>
-      </article>
-    
-      
-      
-      <article id="hf-discovery:oguzeldereli/ttf-VoxCPM2" class="entry" data-kind="downloadable" data-tags="Arabic|Real-time|Cloning|Licensing|Evaluation">
-        
-        <time class="stamp" datetime="2026-11-14">14 Nov 2026</time>
-        
-        <div>
-          <div class="meta"><span class="kind downloadable">Downloadable model</span></div>
-          <h3>Ternary VoxCPM2 update restores the DiT to 8-bit</h3>
-          <p>The November 17 community release keeps ternary language models, replaces the buzzy ternary DiT with Q8_0 and adds 1,500 distillation steps. The split model is 827 MB plus a recommended 100 MB VAE, now including the cloning encoder.</p>
-          <p class="takeaway"><strong>Why it matters</strong> A substantive compression fix worth testing for local TTS. Arabic is listed, but no Arabic-specific or Arabic-English result is reported. Commercial deployment must account for the runtime license.</p>
-          <p><strong>Evidence</strong> Uploader reports RTF 0.16 over 240 FLEURS sentences on an idle RTX 4070 Ti SUPER; laptop i9-14900HX (7 cores, AVX-VNNI) RTF is 0.8-1.1. These are synthesis RTF, not first-audio latency. English WER is 2.61% versus 2.70% full precision on 100 paired items (Whisper-large-v3); Chinese CER worsens to 2.5% from 0.72% on 20 items. Listening evidence is one blind listener, 16 clips per model. No broad quality parity is established.</p>
-          
-          
-          <p class="licensing"><span>Code · PolyForm Noncommercial 1.0.0 (ttf-home)</span><span>Weights · apache-2.0</span><span>Ungated weights and the declared VoxCPM2 base license are Apache-2.0, but the supplied ttf-home runtime is PolyForm Noncommercial 1.0.0. Split Q8_0 files require the November 17 runtime; cloning needs the updated VAE encoder.</span></p>
-          
-          <div class="links">
-            
-            
-              
-              <a href="https://huggingface.co/oguzeldereli/ttf-VoxCPM2" target="_blank" rel="noopener noreferrer">Source ↗</a>
-              
-              
-            
-              
-              <a href="https://huggingface.co/oguzeldereli/ttf-VoxCPM2/blob/2337cd369825478238a6ee4d97eb749b37cc8324/README.md" target="_blank" rel="noopener noreferrer">Pinned model card ↗</a>
-              
-              
-            
-              
-              <a href="https://huggingface.co/openbmb/VoxCPM2" target="_blank" rel="noopener noreferrer">VoxCPM2 ↗</a>
-              
-              
-            
-              
-              <a href="https://github.com/oguzeldereli/ttf-home" target="_blank" rel="noopener noreferrer">ttf-home ↗</a>
-              
-              
-            
-              
-              <a href="https://github.com/oguzeldereli/ttf-conversion" target="_blank" rel="noopener noreferrer">ttf-conversion ↗</a>
-              
-              
-            
-              
-              <a href="https://github.com/oguzeldereli/ttf-ternary" target="_blank" rel="noopener noreferrer">TTF ↗</a>
-              
-              
-            
-              
-              <a href="https://github.com/oguzeldereli/ttf-conversion):" target="_blank" rel="noopener noreferrer">Project or demo ↗</a>
-              
-              
-            
-              
-            
-              
-              <a href="https://huggingface.co/oguzeldereli/ttf-VoxCPM2/tree/2337cd369825478238a6ee4d97eb749b37cc8324/split" target="_blank" rel="noopener noreferrer">Pinned split artifacts ↗</a>
-              
-              
-            
-              
-            
-            
-          </div>
-          <ul class="tags" aria-label="Topics"><li>Arabic</li><li>Real-time</li><li>Cloning</li><li>Licensing</li><li>Evaluation</li></ul>
         </div>
       </article>
     
@@ -1414,8 +1742,8 @@
   <section id="archive" class="panel archive">
     <div class="section-head"><h2>Weekly Archive</h2><span>Cairo calendar weeks</span></div>
     
-    <details><summary><time datetime="2026-11-09">Week of 2026-11-09</time><span>10 entries</span></summary>
-      <ul><li><a href="#hf-discovery:Momenrezk11/NAMAA-Egyptian-TTS" data-entry-link>NAMAA releases an Egyptian Arabic Chatterbox checkpoint</a><p>A useful Egyptian baseline for voice-agent prompts. The card flags Egyptian qāf, number pronunciation, and prompt-dependent inconsistencies.</p></li><li><a href="#hf-discovery:MuntasirElagami/sudanese-chatterbox" data-entry-link>Sudanese Chatterbox v0.1 publishes a dialect fine-tune</a><p>The released test material gives you a starting point to compare dialect intelligibility and similarity against other Arabic checkpoints.</p></li><li><a href="#arxiv:2611.20254" data-entry-link>VoxMel replaces a learned acoustic tokenizer with fixed Haar tiers</a><p>A different acoustic target to compare against token-based models, especially when testing simplifications to the speech front end.</p></li><li><a href="#arxiv:2611.19832" data-entry-link>ProTTS learns word stress and exposes emphasis control</a><p>The stress-mask interface is a design pattern for controlling call-agent emphasis without requiring labeled stress during training.</p></li><li><a href="#arxiv:2611.19787" data-entry-link>Qwen3-TTS post-training adapts prosody to the target text</a><p>The study isolates text-adaptive delivery as a separate evaluation axis for cloned voice agents.</p></li><li><a href="#hf-discovery:oguzeldereli/ttf-VoxCPM2" data-entry-link>Ternary VoxCPM2 update restores the DiT to 8-bit</a><p>A substantive compression fix worth testing for local TTS. Arabic is listed, but no Arabic-specific or Arabic-English result is reported. Commercial deployment must account for the runtime license.</p></li><li><a href="#arxiv:2611.16051" data-entry-link>Customer-service listeners rank human-likeness and preference differently</a><p>Evaluate the voices you actually ship on conversational preference alongside naturalness. Voice choice within a provider can materially change the result.</p></li><li><a href="#arxiv:2611.15464" data-entry-link>RSE-TTS reuses its generator to encode cloning references</a><p>Reusing the generator for conditioning is an option for keeping a cloning model small while preserving speaker similarity.</p></li><li><a href="#hf-discovery:VoxDance-Lab/VoxMel-0.3B" data-entry-link>VoxMel releases two English and Mandarin cloning checkpoints</a><p>VoxMel provides a downloadable comparison point for direct spectrogram generation and transcript-conditioned cloning.</p></li><li><a href="#elevenlabs:925dd817c200dc86887f9873" data-entry-link>ElevenAgents adds conversation-level clone strength</a><p>A voice-agent integration can set clone adherence per conversation where the selected voice supports it.</p></li></ul>
+    <details><summary><time datetime="2026-11-09">Week of 2026-11-09</time><span>9 entries</span></summary>
+      <ul><li><a href="#hf-discovery:Momenrezk11/NAMAA-Egyptian-TTS" data-entry-link>NAMAA releases an Egyptian Arabic Chatterbox checkpoint</a><p>A useful Egyptian baseline for voice-agent prompts. The card flags Egyptian qāf, number pronunciation, and prompt-dependent inconsistencies.</p></li><li><a href="#hf-discovery:MuntasirElagami/sudanese-chatterbox" data-entry-link>Sudanese Chatterbox v0.1 publishes a dialect fine-tune</a><p>The released test material gives you a starting point to compare dialect intelligibility and similarity against other Arabic checkpoints.</p></li><li><a href="#arxiv:2611.20254" data-entry-link>VoxMel replaces a learned acoustic tokenizer with fixed Haar tiers</a><p>A different acoustic target to compare against token-based models, especially when testing simplifications to the speech front end.</p></li><li><a href="#arxiv:2611.19832" data-entry-link>ProTTS learns word stress and exposes emphasis control</a><p>The stress-mask interface is a design pattern for controlling call-agent emphasis without requiring labeled stress during training.</p></li><li><a href="#arxiv:2611.19787" data-entry-link>Qwen3-TTS post-training adapts prosody to the target text</a><p>The study isolates text-adaptive delivery as a separate evaluation axis for cloned voice agents.</p></li><li><a href="#arxiv:2611.16051" data-entry-link>Customer-service listeners rank human-likeness and preference differently</a><p>Evaluate the voices you actually ship on conversational preference alongside naturalness. Voice choice within a provider can materially change the result.</p></li><li><a href="#arxiv:2611.15464" data-entry-link>RSE-TTS reuses its generator to encode cloning references</a><p>Reusing the generator for conditioning is an option for keeping a cloning model small while preserving speaker similarity.</p></li><li><a href="#hf-discovery:VoxDance-Lab/VoxMel-0.3B" data-entry-link>VoxMel releases two English and Mandarin cloning checkpoints</a><p>VoxMel provides a downloadable comparison point for direct spectrogram generation and transcript-conditioned cloning.</p></li><li><a href="#elevenlabs:925dd817c200dc86887f9873" data-entry-link>ElevenAgents adds conversation-level clone strength</a><p>A voice-agent integration can set clone adherence per conversation where the selected voice supports it.</p></li></ul>
       
     </details>
     
