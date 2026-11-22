@@ -25,9 +25,9 @@
       <p>Model releases, provider updates, and research. Arabic speech and real-time deployment first.</p>
     </div>
     <dl class="stats">
-      <div><dt>This week</dt><dd>9</dd></div>
+      <div><dt>This week</dt><dd>18</dd></div>
       <div><dt>Need action</dt><dd>3</dd></div>
-      <div><dt>Sources checked</dt><dd>13<span>/14</span></dd></div>
+      <div><dt>Sources checked</dt><dd>14<span>/14</span></dd></div>
     </dl>
   </section>
   <div class="overview">
@@ -48,26 +48,26 @@
       
       <article class="brief-row">
         <div class="meta"><span class="kind downloadable">Downloadable model</span><span class="focus">Priority</span></div>
+        <h3><a href="#hf-discovery:Jata-AI/Jata-Talk-Mini" data-entry-link>Jata announces small Saudi TTS, but the pinned weights are missing</a></h3>
+        <p>Track for Saudi pronunciation tests, but wait for a downloadable model before attempting local evaluation. No measured latency, intelligibility or Arabic-English switching evidence is supplied.</p>
+      </article>
+      
+      <article class="brief-row">
+        <div class="meta"><span class="kind downloadable">Downloadable model</span><span class="focus">Priority</span></div>
+        <h3><a href="#hf-discovery:qalduaij/lolo_Q8y_voice" data-entry-link>lolo releases Kuwaiti Habibi-TTS fine-tune with conflicting terms</a></h3>
+        <p>Relevant dialect candidate for native listening, especially گ/چ distinctions. No held-out intelligibility, first-audio or Arabic-English benchmark is shown; English metadata alone is insufficient. Resolve upstream license compatibility before reuse.</p>
+      </article>
+      
+      <article class="brief-row">
+        <div class="meta"><span class="kind downloadable">Downloadable model</span><span class="focus">Priority</span></div>
+        <h3><a href="#hf-discovery:algerian-nlp/Hadra-TTS-kokoro" data-entry-link>EL-HARRACHI-Lite revises the Algerian Kokoro loading path</a></h3>
+        <p>A useful correction for evaluating the released fine-tune. Its partial Arabic-to-IPA mapping still enters an American-English KPipeline; inspect phonemes and obtain native listening checks before relying on it. French loanword handling does not establish Arabic-English support.</p>
+      </article>
+      
+      <article class="brief-row">
+        <div class="meta"><span class="kind downloadable">Downloadable model</span><span class="focus">Priority</span></div>
         <h3><a href="#hf-discovery:touati-kamel/Hadra-TTS-piper" data-entry-link>Hadra Piper adds a 75-clip Darja benchmark and clarifies personas</a></h3>
         <p>Use the prompts for dialect listening checks. French words are mapped into Arabic spelling; Arabic-English support remains unvalidated. The reported CPU RTF cannot establish conversational first-audio latency.</p>
-      </article>
-      
-      <article class="brief-row">
-        <div class="meta"><span class="kind downloadable">Downloadable model</span><span class="focus">Priority</span></div>
-        <h3><a href="#hf-discovery:algerian-nlp/Hadra-TTS-kokoro" data-entry-link>Hadra adapts Kokoro 82M to Algerian Darja</a></h3>
-        <p>A compact dialect candidate with documented Darja–French support. Arabic–English behavior remains an open evaluation question.</p>
-      </article>
-      
-      <article class="brief-row">
-        <div class="meta"><span class="kind downloadable">Downloadable model</span><span class="focus">Priority</span></div>
-        <h3><a href="#hf-discovery:touati-kamel/Hadra-TTS-kokoro" data-entry-link>Hadra Kokoro adds Darja samples, but its quickstart bypasses the checkpoint</a></h3>
-        <p>Inspect the released checkpoints directly before evaluating Darja. The recommended pipeline constructs KPipeline(lang_code=&#39;a&#39;) and uses am_adam without loading the Hadra checkpoint or voice tensors. Its results therefore cannot establish this fine-tune&#39;s behavior. Arabic-English remains untested.</p>
-      </article>
-      
-      <article class="brief-row">
-        <div class="meta"><span class="kind downloadable">Downloadable model</span></div>
-        <h3><a href="#hf-discovery:oguzeldereli/ttf-VoxCPM2" data-entry-link>Ternary VoxCPM2 revises its Chinese quality comparison</a></h3>
-        <p>The earlier apparent Chinese regression partly reflected ASR script and number formatting. The new small test does not establish broad quality parity, Arabic dialect quality or Arabic-English code-switching reliability.</p>
       </article>
       
     </section>
@@ -94,8 +94,8 @@
       
     </aside>
   </div>
-  <details class="health" open>
-    <summary><strong>Source checks</strong><span>13 of 14 complete · Last check <time datetime="2026-11-19T08:36:06.536612+02:00">19 Nov 2026, 08:36 Cairo</time></span></summary>
+  <details class="health">
+    <summary><strong>Source checks</strong><span>14 of 14 complete · Last check <time datetime="2026-11-22T08:54:04.135867+02:00">22 Nov 2026, 08:54 Cairo</time></span></summary>
     <ul>
       
       <li><strong>F5-TTS</strong><span>github</span><span class="ok">Ok</span></li>
@@ -124,12 +124,12 @@
       
       <li><strong>Google</strong><span>vendor</span><span class="ok">Ok</span></li>
       
-      <li><strong>arXiv</strong><span>arxiv</span><span class="failed">Failed</span></li>
+      <li><strong>arXiv</strong><span>arxiv</span><span class="ok">Ok</span></li>
       
     </ul>
   </details>
   <section id="timeline" class="timeline">
-    <div class="section-head"><h2>Timeline</h2><span id="shown" aria-live="polite">30 entries</span></div>
+    <div class="section-head"><h2>Timeline</h2><span id="shown" aria-live="polite">41 entries</span></div>
     <div class="toolbar">
       <label class="query"><span>Search updates</span><input id="search" type="search" placeholder="Model, topic, or keyword"></label>
       <div class="filters" aria-label="Entry filters">
@@ -142,6 +142,424 @@
       </div>
     </div>
     <div id="feed">
+    
+      
+      
+      <article id="hf-discovery:Jata-AI/Jata-Talk-Mini" class="entry" data-kind="downloadable" data-tags="Arabic|Licensing|Pronunciation">
+        
+        <time class="stamp" datetime="2026-11-21">21 Nov 2026</time>
+        
+        <div>
+          <div class="meta"><span class="kind downloadable">Downloadable model</span></div>
+          <h3>Jata announces small Saudi TTS, but the pinned weights are missing</h3>
+          <p>Jata-Talk-Mini advertises Saudi dialect and MSA, two synthetic voices, 8.76M parameters and 24 kHz mono CPU inference, based on tiny-voca.</p>
+          <p class="takeaway"><strong>Why it matters</strong> Track for Saudi pronunciation tests, but wait for a downloadable model before attempting local evaluation. No measured latency, intelligibility or Arabic-English switching evidence is supplied.</p>
+          <p><strong>Evidence</strong> The pinned card names models/jata-talk-mini.onnx (38.4 MB) and a SHA256. The pinned Hub file inventory contains scripts, frontend code and six audio samples, but no models directory or ONNX weights.</p>
+          
+          
+          <p class="licensing"><span>Weights · cc-by-nc-4.0</span><span>Repository is ungated; CC BY-NC 4.0 permits non-commercial use with attribution. The card directs commercial inquiries to Jata; public samples do not establish production readiness.</span></p>
+          
+          <div class="links">
+            
+            
+              
+              <a href="https://huggingface.co/Jata-AI/Jata-Talk-Mini" target="_blank" rel="noopener noreferrer">Source ↗</a>
+              
+              
+            
+              
+              <a href="https://huggingface.co/Jata-AI/Jata-Talk-Mini/blob/96e9013207799cc3ff9a8b2780ed30abccd10d16/README.md" target="_blank" rel="noopener noreferrer">Pinned model card ↗</a>
+              
+              
+            
+              
+              <a href="https://jata.sa/" target="_blank" rel="noopener noreferrer">Jata ↗</a>
+              
+              
+            
+              
+              <a href="https://huggingface.co/spaces/Jata-AI/Jata-Talk-Mini" target="_blank" rel="noopener noreferrer">demo Space ↗</a>
+              
+              
+            
+              
+              <a href="https://github.com/n4ze3m/tiny-voca" target="_blank" rel="noopener noreferrer">tiny-voca ↗</a>
+              
+              
+            
+              
+              <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener noreferrer">CC BY-NC 4.0 ↗</a>
+              
+              
+            
+              
+              <a href="https://huggingface.co/Jata-AI/Jata-Talk-Mini/resolve/main/samples/male-greeting.wav" target="_blank" rel="noopener noreferrer">Project or demo ↗</a>
+              
+              
+            
+              
+              <a href="https://huggingface.co/Jata-AI/Jata-Talk-Mini/resolve/main/samples/female-greeting.wav" target="_blank" rel="noopener noreferrer">Project or demo ↗</a>
+              
+              
+            
+              
+              <a href="https://huggingface.co/Jata-AI/Jata-Talk-Mini/resolve/main/samples/male-service.wav" target="_blank" rel="noopener noreferrer">Project or demo ↗</a>
+              
+              
+            
+              
+              <a href="https://huggingface.co/Jata-AI/Jata-Talk-Mini/resolve/main/samples/female-service.wav" target="_blank" rel="noopener noreferrer">Project or demo ↗</a>
+              
+              
+            
+              
+              <a href="https://huggingface.co/Jata-AI/Jata-Talk-Mini/tree/96e9013207799cc3ff9a8b2780ed30abccd10d16" target="_blank" rel="noopener noreferrer">Pinned artifact inventory ↗</a>
+              
+              
+            
+            
+          </div>
+          <ul class="tags" aria-label="Topics"><li>Arabic</li><li>Licensing</li><li>Pronunciation</li></ul>
+        </div>
+      </article>
+    
+      
+      
+      <article id="hf-discovery:oddadmix/tiny-voca-arabic" class="entry" data-kind="downloadable" data-tags="Arabic|Pronunciation|Evaluation|Training">
+        
+        <time class="stamp" datetime="2026-11-21">21 Nov 2026</time>
+        
+        <div>
+          <div class="meta"><span class="kind downloadable">Downloadable model</span></div>
+          <h3>tiny-voca-arabic adds automatic diacritization to a 4.5M MSA model</h3>
+          <p>A separate from-scratch tiny-voca port publishes PyTorch and ONNX weights for one synthetic MSA voice at 24 kHz, with CATT diacritization, number expansion and a rule-based phonetic frontend.</p>
+          <p class="takeaway"><strong>Why it matters</strong> Useful compact MSA frontend reference. Dialects are read with MSA rules and Latin script is skipped, so English words in mixed prompts can disappear. Correct tashkeel manually when automatic readings fail.</p>
+          <p><strong>Evidence</strong> Uploader reports 89 hours/45,737 training clips. On 25 held-out dialogue test clips, Whisper-large-v3 gives 1.8% CER and 2.4% WER after removing diacritics/punctuation; original-recording CER is 2.1%. Eight new sentences give 0.3% CER. The claimed roughly 200x real time on two CPU threads lacks CPU model, warm-up, concurrency and first-audio timing.</p>
+          
+          
+          <p class="licensing"><span>Weights · apache-2.0</span><span>Ungated Apache-2.0 release; single synthetic voice. The card&#39;s synthetic-data description does not independently establish teacher or voice provenance.</span></p>
+          
+          <div class="links">
+            
+            
+              
+              <a href="https://huggingface.co/oddadmix/tiny-voca-arabic" target="_blank" rel="noopener noreferrer">Source ↗</a>
+              
+              
+            
+              
+              <a href="https://huggingface.co/oddadmix/tiny-voca-arabic/blob/e529f716965142f51835adc9e5661f224c3fa103/README.md" target="_blank" rel="noopener noreferrer">Pinned model card ↗</a>
+              
+              
+            
+              
+              <a href="https://huggingface.co/n4ze3m/tiny-voca" target="_blank" rel="noopener noreferrer">tiny-voca ↗</a>
+              
+              
+            
+              
+              <a href="https://huggingface.co/n4ze3m" target="_blank" rel="noopener noreferrer">@n4ze3m ↗</a>
+              
+              
+            
+              
+              <a href="https://github.com/n4ze3m/tiny-voca" target="_blank" rel="noopener noreferrer">github.com/n4ze3m/tiny-voca ↗</a>
+              
+              
+            
+              
+              <a href="https://huggingface.co/oddadmix/tiny-voca-arabic/blob/e529f716965142f51835adc9e5661f224c3fa103/README.md#changes-from-tiny-voca" target="_blank" rel="noopener noreferrer">Changes from tiny-voca ↗</a>
+              
+              
+            
+              
+              <a href="https://huggingface.co/spaces/oddadmix/tiny-voca-arabic" target="_blank" rel="noopener noreferrer">Demo ↗</a>
+              
+              
+            
+              
+              <a href="https://huggingface.co/datasets/oddadmix/msa-duplex-assistant-tts" target="_blank" rel="noopener noreferrer">Dataset ↗</a>
+              
+              
+            
+              
+              <a href="https://huggingface.co/oddadmix/tiny-voca-arabic/blob/e529f716965142f51835adc9e5661f224c3fa103/samples/sample-0.wav" target="_blank" rel="noopener noreferrer">sample-0.wav ↗</a>
+              
+              
+            
+              
+              <a href="https://huggingface.co/oddadmix/tiny-voca-arabic/blob/e529f716965142f51835adc9e5661f224c3fa103/samples/sample-1.wav" target="_blank" rel="noopener noreferrer">sample-1.wav ↗</a>
+              
+              
+            
+            <a href="#hf-discovery:abdullah/tiny-voca-ar" data-entry-link>tiny-voca-ar releases a 4.5M MSA model with unresolved voice rights</a>
+          </div>
+          <ul class="tags" aria-label="Topics"><li>Arabic</li><li>Pronunciation</li><li>Evaluation</li><li>Training</li></ul>
+        </div>
+      </article>
+    
+      
+      
+      <article id="hf-discovery:qalduaij/lolo_Q8y_voice" class="entry" data-kind="downloadable" data-tags="Arabic|Pronunciation|Training|Licensing">
+        
+        <time class="stamp" datetime="2026-11-20">20 Nov 2026</time>
+        
+        <div>
+          <div class="meta"><span class="kind downloadable">Downloadable model</span></div>
+          <h3>lolo releases Kuwaiti Habibi-TTS fine-tune with conflicting terms</h3>
+          <p>The Kuwaiti broadcast/conversational release provides final and stage-one checkpoints, a 2,730-token vocabulary and a spelling helper for dialectal consonants, using Habibi-TTS/F5 architecture and a 24 kHz Vocos vocoder.</p>
+          <p class="takeaway"><strong>Why it matters</strong> Relevant dialect candidate for native listening, especially گ/چ distinctions. No held-out intelligibility, first-audio or Arabic-English benchmark is shown; English metadata alone is insufficient. Resolve upstream license compatibility before reuse.</p>
+          <p><strong>Evidence</strong> Uploader describes 62.01 hours/21,816 clips of stage-one training followed by 4.78 hours/1,867 dialect-focused clips. The card requires a user-supplied reference voice and transcript; no training/reference audio is distributed.</p>
+          
+          
+          <p class="licensing"><span>Weights · lolo-q8y-voice-inference-only-nc-nd-1.0 (declared); upstream cc-by-nc-sa-4.0</span><span>Ungated despite extra_gated metadata. Declared custom license permits non-commercial inference only and prohibits fine-tuning, derivatives and distillation. Habibi-TTS declares CC BY-NC-SA 4.0; the downstream no-derivatives restrictions conflict with the base&#39;s share-alike terms unless separately authorized.</span></p>
+          
+          <div class="links">
+            
+            
+              
+              <a href="https://huggingface.co/qalduaij/lolo_Q8y_voice" target="_blank" rel="noopener noreferrer">Source ↗</a>
+              
+              
+            
+              
+              <a href="https://huggingface.co/qalduaij/lolo_Q8y_voice/blob/42bb71fb47dac71348e3df9f846775c9d6bc3d8e/README.md" target="_blank" rel="noopener noreferrer">Pinned model card ↗</a>
+              
+              
+            
+              
+              <a href="https://huggingface.co/qalduaij/lolo_Q8y_voice/blob/42bb71fb47dac71348e3df9f846775c9d6bc3d8e/README.md#-%D9%86%D8%A8%D8%B0%D8%A9-%D8%B9%D9%86-%D8%A7%D9%84%D9%86%D9%85%D9%88%D8%B0%D8%AC--%D9%87%D9%88%D9%8A%D8%A9-%D8%A7%D9%84%D9%86%D9%85%D9%88%D8%B0%D8%AC-%D9%88%D8%B1%D8%B3%D8%A7%D9%84%D8%AA%D9%87" target="_blank" rel="noopener noreferrer"> 🇰🇼 القسم العربي ↗</a>
+              
+              
+            
+              
+              <a href="https://huggingface.co/qalduaij/lolo_Q8y_voice/blob/42bb71fb47dac71348e3df9f846775c9d6bc3d8e/README.md#-model-overview--mission-english" target="_blank" rel="noopener noreferrer"> 🌐 English Documentation ↗</a>
+              
+              
+            
+              
+              <a href="https://huggingface.co/qalduaij/lolo_Q8y_voice/blob/42bb71fb47dac71348e3df9f846775c9d6bc3d8e/README.md#-%D8%B4%D8%B1%D9%88%D8%B7-%D8%A7%D9%84%D8%AA%D8%B1%D8%AE%D9%8A%D8%B5-%D9%88%D8%AD%D9%85%D8%A7%D9%8A%D8%A9-%D8%A7%D9%84%D8%AD%D9%82%D9%88%D9%82-license--ip-protection" target="_blank" rel="noopener noreferrer"> ⚖️ شروط الترخيص وحماية الحقوق ↗</a>
+              
+              
+            
+              
+              <a href="https://huggingface.co/qalduaij/lolo_Q8y_voice/blob/42bb71fb47dac71348e3df9f846775c9d6bc3d8e/LICENSE" target="_blank" rel="noopener noreferrer">LICENSE ↗</a>
+              
+              
+            
+              
+              <a href="https://huggingface.co/qalduaij/lolo_Q8y_Dialect_v2" target="_blank" rel="noopener noreferrer">`qalduaij/lolo_Q8y_Dialect_v2` ↗</a>
+              
+              
+            
+              
+              <a href="https://huggingface.co/qalduaij/lolo_Q8y_Dialect_v3_31B" target="_blank" rel="noopener noreferrer">`qalduaij/lolo_Q8y_Dialect_v3_31B` ↗</a>
+              
+              
+            
+              
+              <a href="https://huggingface.co/qalduaij/lolo_Q8y_Dialect_v4_26B_A4B" target="_blank" rel="noopener noreferrer">`qalduaij/lolo_Q8y_Dialect_v4_26B_A4B` ↗</a>
+              
+              
+            
+              
+              <a href="https://huggingface.co/qalduaij/lolo_Q8y_Dialect_v5_E2B" target="_blank" rel="noopener noreferrer">`qalduaij/lolo_Q8y_Dialect_v5_E2B` ↗</a>
+              
+              
+            
+              
+              <a href="https://huggingface.co/SWivid/Habibi-TTS" target="_blank" rel="noopener noreferrer">Upstream Habibi-TTS terms ↗</a>
+              
+              
+            
+              
+            
+            
+          </div>
+          <ul class="tags" aria-label="Topics"><li>Arabic</li><li>Pronunciation</li><li>Training</li><li>Licensing</li></ul>
+        </div>
+      </article>
+    
+      
+      
+      <article id="hf-discovery:algerian-nlp/Hadra-TTS-kokoro" class="entry" data-kind="downloadable" data-tags="Arabic|Code-switching|Pronunciation|Evaluation">
+        
+        <time class="stamp" datetime="2026-11-20">20 Nov 2026</time>
+        
+        <div>
+          <div class="meta"><span class="kind downloadable">Downloadable model</span></div>
+          <h3>EL-HARRACHI-Lite revises the Algerian Kokoro loading path</h3>
+          <p>The renamed 82M Darija card now loads its own config, checkpoint and voice tensor into KModel/KPipeline. It explicitly marks MOS, ASR intelligibility and speaker similarity unmeasured, replacing the earlier impression of validated speech quality.</p>
+          <p class="takeaway"><strong>Why it matters</strong> A useful correction for evaluating the released fine-tune. Its partial Arabic-to-IPA mapping still enters an American-English KPipeline; inspect phonemes and obtain native listening checks before relying on it. French loanword handling does not establish Arabic-English support.</p>
+          <p><strong>Evidence</strong> Pinned card ships three voice tensors and 24 kHz output; 75 generated waveforms provide spectral/clipping diagnostics only. The Hadra-TTS-kokoro and EL-HARRACHI-Lite candidates share the same revision and listed artifact hashes.</p>
+          
+          
+          <p class="licensing"><span>Weights · apache-2.0</span><span>Ungated Apache-2.0 weights based on Kokoro-82M. Podcast/story dataset listings do not establish complete speaker or data permissions.</span></p>
+          
+          <div class="links">
+            
+            
+              
+              <a href="https://huggingface.co/algerian-nlp/Hadra-TTS-kokoro" target="_blank" rel="noopener noreferrer">Source ↗</a>
+              
+              
+            
+              
+              <a href="https://huggingface.co/algerian-nlp/Hadra-TTS-kokoro/blob/5eea79a411875b4585aecf57a1f9b49f0e2ffc1a/README.md" target="_blank" rel="noopener noreferrer">Pinned model card ↗</a>
+              
+              
+            
+              
+              <a href="https://huggingface.co/algerian-nlp/EL-HARRACHI" target="_blank" rel="noopener noreferrer">algerian-nlp/EL-HARRACHI ↗</a>
+              
+              
+            
+              
+              <a href="https://huggingface.co/algerian-nlp/EL-HARRACHI-Lite" target="_blank" rel="noopener noreferrer">Project or demo ↗</a>
+              
+              
+            
+              
+              <a href="https://huggingface.co/hexgrad/Kokoro-82M" target="_blank" rel="noopener noreferrer">Project or demo ↗</a>
+              
+              
+            
+              
+            
+              
+              <a href="https://huggingface.co/algerian-nlp/EL-HARRACHI-Lite/blob/5eea79a411875b4585aecf57a1f9b49f0e2ffc1a/README.md" target="_blank" rel="noopener noreferrer">Pinned model card ↗</a>
+              
+              
+            
+              
+            
+              
+            
+            <a href="#hf-discovery:touati-kamel/Hadra-TTS-kokoro" data-entry-link>Hadra Kokoro adds Darja samples, but its quickstart bypasses the checkpoint</a>
+          </div>
+          <ul class="tags" aria-label="Topics"><li>Arabic</li><li>Code-switching</li><li>Pronunciation</li><li>Evaluation</li></ul>
+        </div>
+      </article>
+    
+      
+      
+      <article id="hf-discovery:Ekam/Libra-TTS" class="entry" data-kind="downloadable" data-tags="Arabic|Languages|Real-time|Training|Evaluation">
+        
+        <time class="stamp" datetime="2026-11-19">19 Nov 2026</time>
+        
+        <div>
+          <div class="meta"><span class="kind downloadable">Downloadable model</span></div>
+          <h3>Libra-TTS distills Qwen3-TTS and adds Arabic support</h3>
+          <p>Libra releases a 307M talker/predictor distilled from a fine-tuned Qwen3-TTS teacher plus a separate 114M codec decoder, with eight voices, 16 claimed languages and MLX, CUDA and ONNX inference paths.</p>
+          <p class="takeaway"><strong>Why it matters</strong> A compact multilingual candidate for local testing. Automatic language detection is sentence-by-sentence; within-sentence Arabic-English switching and dialect quality remain unvalidated. Report its total roughly 421M parameters when comparing complete systems.</p>
+          <p><strong>Evidence</strong> Author reports Arabic WER 2.34%, but the card does not specify that subset&#39;s size. The 1.77% ten-language average excludes Arabic (100 MiniMax sentences per language). On 20 English sentences, RTX 3090 generation is 8.7x real time; 64-utterance batching reaches 72x. These are throughput results, not TTFA. Mac CPU ONNX claim is 2.4x real time.</p>
+          
+          
+          <p class="licensing"><span>Weights · apache-2.0</span><span>Ungated Apache-2.0 weights with Qwen3-TTS lineage. Training uses over 9,000 hours of teacher-generated speech; card metrics are author-reported, not independently reproduced.</span></p>
+          
+          <div class="links">
+            
+            
+              
+              <a href="https://huggingface.co/Ekam/Libra-TTS" target="_blank" rel="noopener noreferrer">Source ↗</a>
+              
+              
+            
+              
+              <a href="https://huggingface.co/Ekam/Libra-TTS/blob/b2cd2a0d501f4816255a6adfbf19804477895b2a/README.md" target="_blank" rel="noopener noreferrer">Pinned model card ↗</a>
+              
+              
+            
+              
+              <a href="https://img.shields.io/badge/Try%20it-live%20demo-2F64CF?style=for-the-badge&amp;logo=huggingface&amp;logoColor=white" target="_blank" rel="noopener noreferrer">![Try it live ↗</a>
+              
+              
+            
+              
+              <a href="https://img.shields.io/badge/GitHub-Code-181717?style=for-the-badge&amp;logo=github&amp;logoColor=white" target="_blank" rel="noopener noreferrer">![Code on GitHub ↗</a>
+              
+              
+            
+              
+              <a href="https://img.shields.io/badge/%E2%96%B6%20Listen-13%20samples-8B7BFF?style=for-the-badge" target="_blank" rel="noopener noreferrer">![Listen to 13 samples ↗</a>
+              
+              
+            
+              
+              <a href="https://img.shields.io/badge/License-Apache%202.0-2F80ED" target="_blank" rel="noopener noreferrer">![License: Apache 2.0 ↗</a>
+              
+              
+            
+              
+              <a href="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fhuggingface.co%2Fapi%2Fmodels%2FEkam%2FLibra-TTS&amp;query=%24.downloads&amp;label=downloads&amp;color=FFD21E&amp;logo=huggingface&amp;logoColor=black" target="_blank" rel="noopener noreferrer">![Downloads ↗</a>
+              
+              
+            
+              
+              <a href="https://img.shields.io/github/stars/ekambrar100/Libra-TTS?logo=github&amp;color=181717" target="_blank" rel="noopener noreferrer">![GitHub stars ↗</a>
+              
+              
+            
+              
+              <a href="https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice" target="_blank" rel="noopener noreferrer">Qwen3-TTS-12Hz-1.7B ↗</a>
+              
+              
+            
+              
+              <a href="https://huggingface.co/spaces/Ekam/Libra-TTS" target="_blank" rel="noopener noreferrer">Project or demo ↗</a>
+              
+              
+            
+              
+              <a href="https://github.com/ekambrar100/Libra-TTS" target="_blank" rel="noopener noreferrer">Inference code ↗</a>
+              
+              
+            
+            
+          </div>
+          <ul class="tags" aria-label="Topics"><li>Arabic</li><li>Languages</li><li>Real-time</li><li>Training</li><li>Evaluation</li></ul>
+        </div>
+      </article>
+    
+      
+      
+      <article id="arxiv:2611.25521" class="entry" data-kind="paper" data-tags="Real-time|Evaluation">
+        
+        <time class="stamp" datetime="2026-11-19">19 Nov 2026</time>
+        
+        <div>
+          <div class="meta"><span class="kind paper">Research paper</span><span>Preprint</span></div>
+          <h3>DRVEXO reports one warm 390 ms first-PCM synthesis on GB10</h3>
+          <p>The modular speech-vision assistant uses explicit text boundaries for incremental reference-conditioned speech output. Weights and code are planned, with no public release identifier assigned.</p>
+          <p class="takeaway"><strong>Why it matters</strong> Treat this as a feasibility trace, not a latency distribution or end-to-end voice-agent result. Conversational traces use a separate pre-merge runtime; text throughput is not speech concurrency.</p>
+          <p><strong>Evidence</strong> One warm fixed-text request on NVIDIA GB10 receives first PCM 390 ms after local HTTP submission, completes in 1.305 s and produces 2.48 s audio (RTF 0.53). Separate reference-runtime text-reply and audio-plus-image cases receive first PCM at 1.160 s and 4.544 s. No cold/warm percentiles, microphone-to-speaker timing or speech-quality evaluation is supplied.</p>
+          
+          
+          <p class="licensing"><span>Apache-2.0 release is a plan retaining upstream terms, not currently verified downloadable weights.</span></p>
+          
+          <div class="links">
+            
+            
+              
+              <a href="https://arxiv.org/abs/2611.25521" target="_blank" rel="noopener noreferrer">Source ↗</a>
+              
+              
+            
+              
+              <a href="https://arxiv.org/abs/2611.25521v1" target="_blank" rel="noopener noreferrer">Revision ↗</a>
+              
+              
+            
+              
+              <a href="https://arxiv.org/html/2611.25521v1" target="_blank" rel="noopener noreferrer">Measurement conditions and limitations ↗</a>
+              
+              
+            
+            
+          </div>
+          <ul class="tags" aria-label="Topics"><li>Real-time</li><li>Evaluation</li></ul>
+        </div>
+      </article>
     
       
       
@@ -221,9 +639,47 @@
               
               
             
-            <a href="#hf-discovery:algerian-nlp/Hadra-TTS-kokoro" data-entry-link>Hadra adapts Kokoro 82M to Algerian Darja</a>
+            <a href="#hf-discovery:algerian-nlp/Hadra-TTS-kokoro" data-entry-link>EL-HARRACHI-Lite revises the Algerian Kokoro loading path</a>
           </div>
           <ul class="tags" aria-label="Topics"><li>Arabic</li><li>Code-switching</li><li>Real-time</li><li>Evaluation</li><li>Licensing</li></ul>
+        </div>
+      </article>
+    
+      
+      
+      <article id="arxiv:2611.24094" class="entry" data-kind="paper" data-tags="Real-time|Cloning|Evaluation">
+        
+        <time class="stamp" datetime="2026-11-18">18 Nov 2026</time>
+        
+        <div>
+          <div class="meta"><span class="kind paper">Research paper</span><span>Preprint</span></div>
+          <h3>21Codec moves speaker identity into the streaming decoder</h3>
+          <p>Lindevelt and colleagues use adversarial speaker suppression and formant-shift augmentation to reduce identity recoverable from codec tokens, supplying a speaker embedding to the decoder instead.</p>
+          <p class="takeaway"><strong>Why it matters</strong> A concrete codec experiment for reducing voice drift across streamed chunks. Decoder timings exclude text-to-token generation and network/player delay; no Arabic-specific result establishes transfer.</p>
+          <p><strong>Evidence</strong> At 24 kHz and 0.8 kbps, batch-one ONNX decoding of 160 ms chunks reports RTF 0.129 on i9-13900K and 0.035 on RTX 4090. A 30-speaker English chunk sweep gives similarity 0.875 at 160 ms versus 0.881 non-causal. Five-language stability tests and listener re-voicing tests support identity control; cross-speaker re-voicing raises English WER from 0.099 to 0.140 versus same-speaker conditioning.</p>
+          
+          
+          <div class="links">
+            
+            
+              
+              <a href="https://arxiv.org/abs/2611.24094" target="_blank" rel="noopener noreferrer">Source ↗</a>
+              
+              
+            
+              
+              <a href="https://arxiv.org/abs/2611.24094v1" target="_blank" rel="noopener noreferrer">Revision ↗</a>
+              
+              
+            
+              
+              <a href="https://arxiv.org/html/2611.24094v1" target="_blank" rel="noopener noreferrer">Full codec evaluation ↗</a>
+              
+              
+            
+            <a href="#arxiv:2611.24125" data-entry-link>Layer-wise prompting exposes a voice-versus-style conditioning trade-off</a>
+          </div>
+          <ul class="tags" aria-label="Topics"><li>Real-time</li><li>Cloning</li><li>Evaluation</li></ul>
         </div>
       </article>
     
@@ -382,36 +838,39 @@
     
       
       
-      <article id="hf-discovery:algerian-nlp/Hadra-TTS-kokoro" class="entry" data-kind="downloadable" data-tags="Arabic|Code-switching|Pronunciation">
+      <article id="arxiv:2611.24125" class="entry" data-kind="paper" data-tags="Training|Cloning|Evaluation">
         
-        <time class="stamp" datetime="2026-11-17">17 Nov 2026</time>
+        <time class="stamp" datetime="2026-11-18">18 Nov 2026</time>
         
         <div>
-          <div class="meta"><span class="kind downloadable">Downloadable model</span></div>
-          <h3>Hadra adapts Kokoro 82M to Algerian Darja</h3>
-          <p>The model card describes three speaker personas, Algerian phonology, and support for French code-switching.</p>
-          <p class="takeaway"><strong>Why it matters</strong> A compact dialect candidate with documented Darja–French support. Arabic–English behavior remains an open evaluation question.</p>
+          <div class="meta"><span class="kind paper">Research paper</span><span>Preprint</span></div>
+          <h3>Layer-wise prompting exposes a voice-versus-style conditioning trade-off</h3>
+          <p>Lindevelt and colleagues compare concatenated, equal, style-early and voice-early prompt conditioning through fixed layer gates in a six-block codec-token TTS decoder.</p>
+          <p class="takeaway"><strong>Why it matters</strong> Conditioning depth is an experimental control when style prompts disturb agent voice identity. Both voice preservation and style expressiveness benefit from early layers, so the result is a trade-off rather than one universally best order.</p>
+          <p><strong>Evidence</strong> English LibriTTS-R/LibriTTS-P: 515.1 hours, 2,295 speakers. Voice-early minimizes drift across ECAPA-TDNN, TitaNet and WavLM; style-early favors style spread. Mixed-effects comparisons and cluster-robust checks support conditioning effects, but proxy metrics do not establish Arabic transfer or perceptual superiority.</p>
           
-          
-          
-          <p class="licensing"><span>Weights · apache-2.0</span></p>
           
           <div class="links">
             
             
               
-              <a href="https://huggingface.co/algerian-nlp/Hadra-TTS-kokoro" target="_blank" rel="noopener noreferrer">Source ↗</a>
+              <a href="https://arxiv.org/abs/2611.24125" target="_blank" rel="noopener noreferrer">Source ↗</a>
               
               
             
               
-              <a href="https://huggingface.co/algerian-nlp/Hadra-TTS-kokoro/blob/1ebf113332b25dcd6709142e844a7d7e9b1321e1/README.md" target="_blank" rel="noopener noreferrer">Pinned model card ↗</a>
+              <a href="https://arxiv.org/abs/2611.24125v1" target="_blank" rel="noopener noreferrer">Revision ↗</a>
               
               
             
+              
+              <a href="https://arxiv.org/html/2611.24125v1" target="_blank" rel="noopener noreferrer">Full methods and results ↗</a>
+              
+              
             
+            <a href="#arxiv:2611.24094" data-entry-link>21Codec moves speaker identity into the streaming decoder</a>
           </div>
-          <ul class="tags" aria-label="Topics"><li>Arabic</li><li>Code-switching</li><li>Pronunciation</li></ul>
+          <ul class="tags" aria-label="Topics"><li>Training</li><li>Cloning</li><li>Evaluation</li></ul>
         </div>
       </article>
     
@@ -628,6 +1087,51 @@
     
       
       
+      <article id="hf-discovery:touati-kamel/Hadra-TTS-xtts" class="entry" data-kind="downloadable" data-tags="Arabic|Code-switching|Cloning|Evaluation|Licensing">
+        
+        <time class="stamp" datetime="2026-11-16">16 Nov 2026</time>
+        
+        <div>
+          <div class="meta"><span class="kind downloadable">Downloadable model</span></div>
+          <h3>Hadra XTTS publishes Algerian cloning and French-switching examples</h3>
+          <p>An XTTS-v2 Darja fine-tune publishes model assets and reference-conditioned synthesis examples with French loanwords, alongside a 75-generation stress-suite report.</p>
+          <p class="takeaway"><strong>Why it matters</strong> Evaluate Darja pronunciation and loanwords with native listeners. The frontend folds گ to ق, ڤ to ف and پ to ب to fit vocabulary; those mappings need phonetic checks. Arabic-English capability remains untested.</p>
+          <p><strong>Evidence</strong> Uploader describes 10 epochs over 10,000 podcast/story clips and reports average generation RTF 0.262 on NVIDIA T4 across 25 prompts and three personas. Warm-up, concurrency and TTFA are absent. Spectral metrics and the claimed 75/75 pass do not establish MOS or intelligibility. Card describes 22.05 kHz internal processing and upsampled 24 kHz output.</p>
+          
+          
+          <p class="licensing"><span>Weights · CPML-1.0.0</span><span>Ungated CPML-1.0.0 weights inherit XTTS-v2 terms; do not treat these as Apache/MIT commercial weights. Corpus descriptions do not establish speaker consent or complete data rights.</span></p>
+          
+          <div class="links">
+            
+            
+              
+              <a href="https://huggingface.co/touati-kamel/Hadra-TTS-xtts" target="_blank" rel="noopener noreferrer">Source ↗</a>
+              
+              
+            
+              
+              <a href="https://huggingface.co/touati-kamel/Hadra-TTS-xtts/blob/68831e82195b34cbf7d1c90179b1ebe75dc27b4e/README.md" target="_blank" rel="noopener noreferrer">Pinned model card ↗</a>
+              
+              
+            
+              
+              <a href="https://coqui.ai/cpml" target="_blank" rel="noopener noreferrer">Project or demo ↗</a>
+              
+              
+            
+              
+              <a href="https://hadra-xtts-benchmark.netlify.app/" target="_blank" rel="noopener noreferrer">Project or demo ↗</a>
+              
+              
+            
+            <a href="#hf-discovery:touati-kamel/Hadra-TTS-kokoro" data-entry-link>Hadra Kokoro adds Darja samples, but its quickstart bypasses the checkpoint</a><a href="#hf-discovery:touati-kamel/Hadra-TTS-piper" data-entry-link>Hadra Piper adds a 75-clip Darja benchmark and clarifies personas</a>
+          </div>
+          <ul class="tags" aria-label="Topics"><li>Arabic</li><li>Code-switching</li><li>Cloning</li><li>Evaluation</li><li>Licensing</li></ul>
+        </div>
+      </article>
+    
+      
+      
       <article id="hf-discovery:touati-kamel/Hadra-TTS-kokoro" class="entry" data-kind="downloadable" data-tags="Arabic|Code-switching|Pronunciation|Evaluation">
         
         <time class="stamp" datetime="2026-11-16">16 Nov 2026</time>
@@ -669,9 +1173,106 @@
             
               
             
-            <a href="#hf-discovery:algerian-nlp/Hadra-TTS-kokoro" data-entry-link>Hadra adapts Kokoro 82M to Algerian Darja</a><a href="#hf-discovery:touati-kamel/Hadra-TTS-piper" data-entry-link>Hadra Piper adds a 75-clip Darja benchmark and clarifies personas</a>
+            <a href="#hf-discovery:algerian-nlp/Hadra-TTS-kokoro" data-entry-link>EL-HARRACHI-Lite revises the Algerian Kokoro loading path</a><a href="#hf-discovery:touati-kamel/Hadra-TTS-piper" data-entry-link>Hadra Piper adds a 75-clip Darja benchmark and clarifies personas</a>
           </div>
           <ul class="tags" aria-label="Topics"><li>Arabic</li><li>Code-switching</li><li>Pronunciation</li><li>Evaluation</li></ul>
+        </div>
+      </article>
+    
+      
+      
+      <article id="hf-discovery:FireRedTeam/FireRedTTS3-Instruct-HF" class="entry" data-kind="downloadable" data-tags="Real-time|API|Cloning|Licensing">
+        
+        <time class="stamp" datetime="2026-11-16">16 Nov 2026</time>
+        
+        <div>
+          <div class="meta"><span class="kind downloadable">Downloadable model</span></div>
+          <h3>FireRedTTS3 adds official SGLang Omni streaming checkpoints</h3>
+          <p>Official HF-format Base and Instruct releases document reference cloning through HTTP and WebSocket serving. Instruct also exposes voice design and semantic/acoustic editing; streamed output is 24 kHz mono signed PCM16.</p>
+          <p class="takeaway"><strong>Why it matters</strong> A concrete serving integration worth testing for streaming applications. Download configuration, tokenizer and RedAE assets, plus CAM++ for Base; a root safetensors file alone is insufficient. No runtime latency or Arabic support is established by these cards.</p>
+          <p><strong>Evidence</strong> Cards specify Linux, NVIDIA CUDA and Python 3.12, /v1/audio/speech and a WebSocket stream route. Cloning requires one recording with its actual transcript. Instruct documents flow_mode: fp32 as the supported default and distinguishes serving-runtime evaluation from original model-quality results.</p>
+          
+          
+          <p class="licensing"><span>Weights · apache-2.0 (declared; academic-cloning disclaimer)</span><span>Ungated weights declare Apache-2.0, while the usage disclaimer describes zero-shot cloning as solely for academic research. Preserve that inconsistency in deployment review.</span></p>
+          
+          <div class="links">
+            
+            
+              
+              <a href="https://huggingface.co/FireRedTeam/FireRedTTS3-Instruct-HF" target="_blank" rel="noopener noreferrer">Source ↗</a>
+              
+              
+            
+              
+              <a href="https://huggingface.co/FireRedTeam/FireRedTTS3-Instruct-HF/blob/1fa25f92a13679e6f1a52a867197a6d3b4ebfef7/README.md" target="_blank" rel="noopener noreferrer">Pinned model card ↗</a>
+              
+              
+            
+              
+              <a href="https://github.com/sgl-project/sglang-omni" target="_blank" rel="noopener noreferrer">SGLang Omni ↗</a>
+              
+              
+            
+              
+              <a href="https://github.com/FireRedTeam/FireRedTTS3" target="_blank" rel="noopener noreferrer">FireRedTTS3 source code ↗</a>
+              
+              
+            
+              
+              <a href="https://huggingface.co/FireRedTeam/FireRedTTS3" target="_blank" rel="noopener noreferrer">Original FireRedTTS3 weights and model card ↗</a>
+              
+              
+            
+              
+              <a href="https://github.com/sgl-project/sglang-omni/blob/main/docs/get_started/installation.md" target="_blank" rel="noopener noreferrer">SGLang Omni installation guide ↗</a>
+              
+              
+            
+              
+              <a href="https://github.com/sgl-project/sglang-omni/blob/main/docs/basic_usage/tts.md#websocket-speech-streaming" target="_blank" rel="noopener noreferrer">WebSocket protocol ↗</a>
+              
+              
+            
+              
+              <a href="https://github.com/sgl-project/sglang-omni/blob/main/docs/cookbook/firered_tts3.md" target="_blank" rel="noopener noreferrer">FireRedTTS3 cookbook ↗</a>
+              
+              
+            
+              
+              <a href="https://github.com/QwenLM/Qwen3" target="_blank" rel="noopener noreferrer">Qwen3 ↗</a>
+              
+              
+            
+              
+              <a href="https://github.com/QwenLM/Qwen2-Audio" target="_blank" rel="noopener noreferrer">Qwen2-Audio ↗</a>
+              
+              
+            
+              
+            
+              
+              <a href="https://huggingface.co/FireRedTeam/FireRedTTS3-Base-HF/blob/e4133ef7fc8edb61883da42c584deb72f28c8c5a/README.md" target="_blank" rel="noopener noreferrer">Base checkpoint ↗</a>
+              
+              
+            
+              
+            
+              
+              <a href="https://huggingface.co/FireRedTeam/FireRedTTS3-Base-HF" target="_blank" rel="noopener noreferrer">Source ↗</a>
+              
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+            
+          </div>
+          <ul class="tags" aria-label="Topics"><li>Real-time</li><li>API</li><li>Cloning</li><li>Licensing</li></ul>
         </div>
       </article>
     
@@ -705,6 +1306,48 @@
             
           </div>
           <ul class="tags" aria-label="Topics"><li>Cloning</li><li>Evaluation</li></ul>
+        </div>
+      </article>
+    
+      
+      
+      <article id="hf-discovery:mahmoudalrefaey/amina-tts" class="entry" data-kind="downloadable" data-tags="Arabic|Code-switching|Training|Licensing">
+        
+        <time class="stamp" datetime="2026-11-15">15 Nov 2026</time>
+        
+        <div>
+          <div class="meta"><span class="kind downloadable">Downloadable model</span></div>
+          <h3>Amina targets Egyptian bank-support speech with mixed-script examples</h3>
+          <p>Amina fine-tunes VoiceTut-TTS/OmniVoice 0.6B on Egyptian podcast speech and one female customer-service voice. The card identifies the root checkpoint as step 3000 of 5000; a separate checkpoint-5000 directory also exists.</p>
+          <p class="takeaway"><strong>Why it matters</strong> The sample sentence embeds &#39;Overdraft&#39; in Egyptian Arabic, making this a relevant code-switching test candidate. That example is not an intelligibility or mixed-language benchmark, and the Arabic normalizer&#39;s treatment of English must be checked.</p>
+          <p><strong>Evidence</strong> Pinned card names ehabnegm/masri-podcast-300h-egyptian-tts and KickItLikeShika/NileTTS-dataset SPEAKER_02. Its example supplies amina_ref audio/transcript, language arz and 24 kHz output. No held-out listening, WER/CER, TTFA or concurrency result is reported.</p>
+          
+          
+          <p class="licensing"><span>Weights · cc-by-nc-4.0</span><span>Ungated CC BY-NC 4.0; author explicitly limits use to research because training data is non-commercial. Reference voice and data rights need clearance for client use.</span></p>
+          
+          <div class="links">
+            
+            
+              
+              <a href="https://huggingface.co/mahmoudalrefaey/amina-tts" target="_blank" rel="noopener noreferrer">Source ↗</a>
+              
+              
+            
+              
+              <a href="https://huggingface.co/mahmoudalrefaey/amina-tts/blob/34d13fa7b9c55d6e63dcd335f4e15002a5349dae/README.md" target="_blank" rel="noopener noreferrer">Pinned model card ↗</a>
+              
+              
+            
+              
+              <a href="https://huggingface.co/mohammedaly22/VoiceTut-TTS" target="_blank" rel="noopener noreferrer">mohammedaly22/VoiceTut-TTS ↗</a>
+              
+              
+            
+              
+            
+            
+          </div>
+          <ul class="tags" aria-label="Topics"><li>Arabic</li><li>Code-switching</li><li>Training</li><li>Licensing</li></ul>
         </div>
       </article>
     
@@ -1736,14 +2379,57 @@
         </div>
       </article>
     
+      
+      
+      <article id="arxiv:2510.02848" class="entry" data-kind="paper" data-tags="Training|Cloning|Evaluation">
+        
+        <time class="stamp" datetime="2025-10-03">03 Oct 2025</time>
+        
+        <div>
+          <div class="meta"><span class="kind paper">Research paper</span><span>Preprint</span></div>
+          <h3>Rhythm-TTS revision separates codec planning from latent generation</h3>
+          <p>The November 19 revision of Flamed-TTS, now Rhythm-TTS, details shortcut continuous-latent generation from a codec-token prior and probabilistic duration/silence planning.</p>
+          <p class="takeaway"><strong>Why it matters</strong> A useful controlled test of the codec reconstruction bottleneck. English results do not establish conversational, Arabic or multilingual generalization, and automatic rhythm diversity still needs controlled listening validation.</p>
+          <p><strong>Evidence</strong> Trained on 500 hours of LibriTTS, evaluated on unseen LibriSpeech test-clean speakers. With the same predicted token plan and 3-second prompt, shortcut versus cascade yields UTMOS 3.79 versus 3.17 and SIM-R 0.59 versus 0.44, with WER unchanged at 0.04 as tabulated. Rhythm diversity uses three syntheses per pair.</p>
+          
+          
+          <div class="links">
+            
+            
+              
+              <a href="https://arxiv.org/abs/2510.02848" target="_blank" rel="noopener noreferrer">Source ↗</a>
+              
+              
+            
+              
+              <a href="https://arxiv.org/abs/2510.02848v2" target="_blank" rel="noopener noreferrer">Revision ↗</a>
+              
+              
+            
+              
+              <a href="https://rhythm-tts.github.io/" target="_blank" rel="noopener noreferrer">Project or artifact ↗</a>
+              
+              
+            
+              
+              <a href="https://arxiv.org/html/2510.02848v2" target="_blank" rel="noopener noreferrer">Full revision and controlled comparison ↗</a>
+              
+              
+            
+            
+          </div>
+          <ul class="tags" aria-label="Topics"><li>Training</li><li>Cloning</li><li>Evaluation</li></ul>
+        </div>
+      </article>
+    
     </div>
     <p id="no-results" class="empty" hidden>No matching entries.</p>
   </section>
   <section id="archive" class="panel archive">
     <div class="section-head"><h2>Weekly Archive</h2><span>Cairo calendar weeks</span></div>
     
-    <details><summary><time datetime="2026-11-09">Week of 2026-11-09</time><span>9 entries</span></summary>
-      <ul><li><a href="#hf-discovery:Momenrezk11/NAMAA-Egyptian-TTS" data-entry-link>NAMAA releases an Egyptian Arabic Chatterbox checkpoint</a><p>A useful Egyptian baseline for voice-agent prompts. The card flags Egyptian qāf, number pronunciation, and prompt-dependent inconsistencies.</p></li><li><a href="#hf-discovery:MuntasirElagami/sudanese-chatterbox" data-entry-link>Sudanese Chatterbox v0.1 publishes a dialect fine-tune</a><p>The released test material gives you a starting point to compare dialect intelligibility and similarity against other Arabic checkpoints.</p></li><li><a href="#arxiv:2611.20254" data-entry-link>VoxMel replaces a learned acoustic tokenizer with fixed Haar tiers</a><p>A different acoustic target to compare against token-based models, especially when testing simplifications to the speech front end.</p></li><li><a href="#arxiv:2611.19832" data-entry-link>ProTTS learns word stress and exposes emphasis control</a><p>The stress-mask interface is a design pattern for controlling call-agent emphasis without requiring labeled stress during training.</p></li><li><a href="#arxiv:2611.19787" data-entry-link>Qwen3-TTS post-training adapts prosody to the target text</a><p>The study isolates text-adaptive delivery as a separate evaluation axis for cloned voice agents.</p></li><li><a href="#arxiv:2611.16051" data-entry-link>Customer-service listeners rank human-likeness and preference differently</a><p>Evaluate the voices you actually ship on conversational preference alongside naturalness. Voice choice within a provider can materially change the result.</p></li><li><a href="#arxiv:2611.15464" data-entry-link>RSE-TTS reuses its generator to encode cloning references</a><p>Reusing the generator for conditioning is an option for keeping a cloning model small while preserving speaker similarity.</p></li><li><a href="#hf-discovery:VoxDance-Lab/VoxMel-0.3B" data-entry-link>VoxMel releases two English and Mandarin cloning checkpoints</a><p>VoxMel provides a downloadable comparison point for direct spectrogram generation and transcript-conditioned cloning.</p></li><li><a href="#elevenlabs:925dd817c200dc86887f9873" data-entry-link>ElevenAgents adds conversation-level clone strength</a><p>A voice-agent integration can set clone adherence per conversation where the selected voice supports it.</p></li></ul>
+    <details><summary><time datetime="2026-11-09">Week of 2026-11-09</time><span>10 entries</span></summary>
+      <ul><li><a href="#hf-discovery:mahmoudalrefaey/amina-tts" data-entry-link>Amina targets Egyptian bank-support speech with mixed-script examples</a><p>The sample sentence embeds &#39;Overdraft&#39; in Egyptian Arabic, making this a relevant code-switching test candidate. That example is not an intelligibility or mixed-language benchmark, and the Arabic normalizer&#39;s treatment of English must be checked.</p></li><li><a href="#hf-discovery:Momenrezk11/NAMAA-Egyptian-TTS" data-entry-link>NAMAA releases an Egyptian Arabic Chatterbox checkpoint</a><p>A useful Egyptian baseline for voice-agent prompts. The card flags Egyptian qāf, number pronunciation, and prompt-dependent inconsistencies.</p></li><li><a href="#hf-discovery:MuntasirElagami/sudanese-chatterbox" data-entry-link>Sudanese Chatterbox v0.1 publishes a dialect fine-tune</a><p>The released test material gives you a starting point to compare dialect intelligibility and similarity against other Arabic checkpoints.</p></li><li><a href="#arxiv:2611.20254" data-entry-link>VoxMel replaces a learned acoustic tokenizer with fixed Haar tiers</a><p>A different acoustic target to compare against token-based models, especially when testing simplifications to the speech front end.</p></li><li><a href="#arxiv:2611.19832" data-entry-link>ProTTS learns word stress and exposes emphasis control</a><p>The stress-mask interface is a design pattern for controlling call-agent emphasis without requiring labeled stress during training.</p></li><li><a href="#arxiv:2611.19787" data-entry-link>Qwen3-TTS post-training adapts prosody to the target text</a><p>The study isolates text-adaptive delivery as a separate evaluation axis for cloned voice agents.</p></li><li><a href="#arxiv:2611.16051" data-entry-link>Customer-service listeners rank human-likeness and preference differently</a><p>Evaluate the voices you actually ship on conversational preference alongside naturalness. Voice choice within a provider can materially change the result.</p></li><li><a href="#arxiv:2611.15464" data-entry-link>RSE-TTS reuses its generator to encode cloning references</a><p>Reusing the generator for conditioning is an option for keeping a cloning model small while preserving speaker similarity.</p></li><li><a href="#hf-discovery:VoxDance-Lab/VoxMel-0.3B" data-entry-link>VoxMel releases two English and Mandarin cloning checkpoints</a><p>VoxMel provides a downloadable comparison point for direct spectrogram generation and transcript-conditioned cloning.</p></li><li><a href="#elevenlabs:925dd817c200dc86887f9873" data-entry-link>ElevenAgents adds conversation-level clone strength</a><p>A voice-agent integration can set clone adherence per conversation where the selected voice supports it.</p></li></ul>
       
     </details>
     
@@ -1764,6 +2450,223 @@
     
     <details><summary><time datetime="2026-10-12">Week of 2026-10-12</time><span>0 entries</span></summary>
       <p class="empty">No curated entries.</p>
+    </details>
+    
+    <details><summary><time datetime="2026-10-05">Week of 2026-10-05</time><span>0 entries</span></summary>
+      <p class="empty">No curated entries.</p>
+    </details>
+    
+    <details><summary><time datetime="2026-09-28">Week of 2026-09-28</time><span>0 entries</span></summary>
+      <p class="empty">No curated entries.</p>
+    </details>
+    
+    <details><summary><time datetime="2026-09-21">Week of 2026-09-21</time><span>0 entries</span></summary>
+      <p class="empty">No curated entries.</p>
+    </details>
+    
+    <details><summary><time datetime="2026-09-14">Week of 2026-09-14</time><span>0 entries</span></summary>
+      <p class="empty">No curated entries.</p>
+    </details>
+    
+    <details><summary><time datetime="2026-09-07">Week of 2026-09-07</time><span>0 entries</span></summary>
+      <p class="empty">No curated entries.</p>
+    </details>
+    
+    <details><summary><time datetime="2026-08-31">Week of 2026-08-31</time><span>0 entries</span></summary>
+      <p class="empty">No curated entries.</p>
+    </details>
+    
+    <details><summary><time datetime="2026-08-24">Week of 2026-08-24</time><span>0 entries</span></summary>
+      <p class="empty">No curated entries.</p>
+    </details>
+    
+    <details><summary><time datetime="2026-08-17">Week of 2026-08-17</time><span>0 entries</span></summary>
+      <p class="empty">No curated entries.</p>
+    </details>
+    
+    <details><summary><time datetime="2026-08-10">Week of 2026-08-10</time><span>0 entries</span></summary>
+      <p class="empty">No curated entries.</p>
+    </details>
+    
+    <details><summary><time datetime="2026-08-03">Week of 2026-08-03</time><span>0 entries</span></summary>
+      <p class="empty">No curated entries.</p>
+    </details>
+    
+    <details><summary><time datetime="2026-07-27">Week of 2026-07-27</time><span>0 entries</span></summary>
+      <p class="empty">No curated entries.</p>
+    </details>
+    
+    <details><summary><time datetime="2026-07-20">Week of 2026-07-20</time><span>0 entries</span></summary>
+      <p class="empty">No curated entries.</p>
+    </details>
+    
+    <details><summary><time datetime="2026-07-13">Week of 2026-07-13</time><span>0 entries</span></summary>
+      <p class="empty">No curated entries.</p>
+    </details>
+    
+    <details><summary><time datetime="2026-07-06">Week of 2026-07-06</time><span>0 entries</span></summary>
+      <p class="empty">No curated entries.</p>
+    </details>
+    
+    <details><summary><time datetime="2026-06-29">Week of 2026-06-29</time><span>0 entries</span></summary>
+      <p class="empty">No curated entries.</p>
+    </details>
+    
+    <details><summary><time datetime="2026-06-22">Week of 2026-06-22</time><span>0 entries</span></summary>
+      <p class="empty">No curated entries.</p>
+    </details>
+    
+    <details><summary><time datetime="2026-06-15">Week of 2026-06-15</time><span>0 entries</span></summary>
+      <p class="empty">No curated entries.</p>
+    </details>
+    
+    <details><summary><time datetime="2026-06-08">Week of 2026-06-08</time><span>0 entries</span></summary>
+      <p class="empty">No curated entries.</p>
+    </details>
+    
+    <details><summary><time datetime="2026-06-01">Week of 2026-06-01</time><span>0 entries</span></summary>
+      <p class="empty">No curated entries.</p>
+    </details>
+    
+    <details><summary><time datetime="2026-05-25">Week of 2026-05-25</time><span>0 entries</span></summary>
+      <p class="empty">No curated entries.</p>
+    </details>
+    
+    <details><summary><time datetime="2026-05-18">Week of 2026-05-18</time><span>0 entries</span></summary>
+      <p class="empty">No curated entries.</p>
+    </details>
+    
+    <details><summary><time datetime="2026-05-11">Week of 2026-05-11</time><span>0 entries</span></summary>
+      <p class="empty">No curated entries.</p>
+    </details>
+    
+    <details><summary><time datetime="2026-05-04">Week of 2026-05-04</time><span>0 entries</span></summary>
+      <p class="empty">No curated entries.</p>
+    </details>
+    
+    <details><summary><time datetime="2026-04-27">Week of 2026-04-27</time><span>0 entries</span></summary>
+      <p class="empty">No curated entries.</p>
+    </details>
+    
+    <details><summary><time datetime="2026-04-20">Week of 2026-04-20</time><span>0 entries</span></summary>
+      <p class="empty">No curated entries.</p>
+    </details>
+    
+    <details><summary><time datetime="2026-04-13">Week of 2026-04-13</time><span>0 entries</span></summary>
+      <p class="empty">No curated entries.</p>
+    </details>
+    
+    <details><summary><time datetime="2026-04-06">Week of 2026-04-06</time><span>0 entries</span></summary>
+      <p class="empty">No curated entries.</p>
+    </details>
+    
+    <details><summary><time datetime="2026-03-30">Week of 2026-03-30</time><span>0 entries</span></summary>
+      <p class="empty">No curated entries.</p>
+    </details>
+    
+    <details><summary><time datetime="2026-03-23">Week of 2026-03-23</time><span>0 entries</span></summary>
+      <p class="empty">No curated entries.</p>
+    </details>
+    
+    <details><summary><time datetime="2026-03-16">Week of 2026-03-16</time><span>0 entries</span></summary>
+      <p class="empty">No curated entries.</p>
+    </details>
+    
+    <details><summary><time datetime="2026-03-09">Week of 2026-03-09</time><span>0 entries</span></summary>
+      <p class="empty">No curated entries.</p>
+    </details>
+    
+    <details><summary><time datetime="2026-03-02">Week of 2026-03-02</time><span>0 entries</span></summary>
+      <p class="empty">No curated entries.</p>
+    </details>
+    
+    <details><summary><time datetime="2026-02-23">Week of 2026-02-23</time><span>0 entries</span></summary>
+      <p class="empty">No curated entries.</p>
+    </details>
+    
+    <details><summary><time datetime="2026-02-16">Week of 2026-02-16</time><span>0 entries</span></summary>
+      <p class="empty">No curated entries.</p>
+    </details>
+    
+    <details><summary><time datetime="2026-02-09">Week of 2026-02-09</time><span>0 entries</span></summary>
+      <p class="empty">No curated entries.</p>
+    </details>
+    
+    <details><summary><time datetime="2026-02-02">Week of 2026-02-02</time><span>0 entries</span></summary>
+      <p class="empty">No curated entries.</p>
+    </details>
+    
+    <details><summary><time datetime="2026-01-26">Week of 2026-01-26</time><span>0 entries</span></summary>
+      <p class="empty">No curated entries.</p>
+    </details>
+    
+    <details><summary><time datetime="2026-01-19">Week of 2026-01-19</time><span>0 entries</span></summary>
+      <p class="empty">No curated entries.</p>
+    </details>
+    
+    <details><summary><time datetime="2026-01-12">Week of 2026-01-12</time><span>0 entries</span></summary>
+      <p class="empty">No curated entries.</p>
+    </details>
+    
+    <details><summary><time datetime="2026-01-05">Week of 2026-01-05</time><span>0 entries</span></summary>
+      <p class="empty">No curated entries.</p>
+    </details>
+    
+    <details><summary><time datetime="2025-12-29">Week of 2025-12-29</time><span>0 entries</span></summary>
+      <p class="empty">No curated entries.</p>
+    </details>
+    
+    <details><summary><time datetime="2025-12-22">Week of 2025-12-22</time><span>0 entries</span></summary>
+      <p class="empty">No curated entries.</p>
+    </details>
+    
+    <details><summary><time datetime="2025-12-15">Week of 2025-12-15</time><span>0 entries</span></summary>
+      <p class="empty">No curated entries.</p>
+    </details>
+    
+    <details><summary><time datetime="2025-12-08">Week of 2025-12-08</time><span>0 entries</span></summary>
+      <p class="empty">No curated entries.</p>
+    </details>
+    
+    <details><summary><time datetime="2025-12-01">Week of 2025-12-01</time><span>0 entries</span></summary>
+      <p class="empty">No curated entries.</p>
+    </details>
+    
+    <details><summary><time datetime="2025-11-24">Week of 2025-11-24</time><span>0 entries</span></summary>
+      <p class="empty">No curated entries.</p>
+    </details>
+    
+    <details><summary><time datetime="2025-11-17">Week of 2025-11-17</time><span>0 entries</span></summary>
+      <p class="empty">No curated entries.</p>
+    </details>
+    
+    <details><summary><time datetime="2025-11-10">Week of 2025-11-10</time><span>0 entries</span></summary>
+      <p class="empty">No curated entries.</p>
+    </details>
+    
+    <details><summary><time datetime="2025-11-03">Week of 2025-11-03</time><span>0 entries</span></summary>
+      <p class="empty">No curated entries.</p>
+    </details>
+    
+    <details><summary><time datetime="2025-10-27">Week of 2025-10-27</time><span>0 entries</span></summary>
+      <p class="empty">No curated entries.</p>
+    </details>
+    
+    <details><summary><time datetime="2025-10-20">Week of 2025-10-20</time><span>0 entries</span></summary>
+      <p class="empty">No curated entries.</p>
+    </details>
+    
+    <details><summary><time datetime="2025-10-13">Week of 2025-10-13</time><span>0 entries</span></summary>
+      <p class="empty">No curated entries.</p>
+    </details>
+    
+    <details><summary><time datetime="2025-10-06">Week of 2025-10-06</time><span>0 entries</span></summary>
+      <p class="empty">No curated entries.</p>
+    </details>
+    
+    <details><summary><time datetime="2025-09-29">Week of 2025-09-29</time><span>1 entries</span></summary>
+      <ul><li><a href="#arxiv:2510.02848" data-entry-link>Rhythm-TTS revision separates codec planning from latent generation</a><p>A useful controlled test of the codec reconstruction bottleneck. English results do not establish conversational, Arabic or multilingual generalization, and automatic rhythm diversity still needs controlled listening validation.</p></li></ul>
+      
     </details>
     
   </section>
