@@ -20,12 +20,12 @@
 <main class="wrap">
   <section class="hero" aria-labelledby="page-title">
     <div>
-      <p class="date">16 Nov – 22 Nov 2026 <span>· Cairo</span></p>
+      <p class="date">23 Nov – 29 Nov 2026 <span>· Cairo</span></p>
       <h1 id="page-title">What changed in TTS?</h1>
       <p>Model releases, provider updates, and research. Arabic speech and real-time deployment first.</p>
     </div>
     <dl class="stats">
-      <div><dt>This week</dt><dd>18</dd></div>
+      <div><dt>This week</dt><dd>0</dd></div>
       <div><dt>Need action</dt><dd>3</dd></div>
       <div><dt>Sources checked</dt><dd>14<span>/14</span></dd></div>
     </dl>
@@ -33,43 +33,7 @@
   <div class="overview">
     <section class="panel" id="week">
       <div class="section-head"><h2>This Week</h2><a href="#timeline">Browse timeline ↓</a></div>
-      
-      <article class="brief-row">
-        <div class="meta"><span class="kind proprietary">Proprietary update</span><span class="focus">Priority</span></div>
-        <h3><a href="#elevenlabs:e3361a7cd0a66af60c89aa89" data-entry-link>ElevenLabs Realtime honors expressive mode and exposes usage</a></h3>
-        <p>Regression-test expressive delivery, event correlation and usage accounting in live agents. This is a behavior/API update with no new latency or Arabic dialect/code-switching benchmark.</p>
-      </article>
-      
-      <article class="brief-row">
-        <div class="meta"><span class="kind proprietary">Proprietary update</span></div>
-        <h3><a href="#elevenlabs:49651a906be30c597b8031ae" data-entry-link>ElevenLabs deprecates language-specific TTS normalization parameter</a></h3>
-        <p>Audit callers that set this field and regression-test number, date and identifier pronunciation in Arabic and mixed Arabic-English prompts. The notice does not specify a replacement, removal date or locale behavior change.</p>
-      </article>
-      
-      <article class="brief-row">
-        <div class="meta"><span class="kind downloadable">Downloadable model</span><span class="focus">Priority</span></div>
-        <h3><a href="#hf-discovery:Jata-AI/Jata-Talk-Mini" data-entry-link>Jata announces small Saudi TTS, but the pinned weights are missing</a></h3>
-        <p>Track for Saudi pronunciation tests, but wait for a downloadable model before attempting local evaluation. No measured latency, intelligibility or Arabic-English switching evidence is supplied.</p>
-      </article>
-      
-      <article class="brief-row">
-        <div class="meta"><span class="kind downloadable">Downloadable model</span><span class="focus">Priority</span></div>
-        <h3><a href="#hf-discovery:qalduaij/lolo_Q8y_voice" data-entry-link>lolo releases Kuwaiti Habibi-TTS fine-tune with conflicting terms</a></h3>
-        <p>Relevant dialect candidate for native listening, especially گ/چ distinctions. No held-out intelligibility, first-audio or Arabic-English benchmark is shown; English metadata alone is insufficient. Resolve upstream license compatibility before reuse.</p>
-      </article>
-      
-      <article class="brief-row">
-        <div class="meta"><span class="kind downloadable">Downloadable model</span><span class="focus">Priority</span></div>
-        <h3><a href="#hf-discovery:algerian-nlp/Hadra-TTS-kokoro" data-entry-link>EL-HARRACHI-Lite revises the Algerian Kokoro loading path</a></h3>
-        <p>A useful correction for evaluating the released fine-tune. Its partial Arabic-to-IPA mapping still enters an American-English KPipeline; inspect phonemes and obtain native listening checks before relying on it. French loanword handling does not establish Arabic-English support.</p>
-      </article>
-      
-      <article class="brief-row">
-        <div class="meta"><span class="kind downloadable">Downloadable model</span><span class="focus">Priority</span></div>
-        <h3><a href="#hf-discovery:touati-kamel/Hadra-TTS-piper" data-entry-link>Hadra Piper adds a 75-clip Darja benchmark and clarifies personas</a></h3>
-        <p>Use the prompts for dialect listening checks. French words are mapped into Arabic spelling; Arabic-English support remains unvalidated. The reported CPU RTF cannot establish conversational first-audio latency.</p>
-      </article>
-      
+      <p class="empty">No entries from this Cairo calendar week.</p>
     </section>
     <aside class="panel action-panel" id="actions">
       <div class="section-head"><h2>Action Needed</h2><span class="count">3</span></div>
@@ -95,7 +59,7 @@
     </aside>
   </div>
   <details class="health">
-    <summary><strong>Source checks</strong><span>14 of 14 complete · Last check <time datetime="2026-11-22T08:54:04.135867+02:00">22 Nov 2026, 08:54 Cairo</time></span></summary>
+    <summary><strong>Source checks</strong><span>14 of 14 complete · Last check <time datetime="2026-11-23T09:52:53.241852+02:00">23 Nov 2026, 09:52 Cairo</time></span></summary>
     <ul>
       
       <li><strong>F5-TTS</strong><span>github</span><span class="ok">Ok</span></li>
@@ -129,7 +93,7 @@
     </ul>
   </details>
   <section id="timeline" class="timeline">
-    <div class="section-head"><h2>Timeline</h2><span id="shown" aria-live="polite">41 entries</span></div>
+    <div class="section-head"><h2>Timeline</h2><span id="shown" aria-live="polite">42 entries</span></div>
     <div class="toolbar">
       <label class="query"><span>Search updates</span><input id="search" type="search" placeholder="Model, topic, or keyword"></label>
       <div class="filters" aria-label="Entry filters">
@@ -438,6 +402,46 @@
             <a href="#hf-discovery:touati-kamel/Hadra-TTS-kokoro" data-entry-link>Hadra Kokoro adds Darja samples, but its quickstart bypasses the checkpoint</a>
           </div>
           <ul class="tags" aria-label="Topics"><li>Arabic</li><li>Code-switching</li><li>Pronunciation</li><li>Evaluation</li></ul>
+        </div>
+      </article>
+    
+      
+      
+      <article id="arxiv:2611.27214" class="entry" data-kind="paper" data-tags="Training|Evaluation">
+        
+        <time class="stamp" datetime="2026-11-20">20 Nov 2026</time>
+        
+        <div>
+          <div class="meta"><span class="kind paper">Research paper</span><span>Preprint</span></div>
+          <h3>EAF-TTS tests latent whitening as headroom for fewer flow calls</h3>
+          <p>EAF-TTS combines phone/duration conditioning, shared-network terminal correction and frozen WaveVAE decoding. Its controlled study trains and samples in fixed ZCA-whitened codec coordinates, changing the loss metric without adding learned parameters.</p>
+          <p class="takeaway"><strong>Why it matters</strong> A training ablation worth testing, not an inference-only patch. Evidence is single-speaker English LJSpeech with ground-truth durations; it establishes neither Arabic/code-switching quality nor streaming TTFA. Reduced-call gains spend full-step quality headroom rather than demonstrate better low-step integration.</p>
+          <p><strong>Evidence</strong> On text-disjoint development Val399, three matched E100 raw-checkpoint seeds yield +0.405 ± 0.027 UTMOS22 Strong at 20 calls (mean ± seed SD; not human MOS). ZCA-5 versus Scalar-20 retains +0.375 ± 0.027 and reduces generation-path RTF from 0.0684 to 0.0205 (3.34×). No detected WER/exact-match degradation does not establish equivalence. Timing includes flow, inverse transform and decoder, excludes G2P/duration prediction; hardware and warmup are insufficiently specified for cross-system comparison.</p>
+          
+          
+          <p class="licensing"><span>Blind-text and human listening validation remain missing; test data were repeatedly accessed. Text-only checkpoint comparison is confounded by EMA versus raw weights. Artifacts are described as prepared for release, not verified downloadable here.</span></p>
+          
+          <div class="links">
+            
+            
+              
+              <a href="https://arxiv.org/abs/2611.27214" target="_blank" rel="noopener noreferrer">Source ↗</a>
+              
+              
+            
+              
+              <a href="https://arxiv.org/abs/2611.27214v1" target="_blank" rel="noopener noreferrer">Revision ↗</a>
+              
+              
+            
+              
+              <a href="https://arxiv.org/html/2611.27214v1" target="_blank" rel="noopener noreferrer">Full paper and timing protocol ↗</a>
+              
+              
+            
+            
+          </div>
+          <ul class="tags" aria-label="Topics"><li>Training</li><li>Evaluation</li></ul>
         </div>
       </article>
     
@@ -2427,6 +2431,11 @@
   </section>
   <section id="archive" class="panel archive">
     <div class="section-head"><h2>Weekly Archive</h2><span>Cairo calendar weeks</span></div>
+    
+    <details><summary><time datetime="2026-11-16">Week of 2026-11-16</time><span>19 entries</span></summary>
+      <ul><li><a href="#elevenlabs:e3361a7cd0a66af60c89aa89" data-entry-link>ElevenLabs Realtime honors expressive mode and exposes usage</a><p>Regression-test expressive delivery, event correlation and usage accounting in live agents. This is a behavior/API update with no new latency or Arabic dialect/code-switching benchmark.</p></li><li><a href="#elevenlabs:49651a906be30c597b8031ae" data-entry-link>ElevenLabs deprecates language-specific TTS normalization parameter</a><p>Audit callers that set this field and regression-test number, date and identifier pronunciation in Arabic and mixed Arabic-English prompts. The notice does not specify a replacement, removal date or locale behavior change.</p></li><li><a href="#hf-discovery:Jata-AI/Jata-Talk-Mini" data-entry-link>Jata announces small Saudi TTS, but the pinned weights are missing</a><p>Track for Saudi pronunciation tests, but wait for a downloadable model before attempting local evaluation. No measured latency, intelligibility or Arabic-English switching evidence is supplied.</p></li><li><a href="#hf-discovery:qalduaij/lolo_Q8y_voice" data-entry-link>lolo releases Kuwaiti Habibi-TTS fine-tune with conflicting terms</a><p>Relevant dialect candidate for native listening, especially گ/چ distinctions. No held-out intelligibility, first-audio or Arabic-English benchmark is shown; English metadata alone is insufficient. Resolve upstream license compatibility before reuse.</p></li><li><a href="#hf-discovery:algerian-nlp/Hadra-TTS-kokoro" data-entry-link>EL-HARRACHI-Lite revises the Algerian Kokoro loading path</a><p>A useful correction for evaluating the released fine-tune. Its partial Arabic-to-IPA mapping still enters an American-English KPipeline; inspect phonemes and obtain native listening checks before relying on it. French loanword handling does not establish Arabic-English support.</p></li><li><a href="#hf-discovery:touati-kamel/Hadra-TTS-piper" data-entry-link>Hadra Piper adds a 75-clip Darja benchmark and clarifies personas</a><p>Use the prompts for dialect listening checks. French words are mapped into Arabic spelling; Arabic-English support remains unvalidated. The reported CPU RTF cannot establish conversational first-audio latency.</p></li><li><a href="#arxiv:2611.24094" data-entry-link>21Codec moves speaker identity into the streaming decoder</a><p>A concrete codec experiment for reducing voice drift across streamed chunks. Decoder timings exclude text-to-token generation and network/player delay; no Arabic-specific result establishes transfer.</p></li><li><a href="#hf-discovery:touati-kamel/Hadra-TTS-xtts" data-entry-link>Hadra XTTS publishes Algerian cloning and French-switching examples</a><p>Evaluate Darja pronunciation and loanwords with native listeners. The frontend folds گ to ق, ڤ to ف and پ to ب to fit vocabulary; those mappings need phonetic checks. Arabic-English capability remains untested.</p></li><li><a href="#hf-discovery:touati-kamel/Hadra-TTS-kokoro" data-entry-link>Hadra Kokoro adds Darja samples, but its quickstart bypasses the checkpoint</a><p>Inspect the released checkpoints directly before evaluating Darja. The recommended pipeline constructs KPipeline(lang_code=&#39;a&#39;) and uses am_adam without loading the Hadra checkpoint or voice tensors. Its results therefore cannot establish this fine-tune&#39;s behavior. Arabic-English remains untested.</p></li><li><a href="#hf-discovery:FireRedTeam/FireRedTTS3-Instruct-HF" data-entry-link>FireRedTTS3 adds official SGLang Omni streaming checkpoints</a><p>A concrete serving integration worth testing for streaming applications. Download configuration, tokenizer and RedAE assets, plus CAM++ for Base; a root safetensors file alone is insufficient. No runtime latency or Arabic support is established by these cards.</p></li><li><a href="#hf-discovery:oddadmix/tiny-voca-arabic" data-entry-link>tiny-voca-arabic adds automatic diacritization to a 4.5M MSA model</a><p>Useful compact MSA frontend reference. Dialects are read with MSA rules and Latin script is skipped, so English words in mixed prompts can disappear. Correct tashkeel manually when automatic readings fail.</p></li><li><a href="#arxiv:2611.27214" data-entry-link>EAF-TTS tests latent whitening as headroom for fewer flow calls</a><p>A training ablation worth testing, not an inference-only patch. Evidence is single-speaker English LJSpeech with ground-truth durations; it establishes neither Arabic/code-switching quality nor streaming TTFA. Reduced-call gains spend full-step quality headroom rather than demonstrate better low-step integration.</p></li><li><a href="#hf-discovery:Ekam/Libra-TTS" data-entry-link>Libra-TTS distills Qwen3-TTS and adds Arabic support</a><p>A compact multilingual candidate for local testing. Automatic language detection is sentence-by-sentence; within-sentence Arabic-English switching and dialect quality remain unvalidated. Report its total roughly 421M parameters when comparing complete systems.</p></li><li><a href="#arxiv:2611.25521" data-entry-link>DRVEXO reports one warm 390 ms first-PCM synthesis on GB10</a><p>Treat this as a feasibility trace, not a latency distribution or end-to-end voice-agent result. Conversational traces use a separate pre-merge runtime; text throughput is not speech concurrency.</p></li><li><a href="#hf-discovery:oguzeldereli/ttf-VoxCPM2" data-entry-link>Ternary VoxCPM2 revises its Chinese quality comparison</a><p>The earlier apparent Chinese regression partly reflected ASR script and number formatting. The new small test does not establish broad quality parity, Arabic dialect quality or Arabic-English code-switching reliability.</p></li><li><a href="#hf-discovery:abdullah/tiny-voca-ar" data-entry-link>tiny-voca-ar releases a 4.5M MSA model with unresolved voice rights</a><p>A compact Arabic frontend/distillation reference, pending native listening validation and voice clearance. It provides no dialect, Arabic-English or measured real-time result; undiacritized input is refused.</p></li><li><a href="#arxiv:2611.24125" data-entry-link>Layer-wise prompting exposes a voice-versus-style conditioning trade-off</a><p>Conditioning depth is an experimental control when style prompts disturb agent voice identity. Both voice preservation and style expressiveness benefit from early layers, so the result is a trade-off rather than one universally best order.</p></li><li><a href="#hf-discovery:Zyphra/ZONOS3-Mini" data-entry-link>ZONOS3-Mini adds a speech-edit LoRA artifact</a><p>Track the adapter as an integration update. Arabic is listed among 43 languages, but this revision supplies no dialect-specific or Arabic-English code-switching validation.</p></li><li><a href="#arxiv:2611.20822" data-entry-link>Zero-shot TTS evaluation can miss voice representation gaps</a><p>Audit speaker groups with listener judgments alongside embedding similarity and automated quality scores.</p></li></ul>
+      
+    </details>
     
     <details><summary><time datetime="2026-11-09">Week of 2026-11-09</time><span>10 entries</span></summary>
       <ul><li><a href="#hf-discovery:mahmoudalrefaey/amina-tts" data-entry-link>Amina targets Egyptian bank-support speech with mixed-script examples</a><p>The sample sentence embeds &#39;Overdraft&#39; in Egyptian Arabic, making this a relevant code-switching test candidate. That example is not an intelligibility or mixed-language benchmark, and the Arabic normalizer&#39;s treatment of English must be checked.</p></li><li><a href="#hf-discovery:Momenrezk11/NAMAA-Egyptian-TTS" data-entry-link>NAMAA releases an Egyptian Arabic Chatterbox checkpoint</a><p>A useful Egyptian baseline for voice-agent prompts. The card flags Egyptian qāf, number pronunciation, and prompt-dependent inconsistencies.</p></li><li><a href="#hf-discovery:MuntasirElagami/sudanese-chatterbox" data-entry-link>Sudanese Chatterbox v0.1 publishes a dialect fine-tune</a><p>The released test material gives you a starting point to compare dialect intelligibility and similarity against other Arabic checkpoints.</p></li><li><a href="#arxiv:2611.20254" data-entry-link>VoxMel replaces a learned acoustic tokenizer with fixed Haar tiers</a><p>A different acoustic target to compare against token-based models, especially when testing simplifications to the speech front end.</p></li><li><a href="#arxiv:2611.19832" data-entry-link>ProTTS learns word stress and exposes emphasis control</a><p>The stress-mask interface is a design pattern for controlling call-agent emphasis without requiring labeled stress during training.</p></li><li><a href="#arxiv:2611.19787" data-entry-link>Qwen3-TTS post-training adapts prosody to the target text</a><p>The study isolates text-adaptive delivery as a separate evaluation axis for cloned voice agents.</p></li><li><a href="#arxiv:2611.16051" data-entry-link>Customer-service listeners rank human-likeness and preference differently</a><p>Evaluate the voices you actually ship on conversational preference alongside naturalness. Voice choice within a provider can materially change the result.</p></li><li><a href="#arxiv:2611.15464" data-entry-link>RSE-TTS reuses its generator to encode cloning references</a><p>Reusing the generator for conditioning is an option for keeping a cloning model small while preserving speaker similarity.</p></li><li><a href="#hf-discovery:VoxDance-Lab/VoxMel-0.3B" data-entry-link>VoxMel releases two English and Mandarin cloning checkpoints</a><p>VoxMel provides a downloadable comparison point for direct spectrogram generation and transcript-conditioned cloning.</p></li><li><a href="#elevenlabs:925dd817c200dc86887f9873" data-entry-link>ElevenAgents adds conversation-level clone strength</a><p>A voice-agent integration can set clone adherence per conversation where the selected voice supports it.</p></li></ul>
